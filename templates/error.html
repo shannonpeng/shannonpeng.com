@@ -12,7 +12,12 @@
 {% block content %}
 <div id="error">
     <div class="container">
-        <h3>error
+        <h3>
+            {% if title is defined %}
+                {{ title }}
+            {% else %}
+                error
+            {% endif %}
             {% if message is defined %}
                 <br>{{ message }}
             {% endif %}
