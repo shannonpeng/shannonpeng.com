@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        {% block head %}
+
+        <title>{% block title %} | shannon peng{% endblock %}</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+
+        <!-- viewport scaling -->
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+        <!-- social media metadata -->
+        <meta property="og:title" content="shannon peng">
+        <meta name="description" content="eecs & media arts / mit '20">
+        <meta property="og:description" content="eecs & media arts / mit '20">
+
+        <!-- font awesome, typekit, and css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.typekit.net/efj2qst.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+
+        {% endblock %}
+    </head>
+
+    <body>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            {% block footer %}
+                <div class="content">
+                  made with <i class="fas fa-music" aria-hidden="true"></i> by shannon peng
+                </div>
+            {% endblock %}
+        </footer>
+
+    </body>
+</html>

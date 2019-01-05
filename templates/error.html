@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if title is defined %}
+        {{ title }}
+    {% else %}
+        error
+    {% endif %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div id="error">
+    <div class="container">
+        <h3>error
+            {% if message is defined %}
+                <br>{{ message }}
+            {% endif %}
+        </h3>
+        <a href="javascript:history.back()">
+            <p class="description"><i class="fas fa-arrow-alt-circle-left"></i> go back</p>
+        </a>
+    </div>
+ </div>
+{% endblock %}
