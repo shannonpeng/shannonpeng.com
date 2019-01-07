@@ -32,7 +32,10 @@ def index():
 @app.route('/go/<keyword>')
 def go_get(keyword):
     link = mongo.db.links.find_one_or_404({ 'keyword': keyword })
-    return redirect(link.get('target'))
+    target = link.get('target')
+    if target.find('//') < 0:
+        return redirect('//' + target)
+    return redirect(target)
 
 @app.route('/go/create', methods=['POST'])
 @login_required
