@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ project.title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ project.title }}</h1>
+<p>{{ project.description }}</p>
+
+{{ project.html|safe }}
+
+{% endblock %}

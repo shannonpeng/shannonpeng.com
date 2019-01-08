@@ -8,6 +8,9 @@
         <!-- favicon -->
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
 
+        <!-- charset -->
+        <meta charset="utf-8">
+
         <!-- viewport scaling -->
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -25,16 +28,22 @@
     </head>
 
     <body>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for category, message in messages %}
+                    <li class="flash {{category}}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
 
         {% block content %}{% endblock %}
 
-        <footer>
-            {% block footer %}
-                <div class="content">
-                  made with <i class="fas fa-music" aria-hidden="true"></i> by shannon peng
-                </div>
-            {% endblock %}
-        </footer>
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
 
     </body>
 </html>

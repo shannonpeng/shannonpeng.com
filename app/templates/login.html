@@ -8,16 +8,7 @@
     <div id="admin">
         <div class="container login">
             <div class="content">
-                <h1 class="title">login</h1>
-                {% with messages = get_flashed_messages() %}
-                    {% if messages %}
-                        <ul class="flashes">
-                            {% for message in messages %}
-                            <li>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                {% endwith %}
+                <h1 class="title">LOGIN</h1>
                 <form method='post' action="/login">
                     <div class="field"><i class="fas fa-user"></i><input type="username" name="username" placeholder="username" /></div>
                     <div class="field"><i class="fas fa-lock"></i><input type="password" name="password" placeholder="password" /></div>

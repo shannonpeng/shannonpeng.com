@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, url_for, redirect, session, f
 from flask_pymongo import PyMongo
 from bson import objectid
 from flask_login import LoginManager, login_required, login_user, logout_user
+from flask_flatpages import FlatPages
 from .user import User
 import os
 
@@ -11,11 +12,20 @@ app.secret_key = os.environ.get('SESSION_SECRET')
 app.config['MONGO_URI'] = os.environ.get('MONGOLAB_URI')
 mongo = PyMongo(app)
 
+# set up project posts
+DEBUG = os.environ.get('FLASK_ENV') == 'development'
+FLATPAGES_AUTO_RELOAD = DEBUG
+FLATPAGES_EXTENSION = '.md'
+FLATPAGES_ROOT = 'content'
+POST_DIR = 'projects'
+app.config.from_object(__name__)
+flatpages = FlatPages(app)
+
 # setup login manager
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-login_manager.login_message = 'You must log in to continue.'
+login_manager.login_message = 'Nice try, hacker. 😤'
 @login_manager.user_loader
 def load_user(username):
     user = mongo.db.users.find_one({ 'username': username })
@@ -26,29 +36,30 @@ def load_user(username):
 # home page
 @app.route('/')
 def index():
-    return render_template('index.html')
+    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
+    return render_template('index.html', projects=projects)
 
 # go links
 @app.route('/go/<keyword>')
 def go_get(keyword):
     link = mongo.db.links.find_one_or_404({ 'keyword': keyword })
-    target = link.get('target')
-    if target.find('//') < 0:
-        return redirect('//' + target)
-    return redirect(target)
+    url = link.get('url')
+    if url.find('//') < 0:
+        return redirect('//' + url)
+    return redirect(url)
 
 @app.route('/go/create', methods=['POST'])
 @login_required
 def go_create():
     keyword = request.form.get('keyword')
-    target = request.form.get('target')
-    if keyword and target:
-        new_link = { 'keyword': keyword, 'target': target }
+    url = request.form.get('url')
+    if keyword and url:
+        new_link = { 'keyword': keyword, 'url': url }
         result = mongo.db.links.replace_one({ 'keyword': keyword }, new_link, upsert=True)
         if result.acknowledged:
-            flash('Link created successfully', category='success')
+            flash('Link created successfully 😍', category='success')
         else:
-            flash('Link not created.', category='error')
+            flash('Link not created. 😬', category='error')
     return redirect(url_for('admin'))
 
 @app.route('/go/delete', methods=['POST'])
@@ -57,16 +68,16 @@ def go_delete():
     link_id = request.form.get('link_id')
     link = mongo.db.links.find_one_and_delete({ '_id': objectid.ObjectId(link_id) })
     if link:
-        flash('Link deleted successfully', category='success')
+        flash('Link deleted successfully 💨', category='success')
     else:
-        flash('Link not deleted.', category='error')
+        flash('Link not deleted. 😬', category='error')
     return redirect(url_for('admin'))
 
 # sessions and admin portal
 @app.route('/admin')
 @login_required
 def admin():
-    links = mongo.db.links.find()
+    links = sorted(mongo.db.links.find(), key=lambda x: x['keyword'])
     return render_template('admin.html', links=links)
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -84,25 +95,31 @@ def login():
                 user_obj = User(user['username'])
                 login_user(user_obj)
                 return redirect(request.args.get('next') or url_for('admin'))
-        flash('Invalid username or password', category='error')
+        flash('Invalid username or password 🙅‍♀️', category='error')
         return redirect(url_for('login'))
 
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    flash('You\'re logged out. Buh-bye. ✌️', category='message')
+    return redirect(url_for('index'))
 
 # TODO: fun stats [last.fm, instagram, book, movie]
 
-# TODO: project writeup routing
+# project posts
+@app.route('/projects/<name>')
+def project(name):
+    path = '{}/{}'.format(POST_DIR, name)
+    project = flatpages.get_or_404(path)
+    return render_template('project.html', project=project)
 
 # handle 404
 @app.errorhandler(404)
 def not_found(error):
-    return render_template('error.html', title='404', message='page not found'), 404
+    return render_template('error.html', title='404', message='page not found 👻'), 404
 
 # unhandled errors
 @app.errorhandler(Exception)
 def unhandled_exception(error):
     app.logger.error('Unhandled Exception: %s', (error))
-    return render_template('error.html', message='internal server error'), 500
+    return render_template('error.html', message='internal server error ⚠️'), 500

@@ -10,10 +10,11 @@ set up virtualenv:
 ```
 python3 -m venv venv
 ```
-activate venv and install python packages:
+activate venv, install python packages, and deactivate:
 ```
-. venv/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
+deactivate
 ```
 then run locally:
 ```

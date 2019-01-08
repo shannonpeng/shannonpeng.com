@@ -7,42 +7,43 @@
 {% block content %}
 <div id="admin">
     <div class="container">
-        <h1 class="title">admin portal</h1>
+        <h1 class="title">ADMIN PORTAL</h1>
 
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul class="flashes">
-                    {% for message in messages %}
-                    <li>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-        {% endwith %}
+        <!-- logout -->
+        <a href="/logout"><h3 class="logout"><i class="fas fa-power-off"></i> LOGOUT</h3></a>
 
-        <form name="create" method="post" action="/go/create">
-            <input type="text" placeholder="keyword" name="keyword" class="keyword" required>
-            <input type="text" placeholder="target" name="target" class="target" required>
-            <input type="submit" class="button create" value="create link">
-        </form>
+        <!-- stats -->
+        <div class="block stats">
+            <h2 class="title"><i class="fas fa-chart-bar"></i> STATS</h2>
+        </div>
 
-        <table>
-            {% for link in links %}
-                <tr>
-                  <td>
-                    <form name="delete" method="post" title="delete this link" action="/go/delete">
-                        <input type="hidden" value="{{ link._id }}" name="link_id" />
-                      <button type="submit" class="button delete">
-                         <i class='fa fa-trash' aria-hidden='true'></i>
-                      </button>
-                    </form>
-                  </td>
-                  <td>{{ link.keyword }}</td>
-                  <td><a href="{{ link.target }}">{{ link.target }}</a></td>
-                </tr>
-            {% else %}
-                <p>No links are currently in the database.</p>
-            {% endfor %}
-        </table>
+        <!-- go links -->
+        <div class="block go-links">
+            <h2 class="title"><i class="fas fa-link"></i> GO LINKS</h2>
+            <form name="create" method="post" action="/go/create">
+                <input type="text" placeholder="keyword" name="keyword" class="keyword" required>
+                <input type="text" placeholder="URL" name="url" class="url" required>
+                <input type="submit" class="button create" value="link">
+            </form>
+            <table>
+                {% for link in links %}
+                    <tr>
+                      <td>
+                        <form name="delete" method="post" title="delete this link" action="/go/delete">
+                            <input type="hidden" value="{{ link._id }}" name="link_id" />
+                          <button type="submit" class="button delete">
+                             <i class="fas fa-trash"></i>
+                          </button>
+                        </form>
+                      </td>
+                      <td class="keyword">{{ link.keyword }}</td>
+                      <td class="url"><a href="{{ link.url }}" url="_blank">{{ link.url | truncate(50) }}</a></td>
+                    </tr>
+                {% else %}
+                    <p>No links are currently in the database.</p>
+                {% endfor %}
+            </table>
+        </div>
     </div>
  </div>
 {% endblock %}
