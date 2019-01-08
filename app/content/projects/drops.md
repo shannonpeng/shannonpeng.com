@@ -1,6 +1,6 @@
 title: Drops
 keyword: drops
-subtitle: 
+subtitle: Javascript game about water pollution
 date: 2017-06-25
 tags: [game development, graphic design, UI design]
 technologies: [Javascript, PhaserIO, Illustrator]

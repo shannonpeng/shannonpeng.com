@@ -1,4 +1,4 @@
 $(document).ready(function () {
 	console.log("👀");
-	setTimeout(function(){ $(".flashes").addClass("hidden")}, 1500)
+	setTimeout(function(){ $(".flashes").addClass("hidden")}, 2000);
 });
