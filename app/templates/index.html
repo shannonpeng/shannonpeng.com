@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block title %}
-    shannon peng
+    Shannon Peng
 {% endblock %}
 
 {% block content %}
-<div id="home">
+<div id="main">
 	<div class="container">
 		<div class="sidebar">
 			<div class="content">
-				<h1 class="title">SHANNON PENG</h1>
+				<a href="/"><h1 class="title">SHANNON PENG</h1></a>
 				<p>I'm a junior at MIT studying electrical engineering &amp; computer science and media arts. I'm interested in developing technologies that reimagine how we create and experience stories, music, and art.</p>
 				<ul class="social">
 			        <li><a href="mailto:pengs@mit.edu" target="_blank"><i class="far fa-envelope"></i></a></li>
@@ -18,11 +18,17 @@
 			        <li><a href="//open.spotify.com/user/shannon.penguin" target="_blank"><i class="fab fa-spotify"></i></a>
 			        <li><a href="//instagram.com/shannonpenguin" target="_blank"><i class="fab fa-instagram"></i></a></li>
 			    </ul>
+			    <ul class="nav">
+			    	<a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>
+			    	<a href="/classes"><li {% if page=="classes" %}class="selected"{% endif %}>classes</li></a>
+			    	<a href="/photos"><li {% if page=="photos" %}class="selected"{% endif %}>photos</li></a>
+			    </ul>
 			</div>
 		</div>
-		<div class="projects">
+		{% block main_content %}
+		<div id="projects">
 			{% for project in projects %}
-			<div class="project">
+			<div class="project" style="animation-delay:{{ range(0, 2000) | random }}ms;">
 				<a href="{{ url_for('project', name=project.keyword) }}">
 					<div class="thumbnail" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0)), url('{{ project.thumbnail }}')"></div>
 					<div class="info">
@@ -35,6 +41,7 @@
 			<p>No projects to be found, just this guilty dinosaur. 🦖</p>
 			{% endfor %}
 		</div>
+		{% endblock %}
 	</div>
 </div>
 {% endblock %}

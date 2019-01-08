@@ -33,11 +33,23 @@ def load_user(username):
         return None
     return User(user['username'])
 
-# home page
+# home page [projects]
 @app.route('/')
 def index():
     projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
-    return render_template('index.html', projects=projects)
+    return render_template('index.html', projects=projects, page='projects')
+
+# classes page
+@app.route('/classes')
+def classes():
+    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
+    return render_template('classes.html', page='classes')
+
+# photos page
+@app.route('/photos')
+def photos():
+    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
+    return render_template('index.html', projects=projects, page='photos')
 
 # go links
 @app.route('/go/<keyword>')
