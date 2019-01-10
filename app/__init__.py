@@ -158,6 +158,7 @@ def update_stat(name, fields):
 def stats(name):
     form = dict(request.form)
     s = get_stat_by_name(name)
+    print(form)
     if s:
         for k in s:
             if k in form and not len(form[k][0]) == 0:
