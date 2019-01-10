@@ -142,6 +142,9 @@ footer p:nth-child(2) {
 #main .sidebar > .content .stats p {
   margin: 4px auto;
 }
+#main .sidebar > .content .stats a:hover {
+  text-decoration: underline;
+}
 #main .sidebar > .content .stats .icon {
   width: 24px;
   margin-right: 4px;

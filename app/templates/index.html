@@ -40,7 +40,7 @@
 										</div>
 										{% endif %}
 										<div>
-											<p><i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i> by {{ stat.artist }}</p>
+											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i>{% if stat.url %}</a>{% endif %} by {{ stat.artist }}</p>
 										</div>
 							        </div>
 						       	{% elif stat.name == 'book' %}
@@ -58,7 +58,7 @@
 											<i class="{{ stat.icon }}"></i>
 										</div>
 										<div>
-											<p><i>{{ stat.title }}</i> ({{ stat.year }})</p>
+											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title }}</i>{% if stat.url %}</a>{% endif %} ({{ stat.year }})</p>
 										</div>
 							        </div>
 						        {% endif %}

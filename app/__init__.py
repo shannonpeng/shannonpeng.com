@@ -133,8 +133,9 @@ def get_stats():
     song = data['recenttracks']['track'][0]
     song_title = song['name']
     song_artist = song['artist']['#text']
+    song_url = song['url']
     song_live = '@attr' in song and song['@attr']['nowplaying'] == 'true'
-    update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live })
+    update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live, "url": song_url })
     try:
         stats = sorted(mongo.db.stats.find() or [], key=lambda stat: order.index(stat['name']))
     except:
