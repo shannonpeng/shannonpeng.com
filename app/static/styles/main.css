@@ -186,6 +186,8 @@ footer p:nth-child(2) {
   margin: 24px 0;
   border-right: 4px solid #f8f8f8;
   text-align: right;
+  display: inline-block;
+  float: right;
 }
 #main .sidebar > .content .nav.one {
   border-right: 4px solid rgba(255, 91, 113, 0.25);
