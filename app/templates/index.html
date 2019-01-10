@@ -10,7 +10,62 @@
 		<div class="sidebar">
 			<div class="content">
 				<a href="/"><h1 class="title">SHANNON PENG</h1></a>
-				<p>I'm a junior at MIT studying electrical engineering &amp; computer science and media arts. I'm interested in developing technologies that reimagine how we create and experience stories, music, and art.</p>
+				<p>I'm a junior at MIT studying electrical engineering &amp; computer science. I'm interested in combining technology, media arts, and design to reimagine how we create and experience stories.</p>
+				<div class="stats">
+					<div class="content">
+						{% for stat in stats %}
+							{% if not stat.hidden %}
+								{% if stat.name == 'status' %}
+									<div class="cluster">
+										<div class="icon" title="current status">
+											<i class="{{ stat.icon }}"></i>
+										</div>
+										<div>
+											<p><i><b>{{ stat.prefix }}: </b></i>{{ stat.text }}</p>
+										</div>
+							        </div>
+						       	{% elif stat.name == 'song' %}
+							        <div class="cluster">
+							        	{% if stat.live %}
+										<div class="volume" title="listening now">
+											<div class="bar"><span>&nbsp;</span></div>
+											<div class="bar"><span>&nbsp;</span></div>
+											<div class="bar"><span>&nbsp;</span></div>
+											<div class="bar"><span>&nbsp;</span></div>
+											<div class="bar"><span>&nbsp;</span></div>
+										</div>
+										{% else %}
+										<div class="icon" title="last song played">
+											<i class="{{ stat.icon }}"></i>
+										</div>
+										{% endif %}
+										<div>
+											<p><i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i> by {{ stat.artist }}</p>
+										</div>
+							        </div>
+						       	{% elif stat.name == 'book' %}
+							        <div class="cluster">
+										<div class="icon" title="currently reading">
+											<i class="fas fa-book"></i>
+										</div>
+										<div>
+											<p><i>{{ stat.title }}</i> <span class="description">by {{ stat.author }}</span></p>
+										</div>
+							        </div>
+						        {% elif stat.name == 'movie' %}
+							        <div class="cluster">
+										<div class="icon" title="last movie watched">
+											<i class="{{ stat.icon }}"></i>
+										</div>
+										<div>
+											<p><i>{{ stat.title }}</i> ({{ stat.year }})</p>
+										</div>
+							        </div>
+						        {% endif %}
+					        {% endif %}
+				        {% endfor %}
+				    </div>
+				</div>
 				<ul class="social">
 			        <li><a href="mailto:pengs@mit.edu" target="_blank"><i class="far fa-envelope"></i></a></li>
 			        <li><a href="//github.com/shannonpeng" target="_blank"><i class="fab fa-github-alt"></i></a></li>
@@ -21,21 +76,26 @@
 			    <ul class="nav">
 			    	<a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>
 			    	<a href="/classes"><li {% if page=="classes" %}class="selected"{% endif %}>classes</li></a>
-			    	<a href="/photos"><li {% if page=="photos" %}class="selected"{% endif %}>photos</li></a>
+			    	<!---<a href="/photos"><li {% if page=="photos" %}class="selected"{% endif %}>photos</li></a>-->
 			    </ul>
 			</div>
 		</div>
 		{% block main_content %}
 		<div id="projects">
 			{% for project in projects %}
-			<div class="project" style="animation-delay:{{ range(0, 2000) | random }}ms;">
-				<a href="{{ url_for('project', name=project.keyword) }}">
-					<div class="thumbnail" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0)), url('{{ project.thumbnail }}')"></div>
+			<div class="project">
+				<!--<a href="{{ url_for('project', name=project.keyword) }}">
+					<div class="arrow">
+						<i class="far fa-arrow-alt-circle-right"></i>
+					</div>
+				</a>-->
+				<!--<a href="{{ url_for('project', name=project.keyword) }}">-->
+					<div class="thumbnail" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0)), url('{{ project.thumbnail }}')"></div>
 					<div class="info">
 						<h2 class="title">{{ project.title }}</h2>
 						<p class="subtitle"><i>{{ project.subtitle }}</i></p>
 					</div>
-				</a>
+				<!--</a>-->
 			</div>
 			{% else %}
 			<p>No projects to be found, just this guilty dinosaur. 🦖</p>

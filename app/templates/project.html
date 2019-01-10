@@ -1,14 +1,65 @@
 {% extends "base.html" %}
 
+{% block head %}
+	{{ super() }}
+	<style type="text/css">
+		#project-writeup .links li:hover {
+			background-color: #{{ project.color }};
+		}
+	</style>
+{% endblock %}
+
 {% block title %}
     {{ project.title }}
     {{ super() }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ project.title }}</h1>
-<p>{{ project.description }}</p>
+<div class="back top">
+	<a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
+</div>
+<div id="project-writeup">
+	<header class="cover">
+		<div class="cover-headline">
+			<div class="container">
+				<h5 class="category" style="color: #{{ project.color }}">{{ project.category }}</h5>
+				<h1 class="title">{{ project.title }}</h1>
+				<p class="description">{{ project.description }}</p>
+				{% if project.link or project.facebook or project.github or project.video %}
+				<ul class="links">
+					{% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
+					{% if project.facebook %}<a href="{{project.link}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
+					{% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
+					{% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
+				</ul>
+				{% endif %}
+			</div>
+		</div>
+		<div class="cover-image">
+			<img src="{{ project.cover }}" />
+			{% if project.caption %}<p class="caption">{{ project.caption }}</p>{% endif %}
+		</div>
+	</header>
 
-{{ project.html|safe }}
-
+	<div class="content">
+		{{ project.html|safe }}
+	</div>
+	{% if project.link or project.facebook or project.github or project.video %}
+		<ul class="links">
+			{% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
+			{% if project.facebook %}<a href="{{project.link}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
+			{% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
+			{% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
+		</ul>
+	{% endif %}
+	<div class="back bottom">
+		<a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
+	</div>
+</div>
+<footer>
+	<div class="content">
+		<p>Made with <i class="fas fa-magic"></i> by Shannon Peng</p>
+		<p>&copy; Copyright 2019</p>
+	</div>
+</footer>
 {% endblock %}

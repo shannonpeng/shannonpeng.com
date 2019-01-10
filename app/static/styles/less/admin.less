@@ -49,12 +49,10 @@
 		input, button {
 			outline: none;
 			border: none;
-			max-width: 240px;
 			padding: 12px 24px;
-			display: inline-block;
 			background: @grey;
 			border-radius: 4px;
-			margin: 8px;
+			margin: 12px 8px;
 			font-family: @font-admin;
 			font-size: @font-size-body;
 		}
@@ -70,12 +68,21 @@
 			cursor: pointer;
 		}
 
-		.button.create, .button.login {
-			background: @color1;
-			color: white;
+		.button.submit, .button.login {
+			background-color: transparent;
+			color: @color1;
 			font-family: @font-title;
 			font-weight: @font-weight-bold;
 			text-transform: uppercase;
+			margin-top: 24px;
+			border: 4px solid @color1;
+			.transition-duration(@transition-time);
+
+			&:hover {
+				background-color: @color1;
+				color: white;
+				.transition-duration(@transition-time);
+			}
 		}
 
 		.button.delete {
@@ -91,8 +98,8 @@
 
 		.block {
 			overflow: hidden;
-			margin-right: 24px;
-			margin-bottom: 24px;
+			margin-bottom: 60px;
+			
 			.title {
 				opacity: @hover-opacity;
 			}
@@ -101,6 +108,29 @@
 					margin: 18px 0;
 				}
 			}
+			&.stats {
+				.stat {
+					width: calc(50% - 40px);
+					display: inline-block;
+					vertical-align: top;
+					margin: 18px;
+					.name {
+						text-transform: uppercase;
+					}
+					.icon {
+						width: auto;
+						margin-right: 4px;
+					}
+					input {
+						width: calc(100% - 48px);
+						display: block;
+					}
+					.button {
+						width: 100%;
+					}
+				}
+			}
 		}
+
 	}
 }

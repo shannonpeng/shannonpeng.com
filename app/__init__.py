@@ -4,7 +4,7 @@ from bson import objectid
 from flask_login import LoginManager, login_required, login_user, logout_user
 from flask_flatpages import FlatPages
 from .user import User
-import os
+import os, requests
 
 # set up flask app and connect to database
 app = Flask(__name__)
@@ -25,7 +25,7 @@ flatpages = FlatPages(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-login_manager.login_message = 'Nice try, hacker. 😤'
+login_manager.login_message = 'You gotta log in to do that. 😤'
 @login_manager.user_loader
 def load_user(username):
     user = mongo.db.users.find_one({ 'username': username })
@@ -33,23 +33,25 @@ def load_user(username):
         return None
     return User(user['username'])
 
-# home page [projects]
+# home/projects page
 @app.route('/')
 def index():
-    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
-    return render_template('index.html', projects=projects, page='projects')
+    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
+    stats = get_stats()
+    return render_template('index.html', projects=projects, stats=stats, page='projects')
 
 # classes page
 @app.route('/classes')
 def classes():
-    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
-    return render_template('classes.html', page='classes')
+    stats = get_stats()
+    return render_template('classes.html', stats=stats, page='classes')
 
 # photos page
 @app.route('/photos')
 def photos():
-    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR)], key=lambda x:x['date'], reverse=True)
-    return render_template('index.html', projects=projects, page='photos')
+    stats = get_stats()
+    recent_media = []
+    return render_template('photos.html', photos=recent_media, stats=stats,  page='photos')
 
 # go links
 @app.route('/go/<keyword>')
@@ -72,6 +74,8 @@ def go_create():
             flash('Link created successfully 😍', category='success')
         else:
             flash('Link not created. 😬', category='error')
+    else:
+        flash('Keyword or URL missing. 🤔', category='error')
     return redirect(url_for('admin'))
 
 @app.route('/go/delete', methods=['POST'])
@@ -90,7 +94,8 @@ def go_delete():
 @login_required
 def admin():
     links = sorted(mongo.db.links.find(), key=lambda x: x['keyword'])
-    return render_template('admin.html', links=links)
+    stats = get_stats()
+    return render_template('admin.html', stats=stats, links=links)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -116,10 +121,57 @@ def logout():
     flash('You\'re logged out. Buh-bye. ✌️', category='message')
     return redirect(url_for('index'))
 
-# TODO: fun stats [last.fm, instagram, book, movie]
+# stats
+
+LAST_FM_API_KEY = '6163331a532b34cce6b2fb4d32c55a47'
+LAST_FM_USERNAME = 'spenguinx'
+
+def get_stats():
+    order = ['status', 'song', 'movie']
+    # fetch latest song from last fm API and update database
+    data = requests.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user={0}&api_key={1}&limit=1&format=json'.format(LAST_FM_USERNAME, LAST_FM_API_KEY)).json()
+    song = data['recenttracks']['track'][0]
+    song_title = song['name']
+    song_artist = song['artist']['#text']
+    song_live = '@attr' in song and song['@attr']['nowplaying'] == 'true'
+    update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live })
+    try:
+        stats = sorted(mongo.db.stats.find() or [], key=lambda stat: order.index(stat['name']))
+    except:
+        stats = sorted(mongo.db.stats.find() or [], key=lambda stat: stat['name'], reverse=True)
+    return stats
+def get_stat_by_name(name):
+    return mongo.db.stats.find_one({ "name": name })
+def update_stat(name, fields):
+    s = get_stat_by_name(name)
+    if s:
+        for k in s:
+            if k in fields:
+                s[k] = fields[k]
+        result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
+        return result
+    return False
+
+@app.route('/stats/<name>', methods=['POST'])
+@login_required
+def stats(name):
+    form = dict(request.form)
+    s = get_stat_by_name(name)
+    if s:
+        for k in s:
+            if k in form and not len(form[k][0]) == 0:
+                s[k] = form[k][0]
+        result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
+        if result.acknowledged:
+            flash('Stat updated successfully 😍', category='success')
+        else:
+            flash('Stat not updated. 😬', category='error')
+    else:
+        flash('The requested stat was not found. 🙊', category='error')
+    return redirect(url_for('admin'))
 
 # project posts
-@app.route('/projects/<name>')
+@app.route('/projects/<name>', strict_slashes=False)
 def project(name):
     path = '{}/{}'.format(POST_DIR, name)
     project = flatpages.get_or_404(path)

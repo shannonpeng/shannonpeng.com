@@ -62,3 +62,17 @@ ul {
 		transition: visibility 0s 500ms, opacity 500ms linear;
 	}
 }
+
+footer {
+	text-align: center;
+	background: @grey;
+	color: fade(darken(@grey, 50%), 75%);
+	padding: 24px;
+	font-size: 0.8*@font-size-body;
+	p {
+		margin: 4px auto;
+	}
+	p:nth-child(2) {
+		opacity: @hover-opacity;
+	}
+}

@@ -15,6 +15,21 @@
         <!-- stats -->
         <div class="block stats">
             <h2 class="title"><i class="fas fa-chart-bar"></i> STATS</h2>
+            {% for stat in stats %}
+                {% if not stat.name=='song' %}
+                <div class="stat">
+                    <h4 class="name"><i class="{{ stat.icon }} icon"></i> {{ stat.name }}</h4>
+                    <form name="update" method="post" action="/stats/{{ stat.name }}">
+                        {% for key in stat %}
+                            {% if not (key=='_id' or key=='name') %}
+                            <input title="{{ key }}" type="text" placeholder="{{ stat[key] }}" name="{{ key }}">
+                            {% endif %}
+                        {% endfor %}
+                        <input type="submit" class="button submit" value="update">
+                    </form>
+                </div>
+                {% endif %}
+            {% endfor %}
         </div>
 
         <!-- go links -->
@@ -23,7 +38,7 @@
             <form name="create" method="post" action="/go/create">
                 <input type="text" placeholder="keyword" name="keyword" class="keyword" required>
                 <input type="text" placeholder="URL" name="url" class="url" required>
-                <input type="submit" class="button create" value="link">
+                <input type="submit" class="button submit" value="link">
             </form>
             <table>
                 {% for link in links %}
