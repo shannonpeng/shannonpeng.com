@@ -158,11 +158,13 @@ def update_stat(name, fields):
 def stats(name):
     form = dict(request.form)
     s = get_stat_by_name(name)
-    print(form)
     if s:
         for k in s:
-            if k in form and not len(form[k][0]) == 0:
-                s[k] = form[k][0]
+            if k in form:
+                if type(form[k]) == list and not (len(form[k]) == 0 or len(form[k][0]) == 0):
+                    s[k] = form[k][0]
+                elif not type(form[k]) == list:
+                    s[k] = form[k]
         result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
         if result.acknowledged:
             flash('Stat updated successfully 😍', category='success')
