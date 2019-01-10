@@ -353,6 +353,8 @@ footer p:nth-child(2) {
     padding-right: 30px;
   }
   #main .sidebar .content .nav {
+    display: block;
+    float: none;
     border-right: none !important;
     border-bottom: 4px solid #f8f8f8;
     text-align: left;
