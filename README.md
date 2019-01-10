@@ -1,6 +1,8 @@
 # shannonpeng.com
 new personal website :o
 
+to run locally:
+
 install less and less-watch-compiler (I have it installed globally):
 ```
 npm install -g less
@@ -16,7 +18,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 deactivate
 ```
-then run locally:
+then run the start script:
 ```
 sh start.sh
 ```

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block title %}
+	Photos |
+	{{ super() }}
+{% endblock %}
+
+{% block main_content %}
+<div id="photos">
+	{% for photo in photos %}
+	<div class="photo">
+		<a href="{{ photo.link }}">
+			<div class="thumbnail" style="background-image:url('{{ photo.images.standard_resolution }}')"></div>
+			{% if photo.caption or photo.location %}
+			<div class="info">
+				{% if photo.caption %}<p class="caption"><i>{{ photo.caption.text }}</i></p>{% endif %}
+				{% if photo.location %}<p class="location"><i>{{ photo.location.name }}</i></p>{% endif %}
+			</div>
+			{% endif %}
+		</a>
+	</div>
+	{% else %}
+	<p>No photos to be found, just this guilty dinosaur. 🦖</p>
+	{% endfor %}
+</div>
+{% endblock %}
