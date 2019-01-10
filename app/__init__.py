@@ -123,7 +123,7 @@ def logout():
 
 # stats
 
-LAST_FM_API_KEY = '6163331a532b34cce6b2fb4d32c55a47'
+LAST_FM_API_KEY = os.environ.get('LAST_FM_API_KEY')
 LAST_FM_USERNAME = 'spenguinx'
 
 def get_stats():

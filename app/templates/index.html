@@ -40,7 +40,7 @@
 										</div>
 										{% endif %}
 										<div>
-											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i>{% if stat.url %}</a>{% endif %} by {{ stat.artist }}</p>
+											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i>{% if stat.url %}</a>{% endif %} by {{ stat.artist | truncate(35, killwords=True, leeway=0) }}</p>
 										</div>
 							        </div>
 						       	{% elif stat.name == 'book' %}

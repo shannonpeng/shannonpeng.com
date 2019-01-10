@@ -107,8 +107,8 @@ footer p:nth-child(2) {
   opacity: 1;
   color: inherit;
   position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
+  -webkit-transition-duration: 450ms;
+  transition-duration: 450ms;
 }
 #main .sidebar > .content .social li {
   width: 30px;
@@ -135,11 +135,26 @@ footer p:nth-child(2) {
   font-size: 80%;
   margin: 12px 0;
 }
+#main .sidebar > .content .stats .cluster {
+  white-space: nowrap;
+  overflow-x: hidden;
+  position: relative;
+}
+#main .sidebar > .content .stats .cluster:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, transparent 90%, white);
+  pointer-events: none;
+}
 #main .sidebar > .content .stats .cluster > div {
   display: inline-block;
   vertical-align: middle;
 }
-#main .sidebar > .content .stats p {
+#main .sidebar > .content .stats .cluster p {
   margin: 4px auto;
 }
 #main .sidebar > .content .stats a:hover {
