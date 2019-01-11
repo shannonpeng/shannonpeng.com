@@ -137,7 +137,7 @@ footer p:nth-child(2) {
 }
 #main .sidebar > .content .stats .cluster {
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 #main .sidebar > .content .stats .cluster:before {
@@ -147,7 +147,7 @@ footer p:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(90deg, transparent 90%, white);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 90%, white);
   pointer-events: none;
 }
 #main .sidebar > .content .stats .cluster > div {

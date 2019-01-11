@@ -50,7 +50,7 @@
 
 				.cluster {
 					white-space: nowrap;
-					overflow-x: hidden;
+					overflow: hidden;
 					position: relative;
 					&:before {
 						content: '';
@@ -58,7 +58,7 @@
 						height: 100%;    
 						position: absolute;
 						top: 0; right: 0;
-						background:linear-gradient(90deg, transparent 90%, white);
+						background:linear-gradient(90deg, fade(white, 0%) 90%, white);
 						pointer-events: none;
 					}
 					> div {

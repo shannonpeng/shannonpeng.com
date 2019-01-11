@@ -10,7 +10,7 @@
 	{% for photo in photos %}
 	<div class="photo">
 		<a href="{{ photo.link }}" target="_blank">
-			<div class="thumbnail" style="background-image:linear-gradient(180deg, transparent 75%, rgba(0,0,0,0.2)), url('{{ photo.images.standard_resolution.url }}')"></div>
+			<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(0,0,0,0.2)), url('{{ photo.images.standard_resolution.url }}')"></div>
 			{% if photo.caption or photo.location %}
 			<div class="info">
 				{% if photo.location %}<h5 class="location"><i class="icon fas fa-map-marker-alt"></i> {{ photo.location.name }}</h5>{% endif %}
