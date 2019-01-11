@@ -4,7 +4,7 @@ subtitle: Recreating posters from the iconic chick flick
 date: 2017-12-10
 tags: [Graphic Design, Publicity]
 technologies: [Photoshop]
-category: Graphic Design
+label: Graphic Design
 thumbnail: /static/images/projects/mit-muses-fall-2017/thumbnail.jpg
 cover: /static/images/projects/mit-muses-fall-2017/thumbnail.jpg
 color: aeb3da

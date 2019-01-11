@@ -4,7 +4,7 @@ subtitle: Immunology-inspired game for kids
 date: 2017-05-16
 tags: [Toy Product Design, Game Design, Graphic Design, Fabrication]
 technologies: [Velcro, neoprene, felt, foam, sewing, hot wire, Photoshop]
-category: Game Development
+label: Game Development
 thumbnail: /static/images/projects/infection/thumbnail.png
 cover: /static/images/projects/infection/thumbnail.png
 category: Toy Product Design

@@ -4,7 +4,7 @@ subtitle: Branding for a musical reunion
 date: 2018-12-02
 tags: [Branding, Graphic Design, Web Design, Event Planning]
 technologies: [Illustrator, HTML, CSS, Javascript]
-category: Event Branding
+label: Event Branding
 thumbnail: /static/images/projects/mit-muses-30th-reunion/thumbnail.jpg
 cover: /static/images/projects/mit-muses-30th-reunion/thumbnail.jpg
 color: a33e99

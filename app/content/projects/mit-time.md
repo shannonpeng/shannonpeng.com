@@ -4,7 +4,7 @@ subtitle: Smartwatch for MIT students
 date: 2017-05-16
 tags: [Electronics, Embedded Systems, Internet of Things]
 technologies: [Teensy, GPS, IMU, Microphone, Arduino, C++, Python, HTML, CSS, Javascript]
-category: Internet of Things
+label: Internet of Things
 thumbnail: /static/images/projects/mit-time/thumbnail.png
 cover: /static/images/projects/mit-time/thumbnail.png
 color: 2e4d8f

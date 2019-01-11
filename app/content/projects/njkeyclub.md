@@ -4,7 +4,7 @@ subtitle: Immersive, multimedia spy convention theming
 date: 2016-04-03
 tags: [Branding, Event Theming, Graphic Design, Web Design, Video Production, Social Media, Marketing, Video Production]
 technologies: [Photoshop, Illustrator, After Effects, Premiere Pro, HTML, CSS, Javascript]
-category: Event Theming
+label: Event Theming
 thumbnail: /static/images/projects/njkeyclub/thumbnail.png
 cover: /static/images/projects/njkeyclub/thumbnail.png
 color: 82b0de
