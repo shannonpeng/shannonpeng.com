@@ -50,8 +50,10 @@ def classes():
 @app.route('/photos')
 def photos():
     stats = get_stats()
-    recent_media = []
-    return render_template('photos.html', photos=recent_media, stats=stats,  page='photos')
+    photo_count = 18
+    response = requests.get('https://api.instagram.com/v1/users/self/media/recent/?access_token={0}&count={1}'.format(os.environ.get('IG_ACCESS_TOKEN'), photo_count)).json()
+    recent_media = response.get('data') or []
+    return render_template('photos.html', photos=recent_media, stats=stats, page='photos')
 
 # go links
 @app.route('/go/<keyword>')

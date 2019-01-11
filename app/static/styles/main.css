@@ -239,7 +239,8 @@ footer p:nth-child(2) {
   color: #b9a0ef;
 }
 #projects,
-#classes {
+#classes,
+#photos {
   overflow-x: hidden;
   margin-left: 30%;
   padding-left: 32px;
@@ -337,6 +338,61 @@ footer p:nth-child(2) {
 #classes .semester.winter .label {
   color: #b8b8b8;
 }
+#photos .more-photos h4 {
+  margin-top: 12px;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  opacity: 0.3;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+#photos .more-photos h4:hover {
+  opacity: 0.6;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+}
+#photos .more-photos .icon {
+  margin-left: 4px;
+}
+#photos .photo {
+  width: 420px;
+  height: 280px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 2px 2px 2px;
+}
+#photos .photo .thumbnail {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#photos .photo .info {
+  width: calc(100% - 32px);
+  position: absolute;
+  bottom: 16px;
+  padding: 16px;
+  color: white;
+}
+#photos .photo .info .location {
+  position: absolute;
+  bottom: -50%;
+  margin: 0;
+  opacity: 0;
+  text-transform: uppercase;
+  -webkit-transition-duration: 450ms;
+  transition-duration: 450ms;
+}
+#photos .photo .info .location .icon {
+  margin-right: 4px;
+}
+#photos .photo:hover .info .location {
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+}
 @keyframes volume {
   0% {
     width: 16px;
@@ -388,8 +444,9 @@ footer p:nth-child(2) {
   #main .sidebar .content .nav.three {
     border-bottom: 4px solid rgba(0, 206, 203, 0.25);
   }
+  #projects,
   #classes,
-  #projects {
+  #photos {
     display: block;
     width: 100%;
     margin: 0;
@@ -401,14 +458,23 @@ footer p:nth-child(2) {
   #projects .project .info {
     padding: 12px;
   }
+  #photos .photo {
+    width: calc(50% - 8px);
+  }
+  #photos .photo .info {
+    padding: 12px;
+  }
 }
 @media screen and (max-width: 650px) {
-  #projects .project {
+  #projects .project,
+  #photos .photo {
     display: block;
     width: 100%;
-    height: 225px;
     margin: 0;
     margin-bottom: 8px;
+  }
+  #projects .project {
+    height: 225px;
   }
 }
 #project-writeup {
@@ -432,7 +498,7 @@ footer p:nth-child(2) {
   max-width: 564px;
   float: right;
 }
-#project-writeup .cover .cover-headline .category {
+#project-writeup .cover .cover-headline .label {
   text-transform: uppercase;
   margin: 0;
 }

@@ -9,12 +9,11 @@
 <div id="photos">
 	{% for photo in photos %}
 	<div class="photo">
-		<a href="{{ photo.link }}">
-			<div class="thumbnail" style="background-image:url('{{ photo.images.standard_resolution }}')"></div>
+		<a href="{{ photo.link }}" target="_blank">
+			<div class="thumbnail" style="background-image:linear-gradient(180deg, transparent 75%, rgba(0,0,0,0.2)), url('{{ photo.images.standard_resolution.url }}')"></div>
 			{% if photo.caption or photo.location %}
 			<div class="info">
-				{% if photo.caption %}<p class="caption"><i>{{ photo.caption.text }}</i></p>{% endif %}
-				{% if photo.location %}<p class="location"><i>{{ photo.location.name }}</i></p>{% endif %}
+				{% if photo.location %}<h5 class="location"><i class="icon fas fa-map-marker-alt"></i> {{ photo.location.name }}</h5>{% endif %}
 			</div>
 			{% endif %}
 		</a>
@@ -22,5 +21,8 @@
 	{% else %}
 	<p>No photos to be found, just this guilty dinosaur. 🦖</p>
 	{% endfor %}
+	<div class="more-photos">
+		<a href="//instagram.com/shannonpenguin" target="_blank"><h4>see more photos <i class="icon fas fa-arrow-right"></i></h4></a>
+	</div>
 </div>
 {% endblock %}
