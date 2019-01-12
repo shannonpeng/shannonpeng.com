@@ -5,7 +5,7 @@
 
 	.cover {
 		width: 80%;
-		margin: 48px auto;
+		margin: 60px auto;
 		animation: slide-in-from-top 600ms ease-out;
 		
 		.cover-headline {
@@ -31,7 +31,7 @@
 				font-size: @font-size-title;
 			}
 			.description {
-				margin: 0;
+				margin: 4px 0;
 				font-size: @font-size-subtitle;
 				color: darken(@grey, 50%);
 			}
@@ -64,26 +64,58 @@
 			margin-top: 48px;
 			margin-bottom: 48px;
 		}
+		a:hover {
+			text-decoration: underline;
+		}
 		p {
 			margin-block-start: 1.25em;
     		margin-block-end: 1.25em;
 		}
 		h1, h2, h3, h4, h5, h6 {
-			margin-block-start: 1.25em;
+			margin-block-start: 2em;
+		}
+		h5 { // using this as an image caption
+			font-family: @font-body;
+			font-weight: normal;
+			text-align: center;
+			opacity: 0.5;
+			margin-top: 12px;
+			margin-bottom: 24px;
 		}
 		img {
+			max-width: calc(100% - 3px);
 			text-align: center;
+			vertical-align: middle;
+		}
+		.image-set {
+			p {
+				text-align: center;
+				margin: 6px 0;
+			}
+		}
+		.image-set-two {
+			img {
+				max-width: calc(50% - 3px);
+				display: inline-block;
+			}
+		}
+		.image-set-three {
+			img {
+				max-width: calc(33% - 2px);
+				display: inline-block;
+			}
 		}
 		ul {
 			list-style-type: disc;
 			padding-left: 40px;
 		}
+		.codehilite {
+			padding: 2px 24px;
+		}
 		code {
 			font-family: 'Source Code Pro', monospace;
-			background-color: @code-bg-color;
-			font-size: 0.9 * @font-size-project;
-			padding: 4px 8px;
-    		border-radius: 3px;
+			font-size: 0.8 * @font-size-project;
+			border-radius: 3px;
 		}
 	}
 
@@ -120,6 +152,23 @@
 		margin-top: 24px;
 		margin-bottom: 0;
 		text-align: left;
+	}
+
+	.metadata {
+		margin: auto;
+		margin-top: 60px;
+		font-size: 80%;
+		.property {
+			width: 40%;
+			text-align: right;
+			font-family: @font-title;
+			font-weight: bold;
+			text-transform: uppercase;
+			vertical-align: middle;
+		}
+		td {
+			padding: 8px 12px;
+		}
 	}
 }
 
@@ -175,6 +224,10 @@
 				max-width: 100%;
 				float: none;
 			}
+		}
+		.content .metadata .property {
+			width: auto;
+			vertical-align: top;
 		}
 
 	}

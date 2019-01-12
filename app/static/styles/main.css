@@ -94,7 +94,7 @@ footer p:nth-child(2) {
   right: 0;
   max-width: 350px;
   margin-top: 40%;
-  padding: 16px;
+  padding: 18px;
   text-align: left;
 }
 #main .sidebar > .content .title {
@@ -178,7 +178,7 @@ footer p:nth-child(2) {
   animation: volume 500ms linear infinite alternate;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(1) {
-  background: #ff5b71;
+  background: #00cecb;
   animation-delay: 0.3s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(2) {
@@ -186,7 +186,7 @@ footer p:nth-child(2) {
   animation-duration: 0.7s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(3) {
-  background: #00cecb;
+  background: #ff5b71;
   animation-delay: 0.8s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(4) {
@@ -205,13 +205,13 @@ footer p:nth-child(2) {
   float: right;
 }
 #main .sidebar > .content .nav.one {
-  border-right: 4px solid rgba(255, 91, 113, 0.25);
+  border-right: 4px solid rgba(0, 206, 203, 0.25);
 }
 #main .sidebar > .content .nav.two {
   border-right: 4px solid rgba(245, 199, 71, 0.25);
 }
 #main .sidebar > .content .nav.three {
-  border-right: 4px solid rgba(0, 206, 203, 0.25);
+  border-right: 4px solid rgba(255, 91, 113, 0.25);
 }
 #main .sidebar > .content .nav li {
   font-family: futura-pt, sans-serif;
@@ -224,13 +224,13 @@ footer p:nth-child(2) {
   opacity: 1;
 }
 #main .sidebar > .content .nav a:nth-child(1) .selected {
-  color: #ff5b71;
+  color: #00cecb;
 }
 #main .sidebar > .content .nav a:nth-child(2) .selected {
   color: #f5c747;
 }
 #main .sidebar > .content .nav a:nth-child(3) .selected {
-  color: #00cecb;
+  color: #ff5b71;
 }
 #main .sidebar > .content .nav a:nth-child(4) .selected {
   color: #b7f6ff;
@@ -245,6 +245,28 @@ footer p:nth-child(2) {
   margin-left: 30%;
   padding-left: 32px;
   animation: fade-in 300ms ease-in;
+}
+#projects .category-filter {
+  margin: 0;
+  margin-left: 2px;
+  padding-top: 48px;
+  padding-bottom: 12px;
+}
+#projects .category-filter .category {
+  display: inline-block;
+  text-transform: uppercase;
+  opacity: 0.25;
+  margin: 0;
+  margin-right: 16px;
+  border-bottom: 4px solid transparent;
+}
+#projects .category-filter .category.active {
+  color: #00cecb;
+  opacity: 1;
+  border-bottom: 4px solid #00cecb;
+}
+#projects .category-filter .category:hover {
+  cursor: pointer;
 }
 #projects .project {
   width: 300px;
@@ -288,6 +310,9 @@ footer p:nth-child(2) {
   -webkit-transition-duration: 450ms;
   transition-duration: 450ms;
 }
+#projects .project .info .title .icon {
+  font-size: 50%;
+}
 #projects .project .info .subtitle {
   position: absolute;
   top: 100%;
@@ -314,6 +339,7 @@ footer p:nth-child(2) {
 }
 #classes {
   overflow-x: hidden;
+  padding-top: 36px;
 }
 #classes .label {
   text-transform: uppercase;
@@ -337,6 +363,9 @@ footer p:nth-child(2) {
 }
 #classes .semester.winter .label {
   color: #b8b8b8;
+}
+#photos {
+  padding-top: 36px;
 }
 #photos .more-photos h4 {
   margin-top: 12px;
@@ -436,13 +465,13 @@ footer p:nth-child(2) {
     padding-left: 0;
   }
   #main .sidebar .content .nav.one {
-    border-bottom: 4px solid rgba(255, 91, 113, 0.25);
+    border-bottom: 4px solid rgba(0, 206, 203, 0.25);
   }
   #main .sidebar .content .nav.two {
     border-bottom: 4px solid rgba(245, 199, 71, 0.25);
   }
   #main .sidebar .content .nav.three {
-    border-bottom: 4px solid rgba(0, 206, 203, 0.25);
+    border-bottom: 4px solid rgba(255, 91, 113, 0.25);
   }
   #projects,
   #classes,
@@ -484,7 +513,7 @@ footer p:nth-child(2) {
 }
 #project-writeup .cover {
   width: 80%;
-  margin: 48px auto;
+  margin: 60px auto;
   animation: slide-in-from-top 600ms ease-out;
 }
 #project-writeup .cover .cover-headline {
@@ -509,7 +538,7 @@ footer p:nth-child(2) {
   font-size: 46px;
 }
 #project-writeup .cover .cover-headline .description {
-  margin: 0;
+  margin: 4px 0;
   font-size: 24px;
   color: #797979;
 }
@@ -538,6 +567,9 @@ footer p:nth-child(2) {
   margin-top: 48px;
   margin-bottom: 48px;
 }
+#project-writeup .content a:hover {
+  text-decoration: underline;
+}
 #project-writeup .content p {
   margin-block-start: 1.25em;
   margin-block-end: 1.25em;
@@ -548,20 +580,43 @@ footer p:nth-child(2) {
 #project-writeup .content h4,
 #project-writeup .content h5,
 #project-writeup .content h6 {
-  margin-block-start: 1.25em;
+  margin-block-start: 2em;
+}
+#project-writeup .content h5 {
+  font-family: freight-text-pro, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 #project-writeup .content img {
+  max-width: calc(100% - 3px);
   text-align: center;
+  vertical-align: middle;
+}
+#project-writeup .content .image-set p {
+  text-align: center;
+  margin: 6px 0;
+}
+#project-writeup .content .image-set-two img {
+  max-width: calc(50% - 3px);
+  display: inline-block;
+}
+#project-writeup .content .image-set-three img {
+  max-width: calc(33% - 2px);
+  display: inline-block;
 }
 #project-writeup .content ul {
   list-style-type: disc;
   padding-left: 40px;
 }
+#project-writeup .content .codehilite {
+  padding: 2px 24px;
+}
 #project-writeup .content code {
   font-family: 'Source Code Pro', monospace;
-  background-color: #f8f8f8;
-  font-size: 19.8px;
-  padding: 4px 8px;
+  font-size: 17.6px;
   border-radius: 3px;
 }
 #project-writeup .links {
@@ -598,6 +653,22 @@ footer p:nth-child(2) {
   margin-top: 24px;
   margin-bottom: 0;
   text-align: left;
+}
+#project-writeup .metadata {
+  margin: auto;
+  margin-top: 60px;
+  font-size: 80%;
+}
+#project-writeup .metadata .property {
+  width: 40%;
+  text-align: right;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#project-writeup .metadata td {
+  padding: 8px 12px;
 }
 .back {
   font-size: 18px;
@@ -661,6 +732,10 @@ footer p:nth-child(2) {
   #project-writeup .cover .cover-headline .container {
     max-width: 100%;
     float: none;
+  }
+  #project-writeup .content .metadata .property {
+    width: auto;
+    vertical-align: top;
   }
 }
 #admin {
@@ -729,18 +804,18 @@ footer p:nth-child(2) {
 #admin .container .button.submit,
 #admin .container .button.login {
   background-color: transparent;
-  color: #ff5b71;
+  color: #00cecb;
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 24px;
-  border: 4px solid #ff5b71;
+  border: 4px solid #00cecb;
   -webkit-transition-duration: 150ms;
   transition-duration: 150ms;
 }
 #admin .container .button.submit:hover,
 #admin .container .button.login:hover {
-  background-color: #ff5b71;
+  background-color: #00cecb;
   color: white;
   -webkit-transition-duration: 150ms;
   transition-duration: 150ms;

@@ -3,6 +3,9 @@
 {% block head %}
 	{{ super() }}
 	<style type="text/css">
+		#project-writeup .content a {
+			color: #{{ project.color }};
+		}
 		#project-writeup .links li:hover {
 			background-color: #{{ project.color }};
 		}
@@ -42,7 +45,65 @@
 	</header>
 
 	<div class="content">
+
 		{{ project.html|safe }}
+
+		<table class="metadata">
+			{% if project.collaborators %}
+			<tr>
+				<td class="property">collaborators</td>
+				<td class="value">
+					{{ project.collaborators }}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.tags %}
+			<tr>
+				<td class="property">tags</td>
+				<td class="value">
+					{% for t in project.tags %}
+						{{ t }}{{ "," if not loop.last }}
+					{% endfor %}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.technologies %}
+			<tr>
+				<td class="property">technologies</td>
+				<td class="value">
+					{% for t in project.technologies %}
+						{{ t }}{{ "," if not loop.last }}
+					{% endfor %}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.materials %}
+			<tr>
+				<td class="property">materials &amp; tools</td>
+				<td class="value">
+					{% for m in project.materials %}
+						{{ m }}{{ "," if not loop.last }}
+					{% endfor %}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.context %}
+			<tr>
+				<td class="property">context</td>
+				<td class="value">
+					{{ project.context }}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.date %}
+			<tr>
+				<td class="property">completed</td>
+				<td class="value">
+					{{ project.date.strftime('%B %Y') }}
+				</td>
+			</tr>
+			{% endif %}
+		</table>
 	</div>
 	{% if project.link or project.facebook or project.github or project.video %}
 		<ul class="links">
