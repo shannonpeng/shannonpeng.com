@@ -1,9 +1,11 @@
+featured: true
 title: Plix
 keyword: plix
 subtitle: Pokémon Go, for pixel art
 date: 2018-02-01
 tags: [Software, Web Development, Art, UI design]
 technologies: [Node, Express, Socket.IO, Google Maps API, Handlebars, jQuery, Javascript, HTML, CSS]
+categories: [code]
 label: Web Development
 thumbnail: /static/images/projects/plix/thumbnail.png
 cover: /static/images/projects/plix/thumbnail.png

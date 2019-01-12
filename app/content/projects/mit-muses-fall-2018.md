@@ -4,6 +4,7 @@ subtitle: Concert posters inspired by the classic sci-fi comedy
 date: 2018-12-02
 tags: [Graphic Design, Publicity]
 technologies: [Photoshop]
+categories: [design]
 label: Graphic Design
 thumbnail: /static/images/projects/mit-muses-fall-2018/thumbnail.jpg
 cover: /static/images/projects/mit-muses-fall-2018/thumbnail.jpg

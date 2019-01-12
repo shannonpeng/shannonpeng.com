@@ -1,9 +1,11 @@
+featured: true
 title: HackMIT 2017
 keyword: hackmit-2017
-subtitle: Futurstic, sci-fi theme and branding 
+subtitle: Futuristic, sci-fi theme and branding 
 date: 2017-09-15
 tags: [Branding, Event Theming, Graphic Design, Visual Design, Social Media, Marketing, On-Site Installation]
 technologies: [Photoshop, Illustrator, After Effects, Adobe XD]
+categories: [design]
 label: Event Theming
 thumbnail: /static/images/projects/hackmit-2017/thumbnail.png
 cover: /static/images/projects/hackmit-2017/thumbnail.png

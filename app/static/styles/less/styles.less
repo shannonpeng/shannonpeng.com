@@ -9,7 +9,7 @@
 			right: 0;
 			max-width: 350px;
 			margin-top: 40%;
-			padding: 16px;
+			padding: 18px;
 			text-align: left;
 
 			.title {
@@ -171,6 +171,30 @@
 
 #projects {
 
+	.category-filter {
+		margin: 0;
+		margin-left: 2px;
+		padding-top: 48px;
+		padding-bottom: 12px;
+		.category {
+			display: inline-block;
+			text-transform: uppercase;
+			opacity: 0.25;
+			margin: 0;
+			margin-right: 16px;
+			border-bottom: 4px solid transparent;
+
+			&.active {
+				color: @color1;
+				opacity: 1;
+				border-bottom: 4px solid @color1;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
 	.project {
 		width: @project-width;
 		height: @project-height;
@@ -209,6 +233,9 @@
 				bottom: 0;
 				text-transform: uppercase;
 				.transition-duration(3*@transition-time);
+				.icon {
+					font-size: 50%;
+				}
 			}
 			.subtitle {
 				position: absolute;
@@ -242,6 +269,7 @@
 
 #classes {
 	overflow-x: hidden;
+	padding-top: 36px;
 
 	.label {
 		text-transform: uppercase;
@@ -259,10 +287,10 @@
 	.semester {
 		margin-bottom: 48px;
 		&.fall .label {
-			color: @color1;
+			color: @color3;
 		}
 		&.spring .label {
-			color: @color3;
+			color: @color1;
 		}
 		&.winter .label {
 			color: darken(@grey, 25%);
@@ -271,6 +299,7 @@
 }
 
 #photos {
+	padding-top: 36px;
 
 	.more-photos {
 		h4 {
