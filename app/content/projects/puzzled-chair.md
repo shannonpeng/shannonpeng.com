@@ -113,7 +113,7 @@ After modeling full-scale chair layers in Rhino and calculating that they would 
 
 ## Construction
 
-Building the final chair took approximately 18 hours, including cutting the lumber stock to pieces of proper length, clamping the pieces down, and then nailing them together.
+Building the final chair took approximately 18 hours, including cutting the lumber stock to pieces of proper length, clamping the pieces down, nailing them together, carrying the chair back to the studio, and then sanding down the edges.
 
 <div class="image-set" markdown="1">
 
