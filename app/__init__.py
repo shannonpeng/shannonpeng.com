@@ -1,8 +1,9 @@
-from flask import Flask, request, render_template, url_for, redirect, session, flash
+from flask import Flask, request, render_template, render_template_string, url_for, redirect, session, flash
 from flask_pymongo import PyMongo
 from bson import objectid
 from flask_login import LoginManager, login_required, login_user, logout_user
-from flask_flatpages import FlatPages
+from flask_flatpages import FlatPages, pygments_style_defs
+from markdown2 import Markdown
 from .user import User
 import os, requests
 
@@ -13,13 +14,22 @@ app.config['MONGO_URI'] = os.environ.get('MONGOLAB_URI')
 mongo = PyMongo(app)
 
 # set up project posts
+markdowner = Markdown(extras=['fenced-code-blocks', 'target-blank-links' , 'markdown-in-html'])
+def my_renderer(text):
+    prerendered_body = render_template_string(text)
+    return markdowner.convert(prerendered_body)
 DEBUG = os.environ.get('FLASK_ENV') == 'development'
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
 POST_DIR = 'projects'
+app.config['FLATPAGES_HTML_RENDERER'] = my_renderer
 app.config.from_object(__name__)
 flatpages = FlatPages(app)
+
+@app.route('/pygments.css')
+def pygments_css():
+    return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
 # setup login manager
 login_manager = LoginManager()
@@ -36,9 +46,10 @@ def load_user(username):
 # home/projects page
 @app.route('/')
 def index():
-    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
+    featured_projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('featured') is True and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
+    projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('featured') is None and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
     stats = get_stats()
-    return render_template('index.html', projects=projects, stats=stats, page='projects')
+    return render_template('index.html', projects=featured_projects+projects, stats=stats, page='projects')
 
 # classes page
 @app.route('/classes')
