@@ -1,6 +1,6 @@
 title: Woodmail Lamp
 keyword: woodmail-lamp
-subtitle: Instruction-based chair design
+subtitle: Chainmail-inspired laser cut lamp
 date: 2017-11-16
 tags: [Design Studio, Lamp Design, Parametric Design]
 technologies: [Plywood, Laser Cutting, Rhino]
