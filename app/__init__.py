@@ -174,7 +174,7 @@ def stats(name):
     if s:
         for k in s:
             if k in form:
-                if type(form[k]) == list and not (len(form[k]) == 0 or len(form[k][0]) == 0):
+                if type(form[k]) == list and not len(form[k]) == 0 and not len(form[k][0]) == 0:
                     s[k] = form[k][0]
                 elif not type(form[k]) == list:
                     s[k] = form[k]

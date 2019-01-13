@@ -87,6 +87,14 @@
 				</td>
 			</tr>
 			{% endif %}
+			{% if project.dimensions %}
+			<tr>
+				<td class="property">dimensions</td>
+				<td class="value">
+					{{ project.dimensions }}
+				</td>
+			</tr>
+			{% endif %}
 			{% if project.context %}
 			<tr>
 				<td class="property">context</td>
