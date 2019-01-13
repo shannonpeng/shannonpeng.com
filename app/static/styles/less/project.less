@@ -136,11 +136,11 @@
 			border-radius: 50% 50%;
 			position: relative;
 			display: flex;
-			.transition-duration(2*@transition-time);
+			.transition(2*@transition-time);
 			&:hover {
 				background-color: @grey;
 				color: white;
-				.transition-duration(@transition-time);
+				.transition(@transition-time);
 			}
 		}
 		i {
@@ -176,11 +176,11 @@
 	font-size: @font-size-body;
 	font-family: @font-title;
 	opacity: 0.5 * @hover-opacity;
-	.transition-duration(2*@transition-time);
+	.transition(2*@transition-time);
 
 	&:hover {
 		opacity: @hover-opacity;
-		.transition-duration(@transition-time);
+		.transition(@transition-time);
 	}
 	.icon {
 		margin-right: 4px;

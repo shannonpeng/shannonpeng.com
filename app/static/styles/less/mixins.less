@@ -3,9 +3,9 @@
           transform: @transforms;
 }
 
-.transition-duration(@duration) {
-  -webkit-transition-duration: @duration;
-  transition-duration: @duration;
+.transition(@duration, @property: all) {
+  -webkit-transition: @property @duration ease-in-out;
+  transition: @property @duration ease-in-out;
 }
 
 @keyframes fade-in {

@@ -22,21 +22,22 @@
 				opacity: 1;
 				color: inherit;
 				position: relative;
-				.transition-duration(3*@transition-time);
+				.transition(3*@transition-time, opacity);
 
 				li {
 					width: @social-icon-width;
 					display: inline-block;
 					padding-left: @social-icon-width;
 					text-align: center;
-				}
-				a {
 					opacity: @hover-opacity;
-					.transition-duration(@transition-time);
+					.transition(@transition-time, opacity);
+					&:hover {
+						.transition(@transition-time, opacity);
+					}
 				}
 				&:hover {
-					.transition-duration(@transition-time);
-					a {
+					.transition(@transition-time, opacity);
+					li {
 						opacity: 0.5 * @hover-opacity;
 						&:hover {
 							opacity: 1;
@@ -210,7 +211,7 @@
 			color: white;
 			font-size: 36px;
 			opacity: 0;
-			.transition-duration(3*@transition-time);
+			.transition(3*@transition-time);
 		}
 		.thumbnail {
 			width: 100%;
@@ -232,7 +233,7 @@
 				position: absolute;
 				bottom: 0;
 				text-transform: uppercase;
-				.transition-duration(3*@transition-time);
+				.transition(3*@transition-time);
 				.icon {
 					font-size: 50%;
 				}
@@ -241,7 +242,7 @@
 				position: absolute;
 				top: 100%;
 				opacity: 0;
-				.transition-duration(3*@transition-time);
+				.transition(3*@transition-time);
 			}
 		}
 		&:hover {
@@ -249,18 +250,18 @@
 			.arrow {
 				right: 16px;
 				opacity: 0.75;
-				.transition-duration(@transition-time);
+				.transition(@transition-time);
 			}
 
 			.info {
 				.title {
 					bottom: 150%;
-					.transition-duration(@transition-time);
+					.transition(@transition-time);
 				}
 				.subtitle {
 					top: -50%;
 					opacity: 1;
-					.transition-duration(@transition-time);
+					.transition(@transition-time);
 				}
 			}
 		}
@@ -307,10 +308,10 @@
 		    margin-bottom: 48px;
 		    text-transform: uppercase;
 		    opacity: 0.5 * @hover-opacity;
-		    .transition-duration(2*@transition-time);
+		    .transition(2*@transition-time, opacity);
 		    &:hover {
 		    	opacity: @hover-opacity;
-		    	.transition-duration(@transition-time);
+		    	.transition(@transition-time, opacity);
 		    }
 		}
 	    .icon {
@@ -345,7 +346,7 @@
 				margin: 0;
 				opacity: 0;
 				text-transform: uppercase;
-				.transition-duration(3*@transition-time);
+				.transition(3*@transition-time);
 
 				.icon {
 					margin-right: 4px;
@@ -357,7 +358,7 @@
 				.location {
 					bottom: 0;
 					opacity: 1;
-					.transition-duration(@transition-time);
+					.transition(@transition-time);
 				}
 			}
 		}
