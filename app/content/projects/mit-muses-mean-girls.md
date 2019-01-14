@@ -16,7 +16,7 @@ description: Posters and social media ads for the MIT Muses' Mean Girls-themed F
 
 Every semester, my a cappella group, the [MIT Muses](https://mitmuses.github.io/), chooses a theme for our end-of-semester concert. The theme takes over the posters we hang up around campus and share with our friends on social media.
 
-In the fall of 2017, we chose the movie *Mean Girls* (2004) for our theme. As one of the publicity chairs, I got the chance to design our posters!
+In the fall of 2017, we chose the movie *Mean Girls* (2004). As one of the publicity chairs, I got the chance to design our posters!
 
 ## Scene Selection
 
@@ -39,7 +39,7 @@ I picked three recognizable images related to the movie: the main movie poster, 
 
 </div>
 
-To include more members of the group, I designated the Plastics photo as the group photo and expanded the 4-way call to a *n*-way call, including everyone who was interested in participating.
+To include more members of the group, I designated the Plastics photo as the group photo and expanded the 4-way call to a *n*-way call, including everyone who wanted to participate.
 
 ## Final Posters
 
@@ -53,7 +53,7 @@ We took pictures in a campus dorm after rehearsal, and then I brought the images
 
 </div>
 
-I used the font Gill Sans for the text—with some kerning, it looked almost identical to the font used in the original posters. To reproduce the gradients in the text and the background, I downloaded original images as reference and used an eyedropper to pick out the colors.
+I used the font Gill Sans for the text—with some kerning, it looked almost identical to the font used in the original posters. To reproduce the gradients in the text and the background, I used an eyedropper to pick out the colors from the original poster.
 
 <div class="image-set" markdown="1">
 
@@ -63,9 +63,7 @@ I used the font Gill Sans for the text—with some kerning, it looked almost ide
 
 </div>
 
-For this scene, we took the original picture in a dimly lit room with everyone sitting on a set of short stone stairsteps, in front of a large mirror. Transforming that mirror into a gray gradient and the dark steps into a white bench was a fun and challenging task. To sell the illusion, I added artificial shadows on the bench and subtle shoe reflections on the floor.
-
-For publicity, we printed this onto a 48" x 36" poster and put it on display in MIT's Infinite Corridor during the week leading up to our concert.
+For this scene, we took the original picture in a dimly lit room with everyone sitting in front of a large mirror, on a set of short stone stairsteps. Transforming that mirror into a gray gradient and the dark steps into a white bench was a fun and challenging task. To sell the illusion, I added artificial shadows on the bench and subtle shoe reflections on the floor.
 
 
 <div class="image-set" markdown="1">
@@ -76,7 +74,7 @@ For publicity, we printed this onto a 48" x 36" poster and put it on display in 
 
 </div>
 
-Turns out n = 9: we had 9 members of our group pose with their phones in various locations for the final scene of our shoot. I decided to make this one look like an official movie poster by adding credits at the bottom and a quote at the top, "On Wednesdays, we rehearse," which references the line, "On Wednesdays, we wear pink," in the movie. (Coincidentally, we did have Wednesday rehearsals this semester.)
+Turns out that n = 9: for the final scene of our shoot, we had 9 members of our group pose with their phones in various locations around the dorm. I decided to make this one look like an official movie poster by adding credits at the bottom and a quote at the top, "On Wednesdays, we rehearse," which references the line, "On Wednesdays, we wear pink," in the movie. (Coincidentally, we did have Wednesday rehearsals this semester.)
 
 Recreating scenes and posters from my favorite movies is always a fun challenge, and I look forward to it every semester with the Muses!
 
