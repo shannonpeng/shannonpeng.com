@@ -3,6 +3,7 @@ title: "Muses: Mean Girls"
 keyword: mit-muses-mean-girls
 subtitle: Recreating posters from the iconic chick flick with Photoshop
 date: 2017-12-10
+context: MIT Muses
 tags: [Graphic Design, Publicity]
 technologies: [Photoshop]
 categories: [design]
@@ -12,6 +13,7 @@ cover: /static/images/projects/mit-muses-mean-girls/cover.jpg
 color: aeb3da
 facebook: https://www.facebook.com/events/716875111816152/
 link: https://mitmuses.github.io/
+caption: One of three Mean Girls posters we created to publicize our concert.
 description: Posters and social media ads for the MIT Muses' Mean Girls-themed Fall 2017 concert
 
 Every semester, my a cappella group, the [MIT Muses](https://mitmuses.github.io/), chooses a theme for our end-of-semester concert. The theme takes over the posters we hang up around campus and share with our friends on social media.
@@ -65,6 +67,7 @@ I used the font Gill Sans for the text—with some kerning, it looked almost ide
 
 For this scene, we took the original picture in a dimly lit room with everyone sitting in front of a large mirror, on a set of short stone stairsteps. Transforming that mirror into a gray gradient and the dark steps into a white bench was a fun and challenging task. To sell the illusion, I added artificial shadows on the bench and subtle shoe reflections on the floor.
 
+This image became our [Facebook event cover photo](https://www.facebook.com/events/716875111816152/) and also a 48" x 36" poster that we put on display in MIT's Infinite Corridor!
 
 <div class="image-set" markdown="1">
 
