@@ -334,6 +334,7 @@ footer p:nth-child(2) {
   transition: all 150ms ease-in-out;
 }
 #projects .project:hover .info .subtitle {
+  width: calc(100% - 32px);
   top: -50%;
   opacity: 1;
   -webkit-transition: all 150ms ease-in-out;
