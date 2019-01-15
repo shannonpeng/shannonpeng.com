@@ -586,7 +586,7 @@ footer p:nth-child(2) {
 }
 #project-writeup .content h3,
 #project-writeup .content h4 {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 #project-writeup .content h5 {
   font-family: freight-text-pro, serif;
