@@ -97,7 +97,7 @@ Next, I built scale models using plywood to quickly explore different possible c
 
 </div>
 
-##### Checkpoint passed: these chairs look very different!
+##### Checkpoint passed: these chairs look pretty different!
 
 
 ## Analysis and Revision
@@ -135,7 +135,7 @@ Building the final chair took approximately 18 hours, including cutting the lumb
 
 ## Reflection
 
-I learned that design revisions are important and that woodworking is difficult, especially for the first time. But now I have a nice chair in my dorm room that I can say I designed and built myself. 😎
+I learned that design revisions are important and that woodworking is difficult, especially when you're doing it for first time. But now, I have a nice chair in my dorm room that I can say I designed and built myself!
 
 ## Final Chair
 

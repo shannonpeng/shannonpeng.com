@@ -8,6 +8,7 @@ tags: [Design Studio, Lamp Design, Parametric Design]
 technologies: [Laser Cutting, Rhino, Illustrator]
 materials: [Plywood, Cardboard, Paper]
 categories: [make]
+dimensions: 15" x 15" x 13"
 label: Parametric Design
 thumbnail: /static/images/projects/woodmail-lamp/thumbnail.png
 cover: /static/images/projects/woodmail-lamp/thumbnail.png
@@ -32,8 +33,9 @@ Given Rhino, [Grasshopper](https://www.grasshopper3d.com/), and a combination of
 ![Brainstorming: page one](/static/images/projects/woodmail-lamp/brainstorm-1.jpg "Brainstorming: page one")
 ![Brainstorming: page two](/static/images/projects/woodmail-lamp/brainstorm-2.jpg "Brainstorming: page two")
 
-</div>
 ##### Some early sketches from the brainstorming phase of my lamp project.
+
+</div>
 
 There are so many creative ways to play with light and cast unique shadows. I thought of a "gradient lamp", which would utilize components of decreasing size, density, or opacity to gradually allow more light to shine through. I imagined a "moon lamp"—by carefully designing concentric shells, I could manipulate the lamp to show different moon phases at different viewing angles. For form, I drew inspiration from repeated geometric patterns found in both nature, such as beehives and pineapples, and manmade objects, like interlocking rings.
 
@@ -60,7 +62,7 @@ Using cardboard and paper to represent plywood and polypropylene, I laser cut ri
 
 While prototyping with cardboard and paper worked well for other students' designs, it proved to be difficult for mine. Flimsy cardboard was an unideal approximation for plywood, especially when my rings relied on the rigidity of wood to hold together. If I couldn't guarantee that two cardboard rings would link, I certainly couldn't make a cardboard lamp.
 
-When my next crit came around, I brought up my concern to my instructors, but they advised against switching ideas or using different prototyping materials from what they had recommended for everyone else. They suggested cutting larger and thicker cardboard rings.
+When my next crit came around, I brought up my concern to my instructors, but they advised against switching ideas or using different prototyping materials from what the class provided. They suggested that I try cutting larger and thicker cardboard rings.
 
 I was doubtful, but I persisted. Following their advice, I modified my ring design, went back into the laser cutter room, and spent hours recutting and testing cardboard rings until they locked together. My new rings still weren't rigid enough to keep a lamp from falling apart, but they performed significantly better than the previous ones. I presented my progress at the next crit.
 
@@ -125,17 +127,17 @@ After finalizing my designs in Rhino, I was ready laser cut the rings—using re
 
 </div>
 
-The plywood ring connections turned out to be very stable, and I was happy to see the whole lamp come together, especially when I turned the lights off in the photo studio and saw the beautiful shadows it casted on the walls.
+The plywood ring connections turned out to be very stable, and I was happy to see the whole lamp come together, especially when I turned the lights off in the photo studio and saw the  shadows it casted on the walls.
 
 ## Reflection
 
-I learned valuable lessons from this project, both inside and outside of design. Inside design, I gained many hours of Rhino modeling and laser cutting experience. I found that no matter how precise the laser cutter, I can't rely on exact fits—one 0.125"-wide slit isn't always going to slide perfectly into another.
+I learned valuable lessons from this project. I gained many hours of Rhino modeling and laser cutting experience. I found that no matter how precise the laser cutter, I can't rely on exact fits—one 0.125"-wide slit isn't always going to slide perfectly into another.
 
-In retrospect, I made the wrong decision to keep prototyping with cardboard—if I ever discover again that material is unfit for a prototype, I should switch to another right away. The ability to build full prototypes gave other students more freedom to explore and iterate, which allowed them to gain more insight from the prototyping phase of their projects. Being concerned with and constrained by cardboard led me to miss out on potential exploration.
+In retrospect, I made the wrong decision to keep prototyping with cardboard—if I ever discover again that a material is unfit for a prototype, I should switch to another right away. The ability to build full prototypes gave other students more freedom to explore and iterate, which allowed them to gain more insight from the prototyping phase of their projects. Being concerned about and constrained by cardboard led me to miss out on potential exploration.
 
-Outside design, I learned that it's important to value my own opinion. In the beginning, I went straight for the idea my instructors liked best, but maybe my moon and gradient lamps did have more potential—I wouldn't know unless I gave them a chance.
+I also learned that it's important to value my own opinion. In the beginning, I went straight for the idea my instructors liked best, but maybe my other ideas did have potential—I wouldn't know unless I gave them a chance.
 
-Ultimately, I'm proud of the lamp that I've created this semester, as well as how much I've grown along the way.
+Ultimately, this project was a tough one, and I'm proud of the lamp that I've created this semester, as well as how much I've grown along the way.
 
 ## Final Lamp
 
