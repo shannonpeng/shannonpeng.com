@@ -1,7 +1,7 @@
 published: true
 title: Woodmail Lamp
 keyword: woodmail-lamp
-subtitle: Chainmail-inspired laser cut lamp
+subtitle: Chainmail-inspired, laser cut lamp
 date: 2017-11-16
 context: "4.031 Design Studio: Objects and Interaction"
 tags: [Design Studio, Lamp Design, Parametric Design]

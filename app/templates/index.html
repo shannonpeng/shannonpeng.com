@@ -98,7 +98,7 @@
 				</a>
 				<a href="{{ url_for('project', name=project.keyword) }}">
 				{% endif %}
-					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(0,0,0,0.25)), url('{{ project.thumbnail }}')"></div>
+					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.25)), url('{{ project.thumbnail }}')"></div>
 					<div class="info">
 						<h2 class="title">{{ project.title }} {% if project.featured %}<i class="icon fas fa-star" title="featured"></i> {% endif %}</h2>
 						<p class="subtitle"><i>{{ project.subtitle }}</i></p>

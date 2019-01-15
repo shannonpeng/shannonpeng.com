@@ -1,7 +1,7 @@
 published: true
 title: Puzzled Chair
 keyword: puzzled-chair
-subtitle: Instruction-based chair design
+subtitle: Instruction-based wooden chair design
 date: 2017-10-12
 context: "4.031 Design Studio: Objects and Interaction"
 tags: [Design Studio, Chair Design, Rule-Based Design, Instruction-Based Design]
@@ -11,7 +11,7 @@ categories: [make]
 dimensions: 18" x 18" x 9"
 label: Rule-Based Design
 thumbnail: /static/images/projects/puzzled-chair/thumbnail.jpg
-cover: /static/images/projects/puzzled-chair/thumbnail.jpg
+cover: /static/images/projects/puzzled-chair/cover.jpg
 caption: My final chair — and only one of many possible chair configurations from my set of instructions.
 color: d1b473
 description: Instruction-based chair design inspired by the work of Sol Lewitt
