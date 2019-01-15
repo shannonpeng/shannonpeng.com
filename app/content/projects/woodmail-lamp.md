@@ -41,6 +41,8 @@ There are so many creative ways to play with light and cast unique shadows. I th
 
 During my first desk crit, my class instructors were immediately excited about the interlocking rings idea, which they said reminded them of chainmail. They showed me images of numerous sculptures of people and animals, all composed entirely of chainmail. While I saw more potential in my other ideas, I found it interesting that something as simple as chainmail, essentially just small interlocking metal rings in special patterns, could produce such expressive sculptures. I decided to give the chainmail idea a try.
 
+> I found it interesting that something as simple as chainmail, essentially just small interlocking metal rings in special patterns, could produce such expressive sculptures.
+
 ## Prototyping
 
 The heart of chainmail lies in how the individual rings connect, so I opted for a bottom up design approach.
@@ -63,6 +65,8 @@ Using cardboard and paper to represent plywood and polypropylene, I laser cut ri
 While prototyping with cardboard and paper worked well for other students' designs, it proved to be difficult for mine. Flimsy cardboard was an unideal approximation for plywood, especially when my rings relied on the rigidity of wood to hold together. If I couldn't guarantee that two cardboard rings would link, I certainly couldn't make a cardboard lamp.
 
 When my next crit came around, I brought up my concern to my instructors, but they advised against switching ideas or using different prototyping materials from what the class provided. They suggested that I try cutting larger and thicker cardboard rings.
+
+> Flimsy cardboard was an unideal approximation for plywood, especially when my rings relied on the rigidity of wood to hold together.
 
 I was doubtful, but I persisted. Following their advice, I modified my ring design, went back into the laser cutter room, and spent hours recutting and testing cardboard rings until they locked together. My new rings still weren't rigid enough to keep a lamp from falling apart, but they performed significantly better than the previous ones. I presented my progress at the next crit.
 
@@ -137,7 +141,7 @@ In retrospect, I made the wrong decision to keep prototyping with cardboard—if
 
 I also learned that it's important to value my own opinion. In the beginning, I went straight for the idea my instructors liked best, but maybe my other ideas did have potential—I wouldn't know unless I gave them a chance.
 
-Ultimately, this project was a tough one, and I'm proud of the lamp that I've created this semester, as well as how much I've grown along the way.
+Ultimately, this project was a tough journey, and I'm proud of the lamp that I've created this semester, as well as how much I've grown along the way.
 
 ## Final Lamp
 

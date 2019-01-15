@@ -161,6 +161,7 @@ Virtual Piano was my first time working with Socket.IO! I got the chance to lear
 There are so many features I had in mind for Virtual Piano but didn't get to implement in time. Here are some of them:
 
 - **Note labels:** At first glance, it's hard to tell which octaves of the piano you're looking at. Adding at least a few labels would help.
+- **Sustained notes:** Holding down a key currently registers as multiple presses.
 - **Support for multiple rooms:** Right now, there's only one room, so if 100 people joined, the piano would get pretty crowded! With multiple rooms, players could limit their jam sessions to friends using a unique link or code.
 - **Additional player colors:** It'd be useful to know who's playing when there are more than two people in the room.
 - **More keys:** More octaves to play!
