@@ -74,6 +74,9 @@
 		h1, h2, h3, h4, h5, h6 {
 			margin-block-start: 2em;
 		}
+		h3, h4 {
+			opacity: 0.8;
+		}
 		h5 { // using this as an image caption
 			font-family: @font-body;
 			font-weight: normal;
@@ -116,6 +119,19 @@
 			font-family: 'Source Code Pro', monospace;
 			font-size: 0.8 * @font-size-project;
 			border-radius: 3px;
+		}
+		.button {
+			padding: 12px 24px;
+			font-family: @font-title;
+			text-transform: uppercase;
+			font-weight: bold;
+			display: inline-block;
+			.transition(1.5*@transition-time);
+			&:hover {
+				color: white;
+				.transition(@transition-time);
+				text-decoration: none;
+			}
 		}
 	}
 

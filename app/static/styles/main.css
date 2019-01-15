@@ -584,6 +584,10 @@ footer p:nth-child(2) {
 #project-writeup .content h6 {
   margin-block-start: 2em;
 }
+#project-writeup .content h3,
+#project-writeup .content h4 {
+  opacity: 0.8;
+}
 #project-writeup .content h5 {
   font-family: freight-text-pro, serif;
   font-weight: normal;
@@ -620,6 +624,21 @@ footer p:nth-child(2) {
   font-family: 'Source Code Pro', monospace;
   font-size: 17.6px;
   border-radius: 3px;
+}
+#project-writeup .content .button {
+  padding: 12px 24px;
+  font-family: futura-pt, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-transition: all 225ms ease-in-out;
+  transition: all 225ms ease-in-out;
+}
+#project-writeup .content .button:hover {
+  color: white;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
 }
 #project-writeup .links {
   margin: 60px auto;
