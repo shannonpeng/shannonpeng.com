@@ -619,6 +619,7 @@ footer p:nth-child(2) {
 }
 #project-writeup .content .codehilite {
   padding: 2px 24px;
+  overflow-x: scroll;
 }
 #project-writeup .content code {
   font-family: 'Source Code Pro', monospace;
@@ -627,8 +628,10 @@ footer p:nth-child(2) {
 }
 #project-writeup .content .button {
   padding: 12px 24px;
+  margin: 12px 0;
   font-family: futura-pt, sans-serif;
   text-transform: uppercase;
+  font-size: 80%;
   font-weight: bold;
   display: inline-block;
   -webkit-transition: all 225ms ease-in-out;
@@ -748,7 +751,7 @@ footer p:nth-child(2) {
     display: block;
   }
   #project-writeup .cover .cover-headline {
-    padding: 12px 0;
+    padding: 24px 0;
   }
   #project-writeup .cover .cover-headline .container {
     max-width: 100%;
