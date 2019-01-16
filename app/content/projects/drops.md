@@ -15,9 +15,10 @@ color: 6e5a78
 link: https://liliapoteat.github.io/drops/
 github: https://github.com/shannonpeng/plix
 collaborators: Claire Nord, Lilia Poteat, and Sarah Powazek
-description: Javascript game created to raise awareness about disparities in water quality around the United States. 1st Place and Best UX Winner at ByteHacks 2017
+caption: Collecting polluted water drops in Drops Level 3.
+description: A Javascript game created to raise awareness about disparities in water quality around the United States
 
-I built Drops with my friends [Claire](https://clairenord.com/), Lilia, and Sarah at [ByteHacks 2017](https://bytehacks2017.devpost.com/), where it won the 1st Place and Best UX prizes. It was inspired by [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), an iOS game I loved to play growing up. I worked on developing the gameplay with the Javascript game framework [Phaser.IO](http://phaser.io/) and creating the game's assets!
+I built Drops with my friends [Claire](https://clairenord.com/), Lilia, and Sarah at [ByteHacks 2017](https://bytehacks2017.devpost.com/), where it won 1st Place and Best UX. It was inspired by [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), an iOS game I loved to play growing up. I worked on developing the gameplay with the Javascript game framework [Phaser.IO](http://phaser.io/) and creating the game's assets!
 
 <a href="https://liliapoteat.github.io/drops/" class="button">
 	Play Drops
@@ -36,7 +37,7 @@ In Drops, the player moves a bucket to collect clean water drops in **<span styl
 
 </div>
 
-Drops has three levels: (1) Boston, Massachusetts, (2) Charleston, West Virginia, and (3) Sebring, Ohio. With each level, the ratio of dirty to clean water drops increases, raising the game difficulty and teaching the player about the disparities in water quality between the three locations.
+Drops has three levels: (1) Boston, Massachusetts, (2) Charleston, West Virginia, and (3) Sebring, Ohio. With each level, the ratio of dirty to clean water drops increases, raising the game difficulty while teaching the player about disparities in water quality between the three locations.
 
 <div class="image-set image-set-three" markdown="1">
 
@@ -48,7 +49,7 @@ Drops has three levels: (1) Boston, Massachusetts, (2) Charleston, West Virginia
 
 </div>
 
-Each level has its own introduction screen. **Level 1:** "Welcome to Boston! Cities like Boston have access to reservoirs and high quality treatment plants. In the last 5 years, 90% of water samples had safe levels of lead."
+**Level 1:** "Welcome to Boston! Cities like Boston have access to reservoirs and high quality treatment plants. In the last 5 years, 90% of water samples had safe levels of lead."
 
 <div class="image-set image-set-three" markdown="1">
 
@@ -76,7 +77,7 @@ Each level has its own introduction screen. **Level 1:** "Welcome to Boston! Cit
 
 ## Development
 
-We spent a lot of time planning the different aspects of Drops, including research, game mechanics, control flow, and assets.
+We spent a lot of time planning different aspects of Drops, including research, game mechanics, control flow, and assets.
 
 <div class="image-set" markdown="1">
 
@@ -119,12 +120,12 @@ Only the empty bucket made it into the final game, but I thought it would've bee
 
 ## What I Learned
 
-Every hackathon, I aim to learn something new with my project. With Drops, I learned basics of game development, including working with sprites and collisions and programming the UI. I also learned about the different types and amounts of pollutants in tap water around the country.
+Every hackathon project, I aim to learn something new. Through Drops, I learned basics of game development, including programming the game interface and working with sprites and collisions. I also learned more about the issue of water pollution and the different types of pollutants in tap water around the country.
 
 ## What's Next
 
 Each level of Drops terminates after 15 drops are collected, which is great for a quick hackathon demo, but so short for real gameplay!
 
-In [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), players could continue stacking scoops of ice cream indefinintely, reaching the Moon and even Mars, unless they've acquired three "bad" scoops (onions or tomatoes). Drops levels could be extended to, perhaps, when the pollution level has surpassed that of drinkable tap water.
+In [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), players could continue stacking scoops of ice cream indefinitely, unless they've acquired three "bad" scoops (onions or tomatoes). Perhaps Drops levels could go on until the player's pollution level has surpassed that of drinkable tap water.
 
-Maybe the green drops could even act as "purifying" drops that help the player reduce the pollutants already collected. That'll be a project for next time!
+Maybe the green drops could even act as "purifying" drops that help the player reduce the pollutants they've already collected. That'll be a project for next time!
