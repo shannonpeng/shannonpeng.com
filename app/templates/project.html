@@ -25,6 +25,10 @@
     {{ super() }}
 {% endblock %}
 
+{% block description %}
+    {{ project.description }}
+{% endblock %}
+
 {% block content %}
 <div class="back top">
 	<a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>

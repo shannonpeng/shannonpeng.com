@@ -65,7 +65,7 @@ We modeled our event website after the futuristic interfaces in sci-fi films. Th
 
 </div>
 
-On your first visit to the website, you'll also see an opening animation I made in which the HackMIT logo glitches in, and a loading bar "connects" you to the page.
+On your first visit to the website, you'll also see an opening animation I made, in which the HackMIT logo glitches in, and a loading bar "connects" you to the page.
 
 <div class="image-set" markdown="1">
 
@@ -139,7 +139,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media—an
 
 ## Crewnecks
 
-A hackathon isn't complete with free swag. We provided hackers, mentors, and organizers with color-coded crewnecks. Hacker wore navy crewnecks; mentors wore purple and organizers white so that they could be easily located around the event.
+A hackathon isn't complete without awesome swag. We provided hackers, mentors, and organizers with color-coded crewnecks. Hacker wore navy crewnecks; mentors wore purple and organizers white so that they could be easily located around the event venue.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -152,7 +152,7 @@ A hackathon isn't complete with free swag. We provided hackers, mentors, and org
 
 ## Day-of Booklet
 
-I designed a day-of booklet with detailed information about the weekend's speakers and events. Each hacker received a copy at check-in.
+I designed a day-of booklet with detailed information about the weekend's speakers, schedule, and logistics. Each hacker received a copy with their swag bag at check-in.
 
 <div class="image-set" markdown="1">
 
@@ -165,7 +165,7 @@ I designed a day-of booklet with detailed information about the weekend's speake
 
 ## Signage
 
-Hackers also received pairs of red-cyan 3D glasses, which allowed them to view the event banners in 3D!
+Hackers also received pairs of red-cyan 3D glasses, which they could use to view event banners in 3D!
 
 <div class="image-set image-set-six" markdown="1">
 
@@ -182,7 +182,7 @@ Hackers also received pairs of red-cyan 3D glasses, which allowed them to view t
 
 ## Faction Cup
 
-I proposed the idea of a Faction Cup—a mini-tournament (inspired by the *Harry Potter* Triwizard Cup) that would aim to add more fun to the hackathon experience and encourage more hackers to attend events. With a joint effort from the Marketing, Development, and Logistics committees, we brought the Faction Cup to life at HackMIT 2017!
+I proposed the idea of a Faction Cup—a mini-tournament (inspired by the *Harry Potter* Triwizard Cup) that would aim to add more fun to the hackathon experience and encourage more hackers to attend events throughout the weekend. With joint efforts from the Marketing, Development, and Logistics committees, we brought the Faction Cup to life!
 
 <div class="image-set" markdown="1">
 
@@ -192,9 +192,9 @@ I proposed the idea of a Faction Cup—a mini-tournament (inspired by the *Harry
 
 </div>
 
-During registration, we asked every hacker to pick a faction—<span style="color:#ff585d;font-weight:bold">red</span> or <span style="color:#74d1ea;font-weight:bold">blue</span>. Over the weekend, hackers earned points for their respective factions by attending workshops, talks, and fun mini-events. A live leaderboard in the hacking arena kept track of the current faction scores.
+During registration, we asked every hacker to pick a faction—<span style="color:#ff585d;font-weight:bold">red</span> or <span style="color:#74d1ea;font-weight:bold">blue</span>. Over the weekend, hackers scored points for their factions by attending workshops, tech talks, fireside chats, and mini red-blue battles (including a lightsaber fight!) A live leaderboard in the hacking arena kept track of the current faction scores.
 
-At the end of the hackathon, all members of the winning faction received a mystery prize, which we revealed as *Hack to the Future* magnets.
+At the end of the hackathon, all members of the winning faction took home a special prize: *Hack to the Future* magnets.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -227,7 +227,7 @@ To build hype on campus, we released one letter a day in front of the student ce
 
 ## Reflections
 
-Working with the HackMIT organizing team has been an incredibly rewarding experience. It takes a lot of hard work to plan an event like HackMIT, and nothing compares to seeing it all come together in the big weekend—hackers taking pictures with the HACK letters, having fun at mini-events, and building [innovative projects](https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a). I'm proud to have been a part of the team that made this weekend possible!
+Working with the HackMIT organizing team has been an incredibly rewarding experience. It takes months of hard work to plan an event like HackMIT, and nothing compares to seeing it all come together in the big weekend—hackers taking pictures with the HACK letters, scoring points for their factions, and building [innovative projects](https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a). I'm proud to have been part of the team that made HackMIT 2017 happen!
 
 <div class="image-set image-set-two" markdown="1">
 
