@@ -3,8 +3,8 @@ title: NJ Key Club 2016
 keyword: njkeyclub
 subtitle: Designing and publicizing a secret agent themed convention
 date: 2016-04-03
-context: New Jersey District Board of Key Club International
-tags: [Branding, Event Theming, Graphic Design, Web Design, Video Production, Visual Effects, Social Media, Marketing]
+context: NJ Key Club District Board
+tags: [Branding, Event Theming, Graphic Design, Web Design, Video Production, Visual Effects, Social Media]
 technologies: [Photoshop, Illustrator, After Effects, Premiere Pro, HTML, CSS, Javascript, AngularJS]
 categories: [design]
 label: Event Theming
@@ -148,7 +148,7 @@ During the convention, I also released a Live Page for attendees to view a curre
 
 The Spirit Stick Poll allows members to show spirit for their division (Key Club-defined region of New Jersey) by voting online. The division with the most votes, as well as in-person spirit measured by cheering during events, is awarded the Spirit Stick at the end of the convention.
 
-## Reflection
+## Reflections
 
 In addition to the publicity materials above, the District Board incorporated the theme into event names, convention decorations, signage, scripts, workshops and more. It was incredibly rewarding watching the convention come together and seeing how many people it reached. Over 500 students and club advisors attended DCON 2016, and over 1000 people follow NJ Key Club on social media!
 

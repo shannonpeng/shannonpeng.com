@@ -133,7 +133,7 @@ Building the final chair took approximately 18 hours, including cutting the lumb
 
 ##### Photo Credit: William Wu
 
-## Reflection
+## Reflections
 
 I learned that design revisions are important and that woodworking is difficult, especially when you're doing it for first time. But now, I have a nice chair in my dorm room that I can say I designed and built myself!
 

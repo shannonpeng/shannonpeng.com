@@ -133,7 +133,7 @@ After finalizing my designs in Rhino, I was ready laser cut the rings—using re
 
 The plywood ring connections turned out to be very stable, and I was happy to see the whole lamp come together, especially when I turned the lights off in the photo studio and saw the  shadows it casted on the walls.
 
-## Reflection
+## Reflections
 
 I learned valuable lessons from this project. I gained many hours of Rhino modeling and laser cutting experience. I found that no matter how precise the laser cutter, I can't rely on exact fits—one 0.125"-wide slit isn't always going to slide perfectly into another.
 
