@@ -27,7 +27,7 @@
 				li {
 					width: @social-icon-width;
 					display: inline-block;
-					padding-left: @social-icon-width;
+					margin-left: @social-icon-width;
 					text-align: center;
 					opacity: @hover-opacity;
 					.transition(@transition-time, opacity);
@@ -239,6 +239,7 @@
 				}
 			}
 			.subtitle {
+				width: calc(100% - 32px);
 				position: absolute;
 				top: 100%;
 				opacity: 0;
@@ -259,7 +260,6 @@
 					.transition(@transition-time);
 				}
 				.subtitle {
-					   width: calc(100% - 32px);
 					top: -50%;
 					opacity: 1;
 					.transition(@transition-time);
@@ -390,10 +390,10 @@
 			   	margin: 0;
 			   	padding: 0;
 
-				.social li {
-					padding-left: 0;
-					padding-right: @social-icon-width;
-				}
+			   	.social li {
+			   		margin-left: 0;
+			   		margin-right: @social-icon-width;
+			   	}
 
 				.nav {
 					display: block;
