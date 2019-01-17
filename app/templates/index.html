@@ -90,22 +90,18 @@
 			</div>
 			{% for project in projects %}
 			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %}">
-				{% if project.published %}
 				<a href="{{ url_for('project', name=project.keyword) }}">
 					<div class="arrow">
 						<i class="far fa-arrow-alt-circle-right"></i>
 					</div>
 				</a>
 				<a href="{{ url_for('project', name=project.keyword) }}">
-				{% endif %}
-					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.25)), url('{{ project.thumbnail }}')"></div>
+					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(0,0,0,0.35)), url('{{ project.thumbnail }}')"></div>
 					<div class="info">
 						<h2 class="title">{{ project.title }} {% if project.featured %}<i class="icon fas fa-star" title="featured"></i> {% endif %}</h2>
 						<p class="subtitle"><i>{{ project.subtitle }}</i></p>
 					</div>
-				{% if project.published %}
 				</a>
-				{% endif %}
 			</div>
 			{% else %}
 			<p>No projects to be found, just this guilty dinosaur. 🦖</p>

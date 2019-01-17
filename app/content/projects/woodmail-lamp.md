@@ -1,4 +1,3 @@
-published: true
 title: Woodmail Lamp
 keyword: woodmail-lamp
 subtitle: Chainmail-inspired, laser cut lamp

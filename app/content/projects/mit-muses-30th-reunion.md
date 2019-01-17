@@ -10,7 +10,8 @@ thumbnail: /static/images/projects/mit-muses-30th-reunion/thumbnail.jpg
 cover: /static/images/projects/mit-muses-30th-reunion/thumbnail.jpg
 color: a33e99
 link: https://mitmuses.github.io/reunion/
-collaborators: Courtney Guo, Kathryn Jin
-description: Event branding for the MIT Muses 30th Anniversary Reunion.
+collaborators: Courtney Guo and Kathryn Jin
+caption: Muses of past and present gathering at our 30th Anniversary Reunion.
+description: Event branding for the MIT Muses' 30th Anniversary Reunion.
 
 This writeup is a work in progress 🙊 Come back soon to read more!

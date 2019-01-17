@@ -1,5 +1,4 @@
 featured: true
-published: true
 title: Plix
 keyword: plix
 subtitle: Pokémon Go, for collaborative pixel art

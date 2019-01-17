@@ -1,4 +1,3 @@
-published: true
 featured: true
 title: Drops
 keyword: drops

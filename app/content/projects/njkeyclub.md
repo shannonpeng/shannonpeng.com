@@ -1,4 +1,3 @@
-published: true
 title: NJ Key Club 2016
 keyword: njkeyclub
 subtitle: Designing and publicizing a secret agent themed convention

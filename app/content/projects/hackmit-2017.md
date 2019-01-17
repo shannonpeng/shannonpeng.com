@@ -1,5 +1,4 @@
 featured: true
-published: true
 title: HackMIT 2017
 keyword: hackmit-2017
 subtitle: Futuristic, sci-fi hackathon branding 

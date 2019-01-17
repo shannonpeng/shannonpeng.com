@@ -1,4 +1,3 @@
-published: true
 title: Puzzled Chair
 keyword: puzzled-chair
 subtitle: Instruction-based wooden chair design

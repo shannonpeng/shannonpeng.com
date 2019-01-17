@@ -1,7 +1,6 @@
-published: true
 title: "Muses: Mean Girls"
 keyword: mit-muses-mean-girls
-subtitle: Recreating posters from the iconic chick flick with Photoshop
+subtitle: Recreating posters from the iconic chick flick
 date: 2017-12-10
 context: MIT Muses
 tags: [Graphic Design, Publicity]

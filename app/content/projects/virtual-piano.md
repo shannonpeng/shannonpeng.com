@@ -1,4 +1,3 @@
-published: true
 featured: true
 title: Virtual Piano
 keyword: virtual-piano
