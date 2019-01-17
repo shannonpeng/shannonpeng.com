@@ -23,6 +23,8 @@ Every September, HackMIT draws over 1000 college students from around the world 
 
 HackMIT is organized by a team of 20-30 MIT undergraduates passionate about empowering students through technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme—*Hack to the Future*, inspired by the *Back to the Future* trilogy.
 
+Below is a summary of our work, including HackMIT 2017's branding, website, social media, merchandise, physical hack, and more.
+
 ## Branding
 
 ### HackMIT Logo
@@ -217,7 +219,7 @@ In the week leading up to HackMIT, we traced and cut the letters from large shee
 ![Carrying foam boards](/static/images/projects/hackmit-2017/physical-1.jpg "Carrying foam boards")
 ![H progress](/static/images/projects/hackmit-2017/physical-2.jpg "H progress")
 
-##### *left:* Carrying foam boards down Mass Ave, *right:* cutting the front of the H
+##### *left:* carrying foam boards down Mass Ave, *right:* cutting the front of the H
 
 </div>
 
@@ -242,6 +244,6 @@ Working with the HackMIT organizing team has been an incredibly rewarding experi
 
 ![Team with letters](/static/images/projects/hackmit-2017/team.jpg "Team with letters")
 
-##### Photo Credit: Alex Laiman, Chantal Acacio<br>See what HackMIT is up to now on [Facebook](https://facebook.com/hackmit) and [Medium](https://medium.com/hackmit-stories)!
+##### Photo Credit: Alex Laiman, Chantal Acacio
 
 </div>
