@@ -1,6 +1,6 @@
 title: NJ Key Club 2016
 keyword: njkeyclub
-subtitle: Designing and publicizing a secret agent themed convention
+subtitle: Designing a secret agent themed convention
 date: 2016-04-03
 context: NJ Key Club District Board
 tags: [Branding, Event Theming, Graphic Design, Web Design, Video Production, Visual Effects, Social Media]

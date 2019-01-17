@@ -18,6 +18,10 @@ description: Real-time piano duets in the browser, powered by Socket.IO and Audi
 
 I created Virtual Piano at [Hack@Brown 2017](https://2017.hackatbrown.org/), drawing inspiration from the browser-based experiments in Google's [Chrome Music Lab](https://musiclab.chromeexperiments.com/).
 
+<a href="https://pengs-piano.herokuapp.com/" class="button">
+	Play Virtual Piano
+</a>
+
 ## The Idea
 
 The magic of the Internet is that it can connect people anywhere around the world, at any time. We're now capable of messaging and even video calling our friends online—what if we could also make music together?
@@ -25,10 +29,6 @@ The magic of the Internet is that it can connect people anywhere around the worl
 I envisioned a browser-based app that lets musicians start jamming together, no matter where they're located. Just log on, join a session, and then start making music as if you were in the same room.
 
 Over the 24-hour hackathon, I built a demo of a virtual piano that allows multiple people to play from separate devices. Try it with a friend!
-
-<a href="https://pengs-piano.herokuapp.com/" class="button">
-	Play Virtual Piano
-</a>
 
 ## How It Works
 
