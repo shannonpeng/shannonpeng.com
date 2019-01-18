@@ -751,7 +751,7 @@ footer p:nth-child(2) {
   }
 }
 @media screen and (max-width: 1079px) {
-  .back {
+  .back.top {
     top: 20px;
     left: 24px;
   }
