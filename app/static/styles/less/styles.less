@@ -9,7 +9,7 @@
 			right: 0;
 			max-width: 350px;
 			margin-top: 40%;
-			padding: 18px;
+			padding-left: 36px;
 			text-align: left;
 
 			.title {
@@ -166,7 +166,7 @@
 #projects, #classes, #photos {
 	overflow-x: hidden;
 	margin-left: 30%;
-	padding-left: 32px;
+	padding-left: 28px;
 	animation: fade-in 300ms ease-in;
 }
 
@@ -429,9 +429,22 @@
 		padding-top: 18px;
 	}
 	#projects .project {
-		width: calc(33% - 8px);
+		width: calc(100%/3 - 8px);
 		.info {
 			padding: 12px;
+		}
+		&:hover {
+			.info {
+				.title {
+					bottom: 250%;
+					.transition(@transition-time);
+				}
+				.subtitle {
+					top: -150%;
+					opacity: 1;
+					.transition(@transition-time);
+				}
+			}
 		}
 	}
 	#photos .photo {
@@ -451,5 +464,18 @@
 	}
 	#projects .project {
 		height: 0.75 * @project-height;
+		&:hover {
+			.info {
+				.title {
+					bottom: 200%;
+					.transition(@transition-time);
+				}
+				.subtitle {
+					top: -100%;
+					opacity: 1;
+					.transition(@transition-time);
+				}
+			}
+		}
 	}
 }

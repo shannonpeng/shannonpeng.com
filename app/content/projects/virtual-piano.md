@@ -1,7 +1,7 @@
 featured: true
 title: Virtual Piano
 keyword: virtual-piano
-subtitle: Play real-time piano duets inside your browser
+subtitle: Play real-time piano duets, inside your browser
 date: 2017-02-05
 context: Hack@Brown 2017
 tags: [Software, Web Development, Music]
