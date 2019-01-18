@@ -1,7 +1,7 @@
 featured: true
 title: Plix
 keyword: plix
-subtitle: Pokémon Go, for collaborative pixel art
+subtitle: Pokémon Go for pixel art
 date: 2018-02-01
 context: MIT 6.148 Web Programming Competition
 tags: [Software, Web Development, Art, UI Design]

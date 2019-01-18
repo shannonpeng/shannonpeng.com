@@ -1,6 +1,6 @@
 title: Puzzled Chair
 keyword: puzzled-chair
-subtitle: Instruction-based wooden chair design
+subtitle: Instruction-based chair design
 date: 2017-10-12
 context: "4.031 Design Studio: Objects and Interaction"
 tags: [Design Studio, Chair Design, Rule-Based Design, Instruction-Based Design]

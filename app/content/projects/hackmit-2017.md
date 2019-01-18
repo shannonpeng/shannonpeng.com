@@ -1,7 +1,7 @@
 featured: true
 title: HackMIT 2017
 keyword: hackmit-2017
-subtitle: Futuristic, sci-fi hackathon branding 
+subtitle: Futuristic sci-fi hackathon branding
 date: 2017-09-15
 tags: [Branding, Event Planning, Graphic Design, Motion Graphics, Social Media, Marketing, Installation]
 technologies: [Photoshop, Illustrator, After Effects, Adobe XD]
