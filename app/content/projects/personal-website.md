@@ -1,3 +1,4 @@
+hidden: true
 title: Personal Website
 keyword: personal-website
 subtitle: Building a new portfolio site from the ground up
