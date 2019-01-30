@@ -4,8 +4,8 @@ subtitle: Connecting long-distance partners through familiar aromas
 date: 2018-10-31
 context: MAS.834 Tangible Interfaces
 tags: [Tangible Interfaces, Interation Design, Electronics, Prototyping, Bluetooth]
-technologies: [Arduino Uno, XBee, Force Sensitive Resistors]
-materials: [Lampshade, Essential Oils, Peltier, Wooden Bowl, LEDs]
+technologies: [Arduino Uno, XBee, Peltiers, LEDs, Force Sensitive Resistors]
+materials: [Lampshade, Essential Oils, Wooden Bowl]
 categories: [code, make]
 label: Tangible Interfaces
 thumbnail: /static/images/projects/aromigo/thumbnail.jpg
