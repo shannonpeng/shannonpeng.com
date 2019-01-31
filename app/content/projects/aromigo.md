@@ -4,8 +4,8 @@ subtitle: Connecting long-distance partners through familiar aromas
 date: 2018-10-31
 context: MAS.834 Tangible Interfaces
 tags: [Tangible Interfaces, Interation Design, Electronics, Prototyping, Bluetooth]
-technologies: [Arduino Uno, XBee, Peltiers, LEDs, Force Sensitive Resistors]
-materials: [Lampshade, Essential Oils, Wooden Bowl]
+technologies: [Arduino Uno, XBee, Peltiers, LEDs]
+materials: [Lampshade, Essential Oils, Wooden Bowl, Copper Wire]
 categories: [code, make]
 label: Tangible Interfaces
 thumbnail: /static/images/projects/aromigo/thumbnail.jpg
@@ -20,7 +20,7 @@ I created Aromigo with my team in Tangible Interfaces, an interaction design cla
 
 It’s said that of the five senses (sight, hearing, smell, touch, and taste), smell is most powerfully linked to memory. We associate smells with many people and places around us. What if we used smell as means of communication, as a way to show that we’re thinking of one another?
 
-Aromigos are paired devices that enable long-distance communication through aromas. Each partner sets a personalized aroma and color, and through touch, they can concurrently control the emission of their aroma and light color, in their device and their partner’s. In turn, the presence of the partner’s aroma and light color represent the partner’s remote presence.
+Aromigos are paired devices that enable long-distance communication through aroma. Each partner sets a personalized aroma and color, and through touch, they can concurrently control the emission of their aroma and light color, in their device and their partner’s. In turn, the presence of the partner’s aroma and light color represent the partner’s way of saying, "I'm here and thinking of you."
 
 ## Narrative
 
@@ -40,9 +40,9 @@ One day, Bailey gets home from work and notices that her Aromigo is pulsing blue
 
 On the other side of the country, Alex sees his Aromigo turn purple, and starts to smell some lavender in the air. He knows this means that Bailey is also thinking of him, and he is warmed by the knowledge that both of them are touching their Aromigos at the same time.
 
-## The Process
+## Design Process
 
-Our process spanned several phases. We began with ideation - sketching and discussing possible interactions with an aroma-based interpersonal communication device.
+First, we met for multiple ideation sessions - brainstorming, selecting our idea, and then sketching and discussing possible interactions with an aroma-based interpersonal communication device.
 
 <div class="image-set" markdown="1">
 	
@@ -63,7 +63,7 @@ Our process spanned several phases. We began with ideation - sketching and discu
 
 </div>
 
-We then began the prototyping process, developing the necessary hardware and software. In parallel, we rapidly explored multiple variations of the physical design using a variety of household objects.
+We then began prototyping, gathering hardware components and writing code for the Arduino. In parallel, we rapidly explored multiple variations of the physical design using a variety of household objects.
 
 <div class="image-set" markdown="1">
 
@@ -86,7 +86,7 @@ We then began the prototyping process, developing the necessary hardware and sof
 
 </div>
 
-We then decided on the materials, built the final housing, and embedded the hardware inside. Through several iterations of refinements, we arrived at the final configuration.
+We decided on the materials, constructed the final housing, and secured the electronics inside. After several iterations, we arrived at the final configuration.
 
 <div class="image-set" markdown="1">
 
@@ -103,7 +103,9 @@ We then decided on the materials, built the final housing, and embedded the hard
 
 </div>
 
-## Analysis of Affordances
+## Affordances
+
+An essential step in interaction design is thinking critically about the affordances of the design. Here are the perceived and intended affordances we compiled in our analysis.
 
 ### Perceived Affordances
 - The round, curved shape of the Aromigo invites the user to rest their hands on the device.
@@ -115,7 +117,7 @@ We then decided on the materials, built the final housing, and embedded the hard
 - The larger, weighted bottom discourages the user from picking the device up.
 - The user can smell aromas emitted from the opening.
 
-## Aesthetics and Interactions
+### Aesthetics and Interactions
 
 - The pulsing lights can help bring a user’s attention to their breath. This creates a meditative feel when interacting with the Aromigo.
 - Aromigo can be both in the user’s center of attention or in the ambience; it can play a role in both the foreground and the background.
@@ -123,7 +125,7 @@ We then decided on the materials, built the final housing, and embedded the hard
 
 ## What's Inside
 
-Each Aromigo device consists of a white, semi-translucent polycarbonate lampshade with a small rim at the top, and a larger rim at the bottom. The lampshade sits on top of a wooden bowl.
+Each Aromigo device consists of a white, semi-translucent polycarbonate lampshade with a small rim at the top and a larger rim at the bottom. The lampshade sits on top of a wooden bowl.
 
 <div class="image-set image-set-two" markdown="1">
 	
@@ -135,7 +137,7 @@ Each Aromigo device consists of a white, semi-translucent polycarbonate lampshad
 
 The electronics are tucked away from sight, attached to the inside of the bowl using tape. A hole drilled into the top of the bowl allows for the bolt, which supports a peltier, and several LED wires to come through.
 
-Inside the bowl, the components are driven by the Arduino Uno microcontroller. The Uno takes inputs from the capacitive sensor on this device, as well as through the XBee (receiving information from the partner device), and uses that information to control the LEDs, and the peltiers (through the motor driver).
+Inside the bowl, the components are driven by the Arduino Uno microcontroller. The Uno takes inputs from the capacitive sensor on this device, as well as through the XBee (receiving information from the partner device), and uses that information to control the LEDs and the peltiers (through the motor driver).
 
 ### Inputs (Sensors)
 - Touch sensing data from this device (capacitive touch sensor / copper wire)
@@ -171,9 +173,9 @@ Inside the bowl, the components are driven by the Arduino Uno microcontroller. T
 - **Safety Timers** The code ensures that no peltier is heating for more than 5 seconds — after 5 seconds, the code forces the peltier to cool for a minimum of 5 seconds.
 - **LED Pulsing** The code increases and decreases the LED brightness by a factor of 5 for each interval. This creates a subtle “pulsing” effect.
 - **Moving Average Smoothing** The signal coming in through the capacitive touch sensor is smoothed using a moving average method.
-- **Communication via XBee** Each device emits, receives, and interprets emissions about touch sensing data through XBee.
+- **Communication via XBee** Each device emits and receives touch sensing data through XBee.
 
-## Final Presentation
+## Final Presentation and Demo
 
 <div class="image-set image-set-two" markdown="1">
 	
@@ -184,6 +186,8 @@ Inside the bowl, the components are driven by the Arduino Uno microcontroller. T
 
 </div>
 
+## Reflections
 
+Through Aromigo, I learned about analyzing affordances and illustrating interactions with narratives, as well as working with new hardware components (controlling peltiers and networking via XBee) and smoothing sensor signals. 
 
-
+Aromigo also gave me a venue to explore new questions and areas of design. While most products seek to make our lives more convenient now, Aromigo addresses our emotional needs and envisions how technology might connect us many years into the future.
