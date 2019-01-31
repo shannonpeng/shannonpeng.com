@@ -1,5 +1,5 @@
 title: "Muses: Mean Girls"
-keyword: mit-muses-mean-girls
+keyword: muses-mean-girls
 subtitle: Recreating posters from the iconic chick flick
 date: 2017-12-10
 context: MIT Muses
@@ -7,8 +7,8 @@ tags: [Graphic Design, Publicity]
 technologies: [Photoshop]
 categories: [design]
 label: Graphic Design
-thumbnail: /static/images/projects/mit-muses-mean-girls/thumbnail.jpg
-cover: /static/images/projects/mit-muses-mean-girls/cover.jpg
+thumbnail: /static/images/projects/muses-mean-girls/thumbnail.jpg
+cover: /static/images/projects/muses-mean-girls/cover.jpg
 color: aeb3da
 facebook: https://www.facebook.com/events/716875111816152/
 link: https://mitmuses.github.io/
@@ -27,14 +27,14 @@ I picked three recognizable images related to the movie: the main movie poster, 
 
 <div class="image-set image-set-two" markdown="1">
 
-![Original: poster one](/static/images/projects/mit-muses-mean-girls/original-1.jpg "Original: poster one")
-![Original: poster two](/static/images/projects/mit-muses-mean-girls/original-2.jpg "Original: poster two")
+![Original: poster one](/static/images/projects/muses-mean-girls/original-1.jpg "Original: poster one")
+![Original: poster two](/static/images/projects/muses-mean-girls/original-2.jpg "Original: poster two")
 
 ##### Scene 1: movie poster, Scene 2: Plastics photo
 
 </div>
 
-![Original: 4-way phone call](/static/images/projects/mit-muses-mean-girls/original-3.jpg "Original: 4-way phone call")
+![Original: 4-way phone call](/static/images/projects/muses-mean-girls/original-3.jpg "Original: 4-way phone call")
 
 ##### Scene 3: The 4-way phone call scene from the movie.
 
@@ -48,7 +48,7 @@ We took pictures in a campus dorm after rehearsal, and then I brought the images
 
 <div class="image-set" markdown="1">
 
-![Final: poster one](/static/images/projects/mit-muses-mean-girls/scene-1-poster.jpg "Final: poster one")
+![Final: poster one](/static/images/projects/muses-mean-girls/scene-1-poster.jpg "Final: poster one")
 
 ##### Scene 1: movie poster
 
@@ -58,7 +58,7 @@ I used the font Gill Sans for the text—with some kerning, it looked almost ide
 
 <div class="image-set" markdown="1">
 
-![Final: poster two](/static/images/projects/mit-muses-mean-girls/scene-2-poster.jpg "Final: poster two")
+![Final: poster two](/static/images/projects/muses-mean-girls/scene-2-poster.jpg "Final: poster two")
 
 ##### Scene 2: Plastics photo
 
@@ -70,7 +70,7 @@ This image became our [Facebook event cover photo](https://www.facebook.com/even
 
 <div class="image-set" markdown="1">
 
-![Final: n-way phone call](/static/images/projects/mit-muses-mean-girls/scene-3-poster.jpg "Final: n-way phone call")
+![Final: n-way phone call](/static/images/projects/muses-mean-girls/scene-3-poster.jpg "Final: n-way phone call")
 
 ##### Scene 3: n-way phone call, n = 9
 
