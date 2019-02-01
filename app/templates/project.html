@@ -70,6 +70,14 @@
 				</td>
 			</tr>
 			{% endif %}
+			{% if project.mentors %}
+			<tr>
+				<td class="property">mentors</td>
+				<td class="value">
+					{{ project.mentors }}
+				</td>
+			</tr>
+			{% endif %}
 			{% if project.tags %}
 			<tr>
 				<td class="property">tags</td>
@@ -105,6 +113,14 @@
 				<td class="property">dimensions</td>
 				<td class="value">
 					{{ project.dimensions }}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.pc %}
+			<tr>
+				<td class="property">photo credit</td>
+				<td class="value">
+					{{ project.pc }}
 				</td>
 			</tr>
 			{% endif %}

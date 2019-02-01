@@ -3,7 +3,7 @@ keyword: muses-30th
 subtitle: Branding for a musical reunion
 date: 2018-12-02
 tags: [Branding, Graphic Design, Web Design, Event Planning]
-technologies: [Illustrator, HTML, CSS, Javascript]
+technologies: [Illustrator, After Effects, HTML, CSS, Javascript]
 categories: [design]
 label: Event Branding
 thumbnail: /static/images/projects/muses-30th/thumbnail.jpg
@@ -87,4 +87,19 @@ I also created an animated version of the sticker in After Effects to promote ou
 ##### An animated version of the sticker
 
 </div>
+
+## Reflections
+
+Organizing a reunion weekend meant putting in many additional hours of work on top of normal rehearsal commitments, and it was definitely worth it. We got the chance to meet our group's founding members—the women who were there in the very beginning—and learn about our group's rich history. Many Muses alumnae also brought their families! It was overall a fun-filled, musical weekend for everyone.
+
+<div class="image-set" markdown="1">
+
+![Muses 30th Everyone](/static/images/projects/muses-30th/everyone.jpg "Muses 30th Everyone")
+
+##### Muses 30th Anniversary group picture
+
+</div>
+
+
+
 

@@ -16,6 +16,7 @@ link: https://hackmit.org/2017
 facebook: https://facebook.com/hackmit
 medium: https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a
 collaborators: Hiram Moncivais, Jenny Xu, Jessica Tang, Jierui Fang, Noah Moroze, HackMIT Team
+pc: Alex Laiman, Chantal Acacio
 description: Designing a futuristic, sci-fi theme for MIT's largest annual undergraduate hackathon
 
 Every September, HackMIT draws over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
