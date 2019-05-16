@@ -143,12 +143,15 @@ def get_stats():
     order = ['status', 'song', 'movie']
     # fetch latest song from last fm API and update database
     data = requests.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user={0}&api_key={1}&limit=1&format=json'.format(LAST_FM_USERNAME, LAST_FM_API_KEY)).json()
-    song = data['recenttracks']['track'][0]
-    song_title = song['name']
-    song_artist = song['artist']['#text']
-    song_url = song['url']
-    song_live = '@attr' in song and song['@attr']['nowplaying'] == 'true'
-    update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live, "url": song_url })
+    try:
+        song = data['recenttracks']['track'][0]
+        song_title = song['name']
+        song_artist = song['artist']['#text']
+        song_url = song['url']
+        song_live = '@attr' in song and song['@attr']['nowplaying'] == 'true'
+        update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live, "url": song_url })
+    except:
+        pass
     try:
         stats = sorted(mongo.db.stats.find() or [], key=lambda stat: order.index(stat['name']))
     except:
