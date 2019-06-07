@@ -1,6 +1,6 @@
 title: Muses 30th Anniversary
 keyword: muses-30th
-subtitle: Branding for a musical reunion
+subtitle: Branding for a muse-ical reunion
 date: 2018-12-02
 tags: [Branding, Graphic Design, Web Design, Event Planning]
 technologies: [Illustrator, After Effects, HTML, CSS, Javascript]

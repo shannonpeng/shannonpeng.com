@@ -1,3 +1,4 @@
+hidden: true
 title: MIT Time
 keyword: mit-time
 subtitle: Smartwatch for MIT students
