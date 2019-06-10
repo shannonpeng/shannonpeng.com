@@ -73,8 +73,8 @@ After assembling my grid controller, I set up a software interface for it. 6.115
 The software interface involved (1) matrix scanning to detect button presses, and (2) updating the LED matrix to reflect grid state.
 
 ### Detecting Button Presses
-- When the buttons are pressed, conductive circles underneath them make contact with the circles on the breakout PCB.
-- To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and then read in the output of each column. If a column was also `HIGH`, then I knew the button at that row and column was currently being pressed.
+- When the buttons on the pad are pressed, conductive circles underneath them make contact with the circles on the breakout PCB.
+- To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and then read in the output of each column. If a column was also `HIGH`, then I knew the button at that row and column was currently held down.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -84,10 +84,10 @@ The software interface involved (1) matrix scanning to detect button presses, an
 
 </div>
 
-- I maintained two 2D arrays, one reflecting transient button state, and one reflecting the persistent grid state. I used the first array to detect key-up events and toggle the corresponding value in the second array.
+- I maintained two 2D arrays, one for transient button state, and one for the persistent grid state. I used the first array to detect key-up events (when a user lets go of a button) and toggle the corresponding value in the second array.
 
 ### Driving LEDs
-- To turn on a common anode RGB LED, I would drive the anode `HIGH`, and then drive a combination of the R, G, and B lines `LOW`. If I connected all 32 wires to analog PSoC pins, I could set my LEDs to any RGB color, but:
+- If I connected all 32 wires to analog PSoC pins, I could set my LEDs to any RGB color, but:
 	- Because the PSoC couldn't source enough current to drive all the LEDs, I brought in [LM293](http://web.mit.edu/6.115/www/document/lm18293n.pdf) push/pull drivers. These drivers work with digital inputs and outputs, so I needed to configure my RGB lines as digital, limiting myself to 7 possible colors.
 	- The PSoC has limited I/O pins, and I wanted to save those for other functions.
 - To keep things simple and compatible with the drivers, I designated one color per row: <span style="color:#70eafb;font-weight:bold">turquoise</span> (0% R 100% G 100% B), <span style="color:#e58bf6;font-weight:bold">pink</span> (100% R 0% G 100% B), <span style="color:#6f92f0;font-weight:bold">blue</span>, and <span style="color:#69e0a7;font-weight:bold">green</span>. For turquoise and pink, I connected two color wires to the same driver output so I could control them both at the same time. This setup ultimately saved me 8 PSoC pins.
@@ -98,7 +98,7 @@ Now, I have a grid controller that turns on an LED when I press the correspondin
 ## Playing Audio
 The next step was to get my PSoC to play audio. Originally, I wanted to play 16-bit 44.1 kHz WAV drum samples using an external RAM. After wiring up my RAM, however, I realized, *how am I supposed to transfer such a large amount of audio data onto the RAM every time the program starts up?*
 
-Converting WAV files to C arrays and putting them into code memory didn't seem feasible, because the PSoC internal memory was very limited. I tried burning them onto a ROM chip, but I ran into unknown errors with lab chip burners. I looked into using serial, but it seemed unnecessarily complex.
+Converting WAV files to C arrays and putting them into code memory didn't seem feasible, because the PSoC internal memory was limited. I tried burning them onto a ROM chip, but I ran into unknown errors with lab chip burners. I looked into using serial, but it seemed unnecessarily complex.
 
 Soon, I found a much simpler (though hackier) solution. I discovered that PSoC Creator's [WaveDAC](https://www.cypress.com/documentation/component-datasheets/8-bit-waveform-generator-wavedac8) component allows for custom user-defined tables. If I converted my WAV files to CSV files of 8-bit raw audio data, then WaveDAC could play them!
 
@@ -110,11 +110,11 @@ Soon, I found a much simpler (though hackier) solution. I discovered that PSoC C
 
 </div>
 
-WaveDAC takes a max of 4000 table values, so I downsampled my WAV files to 16 kHz and trimmed and padded them to exactly 0.25 seconds. I then removed the WAV metadata and headers in Audacity. Soon after... my PSoC played drums! (And the 8-bit 16 kHz samples didn't sound *that* bad, too!)
+WaveDAC takes a max of 4000 table values, so I downsampled my WAV files to 16 kHz and trimmed and padded them to exactly 0.25 seconds, in Audacity. I then removed the WAV metadata and headers. Soon after... my PSoC played drums! (And the 8-bit 16 kHz samples didn't sound *that* bad, too!)
 
 ## Timing and Sequencer Logic
 
-The driving force of a sequencer is a timer that determines which column is active. I implemented this with a PSoC [Timer](https://www.cypress.com/documentation/component-datasheets/timer) component and had it generate a software interrupt on overflow (with the max load value, the interrupt period was 2.731 ms).
+The driving force of a sequencer is a timer that determines which column is active. I implemented this with a PSoC [Timer](https://www.cypress.com/documentation/component-datasheets/timer) component and had it generate a software interrupt on overflow (with the max load value, an interrupt was triggered every 2.731 ms).
 
 Every `NUM_INTERRUPTS` interrupts, the interrupt handler increments the active column, starts the appropriate WaveDAC components, and turns on all LEDs in that column. The result is a "shifting" column of LEDs that shows the sequencer timing.
 
@@ -122,7 +122,7 @@ The tempo is set by the `NUM_INTERRUPTS` variable:
 
 <center>**tempo** = 60  / (`NUM_INTERRUPTS` * 0.002731)</center>
 
-The user can control the sequencer tempo by adjusting the PSoC's onboard potentiometer. I sampled the potentiometer value using a 12-bit PSoC [ADC](https://www.cypress.com/documentation/component-datasheets/delta-sigma-analog-digital-converter-adcdelsig), and then mapped that to the `NUM_INTERRUPTS` variable. In the following formula, `adcResult` ranges from `0x0000` to `0x0FFF`:
+The user can control the sequencer tempo by turning the PSoC's onboard potentiometer. I sampled the potentiometer value using a 12-bit PSoC [ADC](https://www.cypress.com/documentation/component-datasheets/delta-sigma-analog-digital-converter-adcdelsig), and then mapped that to the `NUM_INTERRUPTS` variable. In the following formula, `adcResult` ranges from `0x0000` to `0x0FFF`:
 
 <center>**`NUM_INTERRUPTS`** = 400 - (`adcResult` * 300)  / `0x0FFF` </center>
 
@@ -163,7 +163,7 @@ This project taught me the value of being flexible. Coming in, I had minimal exp
 
 Overall, this final project, and 6.115 in general, have made me more confident in my ability to envision and implement embedded software projects. In the many long hours I've invested into this class, I've become more fluent with design patterns, working with lab equipment, reading data sheets, and integrating various types of chips into a system. I also had fun playing around with my finished grid sequencer :)
 
-I especially found the audio aspects of the project — picking apart WAV files and manipulating them as data points — quite interesting, and I'd like to explore that in more depth in the future, maybe in C next time!
+I especially found the audio aspects of the project — picking apart WAV files and manipulating them as data points — quite interesting, and I'd like to explore that in more depth in the future!
 
 <div class="image-set" markdown="1">
 
