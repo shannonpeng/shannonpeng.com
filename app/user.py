@@ -20,4 +20,4 @@ class User():
         
     @staticmethod
     def validate_login(password_hash, password):
-        return bcrypt.hashpw(password.encode('utf-8'), password_hash.encode('utf-8')) == password_hash
+        return bcrypt.checkpw(password.encode('utf-8'), password_hash.encode('utf-8'))
