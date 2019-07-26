@@ -21,7 +21,7 @@ description: Immunology-inspired multiplayer game with velcro organs, antibodies
 
 I created Infection with my project team, Team Hedgehog 🦔, through an intensive exploration of play and product design in MIT's [Toy Product Design](http://web.mit.edu/2.00b/www/index.html) class (2.00B).
 
-Infection actually started off as a completely different product, Impossible Structures, in the beginning of our design process—it was during playtesting and iteration that the idea for Infection first emerged and our project evolved into what it is today.
+Infection actually started off as a completely different concept in the beginning of our design process—it was during playtesting and iteration that the idea for Infection first emerged and our project evolved into what it is today.
 
 ## Gameplay
 
@@ -54,7 +54,7 @@ A player is eliminated when all four of their organs (or their heart) have been 
 
 ## Ideation
 
-The first step in our design process was to think of as many toy design ideas as possible! As we learned, the key to successful brainstorming is to keep a continuous stream of ideas going. The 2.00B course staff kept us on our toes with numerous brainstorming challenges in class.
+The first step in our design process was to think of as many toy design ideas as possible. As we learned, the key to successful brainstorming is to keep a continuous stream of ideas going. The 2.00B course staff kept us on our toes with numerous brainstorming challenges in class.
 
 <div class="image-set" markdown="1">
 
@@ -174,7 +174,7 @@ The first thing we noticed was that when the kids came to visit our table, they 
 
 We were surprised to find that instead of piecing blocks together by hand, kids liked to stand back and throw blocks at the sculpture to add to it—they were amused that the block could stick where it hit the sculpture. We made up a game where we would take turns throwing blocks at the sculpture to see who would be the one to knock it down, and the kids seemed to enjoy that.
 
-At the end of the day, we realized that **kids really like throwing things.** And some also liked throwing things at each other.
+At the end of the day, we realized that **kids really like throwing things.** And many also liked throwing things at each other.
 
 <div class="image-set" markdown="1">
 
@@ -241,7 +241,7 @@ We adjusted the organs' attachment to the vests until they were attached tightly
 
 2.00B is one of my favorite classes I've taken at MIT. I got my first hands-on introduction to the product design process, witnessed the value of playtesting first-hand, and gained experience with fabrication techniques, while having lots of fun along the way.
 
-The class was a very playful and supportive environment, and it inspired me to learn more about design, moving forward!
+The class was a very playful and supportive environment, and it inspired me to learn more about design!
 
 <div class="image-set image-set-two" markdown="1">
 

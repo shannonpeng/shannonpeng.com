@@ -16,7 +16,7 @@ video: https://youtu.be/TMPp4XCwnAg
 caption: A demo of my finished grid sequencer.
 description: A simple grid sequencer for composing and visualizing musical patterns, programmed in C
 
-I built a sequencer as my final project for [6.115](http://web.mit.edu/6.115/www/page/home.html), a class on microcontrollers and embedded systems. The goal was to bring an embedded software project from concept to working prototype, and create something cool and creative along the way! You can find demos of my sequencer making drum patterns and melodies in the videos below.
+I built a sequencer as my final project for [6.115](http://web.mit.edu/6.115/www/page/home.html), a class on microcontrollers and embedded systems. The goal was to bring an embedded software project from concept to working prototype, and to create something cool and creative along the way! You can find demo videos of my sequencer below.
 
 <a href="https://youtu.be/TMPp4XCwnAg" class="button">
 	Watch Percussion Demo
@@ -36,15 +36,13 @@ Grid instruments, like the [Novation Launchpad](https://novationmusic.com/launch
 
 </div>
 
-In the grid, rows represent different sounds, and columns represent different times. The user toggles buttons to indicate which sounds should be played and when.
-
-The sequencer cycles through the columns in order, playing the correct combination of sounds as it arrives at each column.
+In the grid, rows represent different sounds, and columns represent different times. The user toggles buttons to indicate which sounds should be played and when. The sequencer cycles through the columns in order, playing the correct combination of sounds as it arrives at each column.
 
 ## Setting Up the Button Pad
 
 To assemble a grid with 4 rows and 8 columns, I bought 2 [SparkFun 4x4 button pads](https://www.sparkfun.com/products/7835), the corresponding breakout PCBs and bezels, and 3mm common anode RGB LEDs.
 
-Setting up 32 buttons and LEDs, even in a matrix arrangement, involved a *lot* of soldering. At the end, my 4x8 button pad had 32 wires coming out of it! Managing them all was a fun time.
+Setting up 32 buttons and LEDs, even in a matrix arrangement, involved a *lot* of soldering. At the end, my 4x8 button pad had 32 wires coming out of it! Managing them all was a learning experience.
 
 <div class="image-set" markdown="1">
 
@@ -68,13 +66,13 @@ Setting up 32 buttons and LEDs, even in a matrix arrangement, involved a *lot* o
 
 ## Grid Software Interface
 
-After assembling my grid controller, I set up a software interface for it. 6.115 provided each student with a [PSoC board](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-050-psoc-5lp-development-kit), which is like an instant chip inventory! Inside PSoC Creator, I could configure pins on the board to act like a variety of chips and reassign pins easily.
+After assembling my grid controller, I set up a software interface for it. 6.115 provided each student with a [PSoC board](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-050-psoc-5lp-development-kit), which is like an instant chip inventory! In PSoC Creator, I could configure pins on the board to act like a variety of chips and reassign pins easily.
 
 The software interface involved (1) matrix scanning to detect button presses, and (2) updating the LED matrix to reflect grid state.
 
 ### Detecting Button Presses
 - When the buttons on the pad are pressed, conductive circles underneath them make contact with the circles on the breakout PCB.
-- To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and then read in the output of each column. If a column was also `HIGH`, then I knew the button at that row and column was currently held down.
+- To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and reading in the output of all the columns. If a column was also `HIGH`, then I knew the button at that row and column was currently being held down.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -98,7 +96,7 @@ Now, I have a grid controller that turns on an LED when I press the correspondin
 ## Playing Audio
 The next step was to get my PSoC to play audio. Originally, I wanted to play 16-bit 44.1 kHz WAV drum samples using an external RAM. After wiring up my RAM, however, I realized, *how am I supposed to transfer such a large amount of audio data onto the RAM every time the program starts up?*
 
-Converting WAV files to C arrays and putting them into code memory didn't seem feasible, because the PSoC internal memory was limited. I tried burning them onto a ROM chip, but I ran into unknown errors with lab chip burners. I looked into using serial, but it seemed unnecessarily complex.
+Converting WAV files to C arrays and putting them into code memory didn't seem feasible, because the PSoC internal memory was limited. I tried burning them onto a ROM chip, but I ran into unknown errors with the lab chip burners. I looked into using serial, but the setup seemed too complex for the timeframe I had.
 
 Soon, I found a much simpler (though hackier) solution. I discovered that PSoC Creator's [WaveDAC](https://www.cypress.com/documentation/component-datasheets/8-bit-waveform-generator-wavedac8) component allows for custom user-defined tables. If I converted my WAV files to CSV files of 8-bit raw audio data, then WaveDAC could play them!
 
@@ -110,7 +108,7 @@ Soon, I found a much simpler (though hackier) solution. I discovered that PSoC C
 
 </div>
 
-WaveDAC takes a max of 4000 table values, so I downsampled my WAV files to 16 kHz and trimmed and padded them to exactly 0.25 seconds, in Audacity. I then removed the WAV metadata and headers. Soon after... my PSoC played drums! (And the 8-bit 16 kHz samples didn't sound *that* bad, too!)
+WaveDAC takes a max of 4000 table values, so I downsampled my WAV files to 16 kHz, trimmed and padded them to exactly 0.25 seconds, and removed the WAV metadata and headers (all in Audacity). Soon after... my PSoC played drums! (And the 8-bit 16 kHz samples didn't sound *that* bad, too!)
 
 ## Timing and Sequencer Logic
 
@@ -140,7 +138,7 @@ One downside of using WaveDAC components is that it's difficult to manipulate th
 
 </div>
 
-I decided to build an analog mixer instead, following [this tutorial](https://www.allaboutcircuits.com/projects/build-an-audio-mixer/) by Jacob Smith. This added the bonus feature of being able to adjust relative volumes using potentiometers.
+I decided to build an analog mixer instead, following [this tutorial](https://www.allaboutcircuits.com/projects/build-an-audio-mixer/) by Jacob Smith. This added the bonus feature of being able to adjust relative volumes of sounds using potentiometers.
 
 ## Additional Challenges
 
@@ -159,11 +157,11 @@ I decided to build an analog mixer instead, following [this tutorial](https://ww
 
 ## Reflections
 
-This project taught me the value of being flexible. Coming in, I had minimal experience with C programming or PSoC Creator, and I wasn't sure how to implement most of my ideas. Many times, the implementation I'd guessed didn't work out, and I learned a lot through adapting and exploring alternative strategies.
+This project taught me the value of being flexible. Coming in, I had minimal experience with C programming or PSoC Creator, and I wasn't sure how to implement most of my ideas. Many times, the implementations I'd guessed didn't work out, and I learned a lot through rapidly adapting and exploring alternative strategies.
 
-Overall, this final project, and 6.115 in general, have made me more confident in my ability to envision and implement embedded software projects. In the many long hours I've invested into this class, I've become more fluent with design patterns, working with lab equipment, reading data sheets, and integrating various types of chips into a system. I also had fun playing around with my finished grid sequencer :)
+Overall, this final project, and 6.115 in general, have made me more confident in my ability to envision and implement embedded software projects. In the many long hours I've invested into this class, I've gained fluency with design patterns, working with lab equipment, reading data sheets, and integrating various types of chips into a system. I also had fun playing around with my finished grid sequencer :)
 
-I especially found the audio aspects of the project — picking apart WAV files and manipulating them as data points — quite interesting, and I'd like to explore that in more depth in the future!
+I especially found the audio aspects of the project — picking apart WAV files and manipulating them as data — quite interesting, and I'd like to explore that in more depth in the future.
 
 <div class="image-set" markdown="1">
 
