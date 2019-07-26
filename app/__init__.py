@@ -163,7 +163,7 @@ def update_stat(name, fields):
     s = get_stat_by_name(name)
     if s:
         for k in s:
-            if k in fields:
+            if k in fields and len(fields.get(k)) > 0:
                 s[k] = fields[k]
         result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
         return result
