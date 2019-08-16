@@ -149,7 +149,7 @@ def get_stats():
         song_artist = song['artist']['#text']
         song_url = song['url']
         song_live = '@attr' in song and song['@attr']['nowplaying'] == 'true'
-        update_stat('song', { "title": song_title, "artist": song_artist, "live": song_live, "url": song_url })
+        update_stat('song', { 'title': song_title, 'artist': song_artist, 'live': song_live, 'url': song_url })
     except:
         pass
     try:
@@ -162,8 +162,8 @@ def get_stat_by_name(name):
 def update_stat(name, fields):
     s = get_stat_by_name(name)
     if s:
-        for k in s:
-            if k in fields and len(fields.get(k)) > 0:
+        for k in fields:
+            if k in s and len(str(fields[k]).strip()) > 0:
                 s[k] = fields[k]
         result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
         return result
