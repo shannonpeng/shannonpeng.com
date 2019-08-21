@@ -1,5 +1,6 @@
 $(document).ready(function () {
-	console.log("👀");
+	console.log("hello there 👀");
+	console.log("did you know this website is open source? check out the Github repository here: https://github.com/shannonpeng/shannonpeng.com");
 
 	// hide flash messages
 	setTimeout(function(){ $(".flashes").addClass("hidden")}, 2500);
