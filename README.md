@@ -2,7 +2,6 @@
 ## shannonpeng.com
 
 My personal website, built in January 2019.
-© 2019 Shannon Peng, All rights reserved.
 
 To run the server locally:
 
@@ -25,3 +24,4 @@ Then, run the start script:
 ```
 sh start.sh
 ```
+© 2019 Shannon Peng, All rights reserved.
