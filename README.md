@@ -1,24 +1,27 @@
-# shannonpeng.com
-new personal website :o
+# Personal Website
+## shannonpeng.com
 
-to run locally:
+My personal website, built in January 2019.
+© 2019 Shannon Peng, All rights reserved.
 
-install less and less-watch-compiler (I have it installed globally):
+To run the server locally:
+
+Install less and less-watch-compiler (I have it installed globally):
 ```
 npm install -g less
 npm install -g less-watch-compiler
 ```
-set up virtualenv:
+Set up virtualenv:
 ```
 python3 -m venv venv
 ```
-activate venv, install python packages, and deactivate:
+Activate venv, install Python packages, and then deactivate:
 ```
 source venv/bin/activate
 pip install -r requirements.txt
 deactivate
 ```
-then run the start script:
+Then, run the start script:
 ```
 sh start.sh
 ```
