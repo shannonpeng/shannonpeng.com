@@ -180,19 +180,19 @@ footer p:nth-child(2) {
   animation: volume 500ms linear infinite alternate;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(1) {
-  background: #00cecb;
+  background: #1cdb8e;
   animation-delay: 0.3s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(2) {
-  background: #f5c747;
+  background: #fcbc3c;
   animation-duration: 0.7s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(3) {
-  background: #ff5b71;
+  background: #ff5484;
   animation-delay: 0.8s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(4) {
-  background: #b7f6ff;
+  background: #a8ecff;
   animation-delay: 0.4s;
 }
 #main .sidebar > .content .stats .volume .bar:nth-child(5) {
@@ -207,13 +207,13 @@ footer p:nth-child(2) {
   float: right;
 }
 #main .sidebar > .content .nav.one {
-  border-right: 4px solid rgba(0, 206, 203, 0.25);
+  border-right: 4px solid rgba(28, 219, 142, 0.25);
 }
 #main .sidebar > .content .nav.two {
-  border-right: 4px solid rgba(245, 199, 71, 0.25);
+  border-right: 4px solid rgba(252, 188, 60, 0.25);
 }
 #main .sidebar > .content .nav.three {
-  border-right: 4px solid rgba(255, 91, 113, 0.25);
+  border-right: 4px solid rgba(255, 84, 132, 0.25);
 }
 #main .sidebar > .content .nav li {
   font-family: futura-pt, sans-serif;
@@ -226,16 +226,16 @@ footer p:nth-child(2) {
   opacity: 1;
 }
 #main .sidebar > .content .nav a:nth-child(1) .selected {
-  color: #00cecb;
+  color: #1cdb8e;
 }
 #main .sidebar > .content .nav a:nth-child(2) .selected {
-  color: #f5c747;
+  color: #fcbc3c;
 }
 #main .sidebar > .content .nav a:nth-child(3) .selected {
-  color: #ff5b71;
+  color: #ff5484;
 }
 #main .sidebar > .content .nav a:nth-child(4) .selected {
-  color: #b7f6ff;
+  color: #a8ecff;
 }
 #main .sidebar > .content .nav a:nth-child(5) .selected {
   color: #b9a0ef;
@@ -263,9 +263,9 @@ footer p:nth-child(2) {
   border-bottom: 4px solid transparent;
 }
 #projects .category-filter .category.active {
-  color: #00cecb;
+  color: #1cdb8e;
   opacity: 1;
-  border-bottom: 4px solid #00cecb;
+  border-bottom: 4px solid #1cdb8e;
 }
 #projects .category-filter .category:hover {
   cursor: pointer;
@@ -346,7 +346,7 @@ footer p:nth-child(2) {
 }
 #classes .label {
   text-transform: uppercase;
-  color: #f5c747;
+  color: #fcbc3c;
 }
 #classes .description {
   opacity: 0.6;
@@ -359,10 +359,10 @@ footer p:nth-child(2) {
   margin-bottom: 48px;
 }
 #classes .semester.fall .label {
-  color: #ff5b71;
+  color: #ff5484;
 }
 #classes .semester.spring .label {
-  color: #00cecb;
+  color: #1cdb8e;
 }
 #classes .semester.winter .label {
   color: #b8b8b8;
@@ -468,13 +468,13 @@ footer p:nth-child(2) {
     padding-left: 0;
   }
   #main .sidebar .content .nav.one {
-    border-bottom: 4px solid rgba(0, 206, 203, 0.25);
+    border-bottom: 4px solid rgba(28, 219, 142, 0.25);
   }
   #main .sidebar .content .nav.two {
-    border-bottom: 4px solid rgba(245, 199, 71, 0.25);
+    border-bottom: 4px solid rgba(252, 188, 60, 0.25);
   }
   #main .sidebar .content .nav.three {
-    border-bottom: 4px solid rgba(255, 91, 113, 0.25);
+    border-bottom: 4px solid rgba(255, 84, 132, 0.25);
   }
   #projects,
   #classes,
@@ -866,18 +866,18 @@ footer p:nth-child(2) {
 #admin .container .button.submit,
 #admin .container .button.login {
   background-color: transparent;
-  color: #00cecb;
+  color: #1cdb8e;
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 24px;
-  border: 4px solid #00cecb;
+  border: 4px solid #1cdb8e;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 #admin .container .button.submit:hover,
 #admin .container .button.login:hover {
-  background-color: #00cecb;
+  background-color: #1cdb8e;
   color: white;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
