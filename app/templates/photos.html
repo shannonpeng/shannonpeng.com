@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-	Photos |
+	photos /
 	{{ super() }}
 {% endblock %}
 
@@ -19,10 +19,10 @@
 		</a>
 	</div>
 	{% else %}
-	<p>No photos to be found, just this guilty dinosaur. 🦖</p>
+	<p>no photos to be found, just this guilty dinosaur. 🦖</p>
 	{% endfor %}
 	<div class="more-photos">
-		<a href="//instagram.com/shannonpenguin" target="_blank"><h4>see more photos <i class="icon fas fa-arrow-right"></i></h4></a>
+		<a href="//instagram.com/shannonpenguin" target="_blank"><p>see more photos >></p></a>
 	</div>
 </div>
 {% endblock %}

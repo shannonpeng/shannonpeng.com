@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Shannon Peng
+    shannon peng
 {% endblock %}
 
 {% block content %}
@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="sidebar">
 			<div class="content">
-				<a href="/"><h1 class="title">SHANNON PENG</h1></a>
+				<a href="/"><h2 class="title">Shannon Peng</h2></a>
 				<p>I'm a senior at MIT studying electrical engineering and computer science with a focus&nbsp;on multimedia and human-computer interaction. I like to design and build memorable experiences.</p>
 				<div class="stats">
 					<div class="content">
@@ -83,10 +83,10 @@
 		{% block main_content %}
 		<div id="projects">
 			<div class="category-filter">
-				<h4 class="category active" category="all">all</h3>
-				<h4 class="category" category="code">code</h3>
-				<h4 class="category" category="design">design</h3>
-				<h4 class="category" category="make">make</h3>
+				<p class="category active" category="all">all</p>
+				<p class="category" category="code">code</p>
+				<p class="category" category="design">design</p>
+				<p class="category" category="make">make</p>
 			</div>
 			{% for project in projects %}
 			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %}">
@@ -98,8 +98,8 @@
 				<a href="{{ url_for('project', name=project.keyword) }}">
 					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.2)), url('{{ project.thumbnail }}')"></div>
 					<div class="info">
-						<h2 class="title">{{ project.title }}</h2>
-						<p class="subtitle"><i>{{ project.subtitle }}</i></p>
+						<h3 class="title">{{ project.title }}</h3>
+						<p class="subtitle">{{ project.subtitle }}</p>
 					</div>
 				</a>
 			</div>
