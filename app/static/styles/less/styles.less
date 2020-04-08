@@ -2,7 +2,7 @@
 	.sidebar {
 		position: fixed;
 	    width: 30%;
-	    min-width: 350px;
+	    min-width: @sidebar-min-width;
 	    
 		> .content {
 			position: absolute;
@@ -11,6 +11,7 @@
 			margin-top: 40%;
 			padding-left: 36px;
 			text-align: left;
+			text-transform: lowercase;
 
 			.title {
 				margin: 0;
@@ -116,26 +117,26 @@
 			}
 			.nav {
 				margin: 24px 0;
-				border-right: 4px solid @grey;
+				border-right: @nav-border-width solid @grey;
 				text-align: right;
 				display: inline-block;
 				float: right;
 
 				&.one {
-					border-right: 4px solid fade(@color1, 25%);
+					border-right: @nav-border-width solid darken(@color1, 10%);
 				}
 				&.two {
-					border-right: 4px solid fade(@color2, 25%);
+					border-right: @nav-border-width solid darken(@color2, 10%);
 				}
 				&.three {
-					border-right: 4px solid fade(@color3, 25%);
+					border-right: @nav-border-width solid darken(@color3, 10%);
 				}
 
 				li {
-					font-family: @font-title;
 					font-weight: @font-weight-bold;
-					text-transform: uppercase;
-					padding: 6px 16px;
+					font-style: italic;
+					text-transform: lowercase;
+					padding: 4px 16px;
 					opacity: 0.25;
 
 					&.selected {
@@ -143,19 +144,19 @@
 					}
 				}
 				a:nth-child(1) .selected {
-					color: @color1;
+					color: darken(@color1, 10%);
 				}
 				a:nth-child(2) .selected {
-					color: @color2;
+					color: darken(@color2, 10%);
 				}
 				a:nth-child(3) .selected {
-					color: @color3;
+					color: darken(@color3, 10%);
 				}
 				a:nth-child(4) .selected {
-					color: @color4;
+					color: darken(@color4, 10%);
 				}
 				a:nth-child(5) .selected {
-					color: @color5;
+					color: darken(@color5, 10%);
 				}
 
 			}
@@ -179,16 +180,18 @@
 		padding-bottom: 12px;
 		.category {
 			display: inline-block;
-			text-transform: uppercase;
+			text-transform: lowercase;
+			font-style: italic;
+			font-weight: @font-weight-bold;
 			opacity: 0.25;
 			margin: 0;
-			margin-right: 16px;
-			border-bottom: 4px solid transparent;
+			margin-right: 12px;
+			border-bottom: @nav-border-width solid transparent;
 
 			&.active {
 				color: @color1;
 				opacity: 1;
-				border-bottom: 4px solid @color1;
+				border-bottom: @nav-border-width solid @color1;
 			}
 			&:hover {
 				cursor: pointer;
@@ -272,10 +275,14 @@
 #classes {
 	overflow-x: hidden;
 	padding-top: 36px;
+	text-transform: lowercase;
 
 	.label {
-		text-transform: uppercase;
-		color: @color2;
+		text-transform: lowercase;
+		color: @color1;
+		margin-bottom: 0.5em;
+		font-style: italic;
+		font-weight: @font-weight-bold;
 	}
 	.description {
 		opacity: @hover-opacity;
@@ -289,13 +296,16 @@
 	.semester {
 		margin-bottom: 48px;
 		&.fall .label {
-			color: @color3;
-		}
-		&.spring .label {
 			color: @color1;
 		}
+		&.spring .label {
+			color: @color2;
+		}
 		&.winter .label {
-			color: darken(@grey, 25%);
+			color: @color3;
+		}
+		&.summer .label {
+			color: @color4;
 		}
 	}
 }
@@ -304,19 +314,13 @@
 	padding-top: 36px;
 
 	.more-photos {
-		h4 {
-		    margin-top: 12px;
-		    margin-bottom: 48px;
-		    text-transform: uppercase;
-		    opacity: 0.5 * @hover-opacity;
-		    .transition(2*@transition-time, opacity);
-		    &:hover {
-		    	opacity: @hover-opacity;
-		    	.transition(@transition-time, opacity);
-		    }
-		}
-	    .icon {
-	    	margin-left: 4px;
+	    margin-bottom: 48px;
+	    text-transform: lowercase;
+	    color: darken(@color3, 15%);
+	    font-weight: @font-weight-bold;
+	    font-style: italic;
+	    &:hover {
+	    	text-decoration: underline;
 	    }
 	}
 
@@ -399,21 +403,21 @@
 					display: block;
 					float: none;
 					border-right: none !important;
-					border-bottom: 4px solid @grey;
+					border-bottom: @nav-border-width solid @grey;
 					text-align: left;
-					margin: 12px 0;
+					margin: 8px 0;
 					li {
 						display: inline-block;
 						padding-left: 0;
 					}
 					&.one {
-						border-bottom: 4px solid fade(@color1, 25%);
+						border-bottom: @nav-border-width solid darken(@color1, 10%);
 					}
 					&.two {
-						border-bottom: 4px solid fade(@color2, 25%);
+						border-bottom: @nav-border-width solid darken(@color2, 10%);
 					}
 					&.three {
-						border-bottom: 4px solid fade(@color3, 25%);
+						border-bottom: @nav-border-width solid darken(@color3, 10%);
 					}
 				}
 			}
