@@ -1,3 +1,4 @@
+hidden: true
 title: "Muses: Mean Girls"
 keyword: muses-mean-girls
 subtitle: Recreating posters from the iconic chick flick
