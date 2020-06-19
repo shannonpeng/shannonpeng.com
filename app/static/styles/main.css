@@ -14,9 +14,9 @@ body {
   padding: 0;
 }
 body {
-  font-family: freight-text-pro, serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
   font-weight: 700;
 }
 a {
@@ -76,7 +76,7 @@ footer {
   background: #f4f4f4;
   color: rgba(117, 117, 117, 0.75);
   padding: 24px;
-  font-size: 14.4px;
+  font-size: 12.8px;
 }
 footer p {
   margin: 4px auto;
@@ -96,11 +96,10 @@ footer p:nth-child(2) {
   margin-top: 40%;
   padding-left: 36px;
   text-align: left;
-  text-transform: lowercase;
 }
 #main .sidebar > .content .title {
   margin: 0;
-  text-transform: uppercase;
+  font-family: futura-pt, sans-serif;
 }
 #main .sidebar > .content .social {
   display: inline-block;
@@ -218,7 +217,6 @@ footer p:nth-child(2) {
 }
 #main .sidebar > .content .nav li {
   font-weight: 700;
-  font-style: italic;
   text-transform: lowercase;
   padding: 4px 16px;
   opacity: 0.25;
@@ -258,7 +256,6 @@ footer p:nth-child(2) {
 #projects .category-filter .category {
   display: inline-block;
   text-transform: lowercase;
-  font-style: italic;
   font-weight: 700;
   opacity: 0.25;
   margin: 0;
@@ -311,6 +308,7 @@ footer p:nth-child(2) {
 #projects .project .info .title {
   position: absolute;
   bottom: 0;
+  font-family: futura-pt, sans-serif;
   text-transform: uppercase;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
@@ -346,14 +344,12 @@ footer p:nth-child(2) {
 #classes {
   overflow-x: hidden;
   padding-top: 36px;
-  text-transform: lowercase;
 }
 #classes .label {
-  text-transform: lowercase;
   color: #9f9aa4;
   margin-bottom: 0.5em;
-  font-style: italic;
   font-weight: 700;
+  text-transform: lowercase;
 }
 #classes .description {
   opacity: 0.6;
@@ -540,7 +536,7 @@ footer p:nth-child(2) {
 }
 #project-writeup {
   margin: 0 60px;
-  font-size: 22px;
+  font-size: 18px;
   animation: fade-in 600ms ease-in;
 }
 #project-writeup .cover {
@@ -564,14 +560,15 @@ footer p:nth-child(2) {
   margin: 0;
 }
 #project-writeup .cover .cover-headline .title {
-  text-transform: uppercase;
   margin: 12px 0;
   margin-left: -1px;
-  font-size: 36px;
+  font-size: 34px;
+  font-family: futura-pt, sans-serif;
+  text-transform: uppercase;
 }
 #project-writeup .cover .cover-headline .description {
   margin: 4px 0;
-  font-size: 22px;
+  font-size: 20px;
   color: #757575;
 }
 #project-writeup .cover .cover-image {
@@ -594,10 +591,12 @@ footer p:nth-child(2) {
   animation: counter-slide 600ms ease-out;
 }
 #project-writeup .content blockquote {
-  font-size: 28px;
+  font-size: 24px;
   color: #757575;
   margin-top: 48px;
   margin-bottom: 48px;
+  border-left: 3px solid #e7e7e7;
+  padding-left: 24px;
 }
 #project-writeup .content a:hover {
   text-decoration: underline;
@@ -619,8 +618,8 @@ footer p:nth-child(2) {
   opacity: 0.6;
 }
 #project-writeup .content h5 {
-  font-family: freight-text-pro, serif;
-  font-weight: normal;
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
   text-align: center;
   opacity: 0.5;
   margin-top: 12px;
@@ -665,15 +664,14 @@ footer p:nth-child(2) {
 }
 #project-writeup .content code {
   font-family: 'Source Code Pro', monospace;
-  font-size: 17.6px;
+  font-size: 14.4px;
   border-radius: 3px;
 }
 #project-writeup .content .button {
   padding: 12px 24px;
   margin: 12px 0;
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
   text-transform: uppercase;
-  font-size: 80%;
   font-weight: bold;
   display: inline-block;
   -webkit-transition: all 225ms ease-in-out;
@@ -693,8 +691,8 @@ footer p:nth-child(2) {
   display: inline-block;
 }
 #project-writeup .links li {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   background-color: #e7e7e7;
   color: #757575;
   padding: 16px;
@@ -712,7 +710,7 @@ footer p:nth-child(2) {
   transition: all 150ms ease-in-out;
 }
 #project-writeup .links i {
-  font-size: 18px;
+  font-size: 16px;
   margin: auto;
 }
 #project-writeup .cover .links {
@@ -728,7 +726,7 @@ footer p:nth-child(2) {
 #project-writeup .metadata .property {
   width: 40%;
   text-align: right;
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -737,8 +735,8 @@ footer p:nth-child(2) {
   padding: 8px 12px;
 }
 .back {
-  font-size: 18px;
-  font-family: futura-pt, sans-serif;
+  font-size: 16px;
+  font-family: halyard-text, sans-serif;
   opacity: 0.3;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -805,7 +803,7 @@ footer p:nth-child(2) {
   }
 }
 #admin {
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
 }
 #admin .container.login {
   margin-top: 25vh;
@@ -855,8 +853,8 @@ footer p:nth-child(2) {
   background: #f4f4f4;
   border-radius: 4px;
   margin: 12px 8px;
-  font-family: futura-pt, sans-serif;
-  font-size: 18px;
+  font-family: halyard-text, sans-serif;
+  font-size: 16px;
 }
 #admin .container input.keyword {
   width: 160px;
@@ -871,7 +869,7 @@ footer p:nth-child(2) {
 #admin .container .button.login {
   background-color: transparent;
   color: #9f9aa4;
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 24px;
@@ -929,7 +927,7 @@ footer p:nth-child(2) {
   width: 100%;
 }
 #error {
-  font-family: futura-pt, sans-serif;
+  font-family: halyard-text, sans-serif;
 }
 #error .container {
   display: flex;

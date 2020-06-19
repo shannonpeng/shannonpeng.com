@@ -17,7 +17,7 @@ color: 3c5ce2
 collaborators: Dillon Zhang
 description: An immersive space-themed escape room over Zoom video call
 
-I created Zooming Away with my friend Dillon Zhang as our final project for an MIT theatre class: 21M.737 Interactive Design and Projection for Live Performance.
+I created Zooming Away with my friend Dillon Zhang in May 2020. It was our final project for an MIT theatre class: 21M.737 Interactive Design and Projection for Live Performance.
 
 ## The Idea
 
@@ -101,9 +101,7 @@ As space cadets, you retrieve the ASAN diagnostic guide you received during trai
 
 </div>
 
-Through interacting with Rachel over video call and flipping through the guide to determine the correct console commands, you can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes? 
-
-Be careful — putting in too many incorrect commands can damage the system and force it to reset, causing you to lose time!
+Through interacting with Rachel over video call and flipping through the guide to determine the correct console commands, you can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes?
 
 ## How It Works
 
@@ -137,7 +135,7 @@ Hidden from the players is the actor's panel, which helps the live actor direct 
 
 **Line Prompter:** At the bottom, a line prompter gives the actor hints and starter lines for directing the players, though the majority of her dialogue is left to improvisation.
 
-**Capsule Information:** The middle section of the actor's panel contains a range of information about the space capsule, which the actor can or cannot read depending on the capsule state. For example: in this screencap, we know that the number on the outside of the window is 21737, but in order to see what's inside the window, we'll need to close the window. If the players ask about the inside of the window, the actor could say, "The window's open. I can't see inside." The players will then figure out that they need to hit the "Close Window" command in their control console.
+**Capsule Information:** The middle section of the actor's panel contains a range of information about the space capsule, which the actor can or cannot read depending on the capsule state. For example: in this screencap, we know that the number on the outside of the window is 21737, but in order to see what's inside the window, we'll need to close the window. If the players ask about the inside of the window, the actor could say, "The window's open. I can't see inside." The players should then figure out that they need to hit the "Close Window" command in their control console.
 
 Both the actor's panel and space cadet control console are connected via web sockets (Socket.IO) and a web server (Node.js) that keeps track of the game state.
 
@@ -147,8 +145,8 @@ I designed all graphic assets, video FX, and audio FX, and played the role of th
 
 ## Reflections
 
-Zooming Away received glowing reviews from our guest participants and our class instructor! They praised its level of immersion and its use of a Zoom call as a storytelling medium.
+Zooming Away received glowing reviews from our guest participants and class instructor! They praised its level of immersion and its use of a Zoom call as a storytelling medium.
 
-My biggest takeaway from this project was that building interactive live experiences for our laptop screens opens more doors than it closes. We had lost the chance to experiment with physical space, but we gained the opportunity to explore how AR lenses and web sockets can play a role in immersive theatre and producing engaging experiences in our own homes.
+My biggest takeaway from this project was that building interactive live experiences for our laptop screens opens more doors than it closes. We lost the chance to experiment with physical space, but we gained the opportunity to explore how AR lenses and web sockets can play a role in producing engaging experiences in our own homes.
 
 Where could this take us in the future?

@@ -115,7 +115,6 @@ Only the empty bucket made it into the final game, but I thought it would've bee
 
 </div>
 
-
 ## What I Learned
 
 Every hackathon project, I aim to learn something new. Through Drops, I learned basics of game development, including programming the game interface and working with sprites and collisions. I also learned more about the issue of water pollution and the different types of pollutants in tap water around the country.

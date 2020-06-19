@@ -69,10 +69,13 @@ Once you hit `Play`, you enter the game screen. It's packed with features:
 
 </div>
 
-- **Score, Progress Bar, and Streak:** These help you keep track of your accuracy and progress.
-- **Notes Move Across the Screen:** You'll never lose your place in the guitar tab, because instead of having to scroll down the page to see more notes, the notes will scroll to you as you play! You can't move on to the next note until you play the current one correctly.
-- **Live Fret Diagram:** One of the challenges of reading a guitar tab is translating a fret number into a physical position on the fretboard. You can toggle a live fret diagram, which helps you visually compare where your fingers currently are to where they should be.
-- **Game Feedback:** You'll know when you've played something right or wrong. When you play a note correctly, it will "poof" away on the screen. If you pluck the wrong string, the string you plucked will bend and flash red. If you pluck the right string but have your finger in the wrong place, an arrow and number will pop up, indicating the number of frets you should move your finger up or down on that string.
+**Score, Progress Bar, and Streak:** These help you keep track of your accuracy and progress.
+
+**Notes Move Across the Screen:** You'll never lose your place in the guitar tab, because instead of having to scroll down the page to see more notes, the notes will scroll to you as you play! You can't move on to the next note until you play the current one correctly.
+
+**Live Fret Diagram:** One of the challenges of reading a guitar tab is translating a fret number into a physical position on the fretboard. You can toggle a live fret diagram, which helps you visually compare where your fingers currently are to where they should be.
+
+**Game Feedback:** You'll know when you've played something right or wrong. When you play a note correctly, it will "poof" away on the screen. If you pluck the wrong string, the string you plucked will bend and flash red. If you pluck the right string but have your finger in the wrong place, an arrow and number will pop up, indicating the number of frets you should move your finger up or down on that string.
 
 
 ## What's Next

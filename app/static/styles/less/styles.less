@@ -11,11 +11,10 @@
 			margin-top: 40%;
 			padding-left: 36px;
 			text-align: left;
-			text-transform: lowercase;
 
 			.title {
 				margin: 0;
-				text-transform: uppercase;
+				font-family: futura-pt, sans-serif;
 			}
 			.social {
 				display: inline-block;
@@ -134,7 +133,6 @@
 
 				li {
 					font-weight: @font-weight-bold;
-					font-style: italic;
 					text-transform: lowercase;
 					padding: 4px 16px;
 					opacity: 0.25;
@@ -181,7 +179,6 @@
 		.category {
 			display: inline-block;
 			text-transform: lowercase;
-			font-style: italic;
 			font-weight: @font-weight-bold;
 			opacity: 0.25;
 			margin: 0;
@@ -235,6 +232,7 @@
 			.title {
 				position: absolute;
 				bottom: 0;
+				font-family: futura-pt, sans-serif;
 				text-transform: uppercase;
 				.transition(3*@transition-time);
 				.icon {
@@ -275,14 +273,12 @@
 #classes {
 	overflow-x: hidden;
 	padding-top: 36px;
-	text-transform: lowercase;
 
 	.label {
-		text-transform: lowercase;
 		color: @color1;
 		margin-bottom: 0.5em;
-		font-style: italic;
 		font-weight: @font-weight-bold;
+		text-transform: lowercase;
 	}
 	.description {
 		opacity: @hover-opacity;

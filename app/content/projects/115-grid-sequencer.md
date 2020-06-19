@@ -71,8 +71,9 @@ After assembling my grid controller, I set up a software interface for it. 6.115
 The software interface involved (1) matrix scanning to detect button presses, and (2) updating the LED matrix to reflect grid state.
 
 ### Detecting Button Presses
-- When the buttons on the pad are pressed, conductive circles underneath them make contact with the circles on the breakout PCB.
-- To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and reading in the output of all the columns. If a column was also `HIGH`, then I knew the button at that row and column was currently being held down.
+When the buttons on the pad are pressed, conductive circles underneath them make contact with the circles on the breakout PCB.
+
+To detect a button press, I cycled through the rows one at a time, driving the row `HIGH` and the other rows `LOW`, and reading in the output of all the columns. If a column was also `HIGH`, then I knew the button at that row and column was currently being held down.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -82,14 +83,17 @@ The software interface involved (1) matrix scanning to detect button presses, an
 
 </div>
 
-- I maintained two 2D arrays, one for transient button state, and one for the persistent grid state. I used the first array to detect key-up events (when a user lets go of a button) and toggle the corresponding value in the second array.
+I maintained two 2D arrays, one for transient button state, and one for the persistent grid state. I used the first array to detect key-up events (when a user lets go of a button) and toggle the corresponding value in the second array.
 
 ### Driving LEDs
-- If I connected all 32 wires to analog PSoC pins, I could set my LEDs to any RGB color, but:
-	- Because the PSoC couldn't source enough current to drive all the LEDs, I brought in [LM293](http://web.mit.edu/6.115/www/document/lm18293n.pdf) push/pull drivers. These drivers work with digital inputs and outputs, so I needed to configure my RGB lines as digital, limiting myself to 7 possible colors.
-	- The PSoC has limited I/O pins, and I wanted to save those for other functions.
-- To keep things simple and compatible with the drivers, I designated one color per row: <span style="color:#70eafb;font-weight:bold">turquoise</span> (0% R 100% G 100% B), <span style="color:#e58bf6;font-weight:bold">pink</span> (100% R 0% G 100% B), <span style="color:#6f92f0;font-weight:bold">blue</span>, and <span style="color:#69e0a7;font-weight:bold">green</span>. For turquoise and pink, I connected two color wires to the same driver output so I could control them both at the same time. This setup ultimately saved me 8 PSoC pins.
-- I made liberal use of C's shift and bitwise logic operators to match the LEDs to a 2D array representing the grid state.
+If I connected all 32 wires to analog PSoC pins, I could set my LEDs to any RGB color, but:
+
+- Because the PSoC couldn't source enough current to drive all the LEDs, I brought in [LM293](http://web.mit.edu/6.115/www/document/lm18293n.pdf) push/pull drivers. These drivers work with digital inputs and outputs, so I needed to configure my RGB lines as digital, limiting myself to 7 possible colors.
+- The PSoC has limited I/O pins, and I wanted to save those for other functions.
+
+To keep things simple and compatible with the drivers, I designated one color per row: <span style="color:#70eafb;font-weight:bold">turquoise</span> (0% R 100% G 100% B), <span style="color:#e58bf6;font-weight:bold">pink</span> (100% R 0% G 100% B), <span style="color:#6f92f0;font-weight:bold">blue</span>, and <span style="color:#69e0a7;font-weight:bold">green</span>. For turquoise and pink, I connected two color wires to the same driver output so I could control them both at the same time. This setup ultimately saved me 8 PSoC pins.
+
+I made liberal use of C's shift and bitwise logic operators to match the LEDs to a 2D array representing the grid state.
 
 Now, I have a grid controller that turns on an LED when I press the corresponding button!
 
@@ -118,11 +122,11 @@ Every `NUM_INTERRUPTS` interrupts, the interrupt handler increments the active c
 
 The tempo is set by the `NUM_INTERRUPTS` variable:
 
-<center>**tempo** = 60  / (`NUM_INTERRUPTS` * 0.002731)</center>
+<center>`tempo` = 60  / (`NUM_INTERRUPTS` * 0.002731)</center>
 
 The user can control the sequencer tempo by turning the PSoC's onboard potentiometer. I sampled the potentiometer value using a 12-bit PSoC [ADC](https://www.cypress.com/documentation/component-datasheets/delta-sigma-analog-digital-converter-adcdelsig), and then mapped that to the `NUM_INTERRUPTS` variable. In the following formula, `adcResult` ranges from `0x0000` to `0x0FFF`:
 
-<center>**`NUM_INTERRUPTS`** = 400 - (`adcResult` * 300)  / `0x0FFF` </center>
+<center>`NUM_INTERRUPTS` = 400 - (`adcResult` * 300)  / `0x0FFF` </center>
 
 This gives a `NUM_INTERRUPTS` range of 100-400, which corresponds to tempos of approximately 220 to 55 columns per minute.
 
@@ -142,8 +146,9 @@ I decided to build an analog mixer instead, following [this tutorial](https://ww
 
 ## Additional Challenges
 
-- An issue with the WaveDACs is that they don't stop after playing a sound once — which I guess makes sense, because you normally wouldn't want a waveform generator to stop after one period. To work around this, I wrote interrupt handlers that stop a WaveDAC after one iteration of the table. This causes some blips in the audio when a WaveDAC stops, but it's necessary to keep the samples from playing more than once per column.
-- Because WaveDACs can only play one sound at a time, if the tempo becomes too fast such that a column is active for less time than the duration of the sound, and there are two consecutive sounds in a row, the second sound would simply not play. I made the easy fix by lowering the tempo limit. Given more time, I would like to develop a more solid solution for this.
+An issue with the WaveDACs is that they don't stop after playing a sound once — which I guess makes sense, because you normally wouldn't want a waveform generator to stop after one period. To work around this, I wrote interrupt handlers that stop a WaveDAC after one iteration of the table. This causes some blips in the audio when a WaveDAC stops, but it's necessary to keep the samples from playing more than once per column.
+
+Because WaveDACs can only play one sound at a time, if the tempo becomes too fast such that a column is active for less time than the duration of the sound, and there are two consecutive sounds in a row, the second sound would simply not play. I made the easy fix by lowering the tempo limit. Given more time, I would like to develop a more solid solution for this.
 
 ## PSoC Creator Schematic
 
@@ -151,7 +156,7 @@ I decided to build an analog mixer instead, following [this tutorial](https://ww
 
 ![PSoC schematic](/static/images/projects/115-grid-sequencer/schematic.jpg "PSoC schematic")
 
-##### My final PSoC Creator schematic. [View Code](https://gist.github.com/shannonpeng/1657018d92a1b81b7fcb56381519141a)
+##### My final PSoC Creator schematic (full code [here](https://gist.github.com/shannonpeng/1657018d92a1b81b7fcb56381519141a))
 
 </div>
 

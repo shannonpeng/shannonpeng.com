@@ -170,10 +170,13 @@ Inside the bowl, the components are driven by the Arduino Uno microcontroller. T
 ![State table](/static/images/projects/aromigo/state-table.jpg "State table")
 
 ### Software Features
-- **Safety Timers** The code ensures that no peltier is heating for more than 5 seconds — after 5 seconds, the code forces the peltier to cool for a minimum of 5 seconds.
-- **LED Pulsing** The code increases and decreases the LED brightness by a factor of 5 for each interval. This creates a subtle “pulsing” effect.
-- **Moving Average Smoothing** The signal coming in through the capacitive touch sensor is smoothed using a moving average method.
-- **Communication via XBee** Each device emits and receives touch sensing data through XBee.
+**Safety Timers:** The code ensures that no peltier is heating for more than 5 seconds — after 5 seconds, the code forces the peltier to cool for a minimum of 5 seconds.
+
+**LED Pulsing:** The code increases and decreases the LED brightness by a factor of 5 for each interval. This creates a subtle “pulsing” effect.
+
+**Moving Average Smoothing:** The signal coming in through the capacitive touch sensor is smoothed using a moving average method.
+
+**Communication via XBee:** Each device emits and receives touch sensing data through XBee.
 
 ## Final Presentation and Demo
 

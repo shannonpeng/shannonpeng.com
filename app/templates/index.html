@@ -9,8 +9,9 @@
 	<div class="container">
 		<div class="sidebar">
 			<div class="content">
-				<a href="/"><h2 class="title">Shannon Peng</h2></a>
-				<p>I'm a senior at MIT studying electrical engineering and computer science with a focus&nbsp;on multimedia and human-computer interaction. I like to design and build memorable experiences.</p>
+				<a href="/"><h2 class="title">SHANNON PENG</h2></a>
+				<p>I'm a creative technologist with a love for music and experiential storytelling.</p>
+				<p>I graduated from MIT in 2020 with a B.S. in Electrical Engineering and Computer Science and a minor in Theater Arts.</p>
 				<div class="stats">
 					<div class="content">
 						{% for stat in stats %}
@@ -21,7 +22,7 @@
 											<i class="{{ stat.icon }}"></i>
 										</div>
 										<div>
-											<p><i><b>{{ stat.prefix }}: </b></i>{{ stat.text }}</p>
+											<p><b>{{ stat.prefix }}: </b>{{ stat.text }}</p>
 										</div>
 							        </div>
 						       	{% elif stat.name == 'song' %}
