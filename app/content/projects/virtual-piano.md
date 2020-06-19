@@ -1,4 +1,4 @@
-featured: true
+hidden: true
 title: Virtual Piano
 keyword: virtual-piano
 subtitle: Play real-time piano duets, inside your browser
@@ -6,7 +6,7 @@ date: 2017-02-05
 context: Hack@Brown 2017
 tags: [Software, Web Development, Music]
 technologies: [Node, Express, Socket.IO, Audiosynth, jQuery, Javascript, HTML, CSS]
-categories: [code]
+categories: [code, music, interactive]
 label: Web Development
 thumbnail: /static/images/projects/virtual-piano/thumbnail.png
 cover: /static/images/projects/virtual-piano/cover.png
