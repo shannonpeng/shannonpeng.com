@@ -6,7 +6,7 @@ date: 2019-05-13
 context: 6.809/21M.385 Interactive Music Systems
 tags: [Software, Game Development, UI Design, Music Technology]
 technologies: [Kivy, Python, MIDI Guitar]
-categories: [code]
+categories: [code, music, interactive, games, design]
 label: Interactive Music Systems
 thumbnail: /static/images/projects/ultimate-guitar-hero/thumbnail.jpg
 cover: /static/images/projects/ultimate-guitar-hero/cover.png
@@ -21,8 +21,9 @@ When guitar players learn new music, they'll usually turn to [guitar tabs](https
 
 ![Photograph tab](/static/images/projects/ultimate-guitar-hero/photograph-tab.jpg "Photograph tab")
 
-</div>
 ##### A guitar tab for [Photograph by Ed Sheeran](https://tabs.ultimate-guitar.com/tab/ed_sheeran/photograph_tabs_1499667)
+
+</div>
 
 Tabs serve their purpose — with some time and practice, you'll be able to learn how to play a song from its tab. But last spring, in the class 21M.385/6.809 Interactive Music Systems, my final project team couldn't help but wonder if these tabs could offer something more.
 
@@ -36,8 +37,9 @@ Here's what we came up with.
 
 ![Flowchart](/static/images/projects/ultimate-guitar-hero/flowchart.jpg "Flowchart")
 
-</div>
 ##### A high-level flowchart
+
+</div>
 
 To start, we select a tab on [Ultimate Guitar](http://ultimate-guitar.com). We scrape the web page as HTML text, and then parse out the strings, fret numbers, and relative timing of notes (indicated by the dashes in between numbers).
 
@@ -53,8 +55,9 @@ Upon launching the app, you're greeted with Ultimate Guitar Hero's homescreen. Y
 
 ![Homescreen](/static/images/projects/ultimate-guitar-hero/homescreen.jpg "Homescreen")
 
-</div>
 ##### Ultimate Guitar Hero's homescreen
+
+</div>
 
 Once you hit `Play`, you enter the game screen. It's packed with features:
 
@@ -62,8 +65,9 @@ Once you hit `Play`, you enter the game screen. It's packed with features:
 
 ![Features](/static/images/projects/ultimate-guitar-hero/features.gif "Features")
 
-</div>
 ##### Game screen features
+
+</div>
 
 - **Score, Progress Bar, and Streak:** These help you keep track of your accuracy and progress.
 - **Notes Move Across the Screen:** You'll never lose your place in the guitar tab, because instead of having to scroll down the page to see more notes, the notes will scroll to you as you play! You can't move on to the next note until you play the current one correctly.
@@ -71,7 +75,7 @@ Once you hit `Play`, you enter the game screen. It's packed with features:
 - **Game Feedback:** You'll know when you've played something right or wrong. When you play a note correctly, it will "poof" away on the screen. If you pluck the wrong string, the string you plucked will bend and flash red. If you pluck the right string but have your finger in the wrong place, an arrow and number will pop up, indicating the number of frets you should move your finger up or down on that string.
 
 
-## Next Steps
+## What's Next
 
 Ultimate Guitar Hero received lots of positive and constructive feedback from members of our class and the larger MIT community. Where could we take it next?
 
