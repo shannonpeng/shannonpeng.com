@@ -7,7 +7,7 @@ context: 2.00B Toy Product Design
 tags: [Toy Product Design, Graphic Design, Playtesting, Prototyping, Fabrication]
 technologies: [Photoshop, Illustrator]
 materials: [Velcro, Neoprene, Felt, Foam, Sewing, Hot Wire, Spray Paint]
-categories: [design, make]
+categories: [design, games, make]
 label: Toy Product Design
 link: http://web.mit.edu/2.00b/www/pastyears2017.html#2017images
 thumbnail: /static/images/projects/infection/thumbnail.jpg

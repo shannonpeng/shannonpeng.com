@@ -85,8 +85,9 @@
 			<div class="category-filter">
 				<p class="category active" category="all">all</p>
 				<p class="category" category="code">code</p>
-				<p class="category" category="design">design</p>
-				<p class="category" category="make">make</p>
+				<p class="category" category="games">games</p>
+				<p class="category" category="music">music</p>
+				<p class="category" category="interactive">interactive</p>
 			</div>
 			{% for project in projects %}
 			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %}">

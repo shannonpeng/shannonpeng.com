@@ -1,4 +1,3 @@
-featured: true
 title: Drops
 keyword: drops
 subtitle: Javascript game raising awareness about water pollution
@@ -6,7 +5,7 @@ date: 2017-06-25
 context: ByteHacks 2017
 tags: [Game Development, Graphic Design, UI Design]
 technologies: [Javascript, PhaserIO, Illustrator]
-categories: [code]
+categories: [games, interactive, design]
 label: Game Development
 thumbnail: /static/images/projects/drops/thumbnail.png
 cover: /static/images/projects/drops/cover.png

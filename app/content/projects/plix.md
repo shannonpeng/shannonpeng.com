@@ -6,7 +6,7 @@ date: 2018-02-01
 context: MIT 6.148 Web Programming Competition
 tags: [Software, Web Development, Art, UI Design]
 technologies: [Node, Express, Socket.IO, Mongoose, Google Maps API, Handlebars, Sass, jQuery, Javascript, HTML, CSS]
-categories: [code]
+categories: [code, interactive]
 label: Web Development
 thumbnail: /static/images/projects/plix/thumbnail.jpg
 cover: /static/images/projects/plix/cover.jpg

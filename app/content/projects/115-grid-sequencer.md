@@ -6,7 +6,7 @@ date: 2019-05-16
 context: 6.115 Microcomputer Project Laboratory
 tags: [Electronics, Embedded Systems, Music Technology]
 technologies: [PSoC, C, Button Pad, LEDs, Speaker]
-categories: [code, make]
+categories: [code, music]
 label: Embedded Systems
 thumbnail: /static/images/projects/115-grid-sequencer/thumbnail.jpg
 cover: /static/images/projects/115-grid-sequencer/cover.jpg
