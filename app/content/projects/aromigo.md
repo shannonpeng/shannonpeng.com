@@ -6,7 +6,7 @@ context: MAS.834 Tangible Interfaces
 tags: [Tangible Interfaces, Interation Design, Electronics, Prototyping, Bluetooth]
 technologies: [Arduino Uno, XBee, Peltiers, LEDs]
 materials: [Lampshade, Essential Oils, Wooden Bowl, Copper Wire]
-categories: [design, make]
+categories: [design, make, interactive]
 label: Tangible Interfaces
 thumbnail: /static/images/projects/aromigo/thumbnail.jpg
 cover: /static/images/projects/aromigo/cover.jpg
