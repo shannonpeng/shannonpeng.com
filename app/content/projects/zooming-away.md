@@ -21,9 +21,9 @@ I created Zooming Away with my friend Dillon Zhang as our final project for an M
 
 ## The Idea
 
-Normally, the class would have us create interactive media for a physical space on campus. However, after the COVID-19 outbreak moved our classes online, we found ourselves with a new, unique challenge: creating a live interactive performance from the confines of our homes, to be shared with the class over video call.
+Normally, the class would have us create interactive media for a physical space on campus. However, after the COVID-19 outbreak moved our classes online, we found ourselves with a new, unique challenge: creating an interactive live performance from the confines of our homes, to be shared with the class over video call.
 
-Rather than create a traditional performance and "virtualize" it, we decided to embrace the medium and build our project around a video call. Drawing inspiration from the game [Keep Talking and Nobody Explodes](https://keeptalkinggame.com/), we created a 15-minute, 2-4 player immersive experience that takes place in a Zoom call and web browser.
+Rather than create a traditional performance and "virtualize" it, we decided to embrace the format and build our project around a video call. Drawing inspiration from the game [Keep Talking and Nobody Explodes](https://keeptalkinggame.com/), we created a 15-minute, 2-4 player immersive escape room that takes place in a Zoom call and web browser.
 
 ## Walkthrough
 
@@ -47,13 +47,13 @@ The experience starts in your inbox: each member of your team has just completed
 
 ### Virtual Commencement
 
-When the time comes, you join the Zoom call, and the ceremony kicks off with a special congratulatory message from Jim Fredstine, the director of ASAN.
+When the time comes, you join the Zoom call, and the ceremony kicks off with a special congratulatory message from Jim Fredstine, Director of ASAN.
 
 <div class="image-set" markdown="1">
 
 ![Congratulations from Jim Fredstine](/static/images/projects/zooming-away/jim.jpg "Congratulations from Jim Fredstine")
 
-##### A special message from ASAN Director Jim Fredstine
+##### A special message from Jim Fredstine, Director of ASAN
 
 </div>
 
@@ -101,9 +101,9 @@ As space cadets, you retrieve the ASAN diagnostic guide you received during trai
 
 </div>
 
-Through interacting with Rachel over the video call and flipping through the guide to determine the correct console commands, you can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes? 
+Through interacting with Rachel over video call and flipping through the guide to determine the correct console commands, you can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes? 
 
-And be careful — putting in too many incorrect commands can damage the system and force it to reset, causing you to lose time!
+Be careful — putting in too many incorrect commands can damage the system and force it to reset, causing you to lose time!
 
 ## How It Works
 
@@ -119,7 +119,7 @@ The space cadets (players) communicate with the cosmonaut (live actor) and her s
 
 ### Audio and Video FX
 
-To sell the illusion that the live actor is dialing in from a space capsule, we process her microphone and webcam feeds before sending them to Zoom. We pass the audio through Logic Pro X, where we apply EQ, distortion, and other plugins to achieve a lo-fi, crackly sound. We run the video through [Snap Camera](https://snapcamera.snapchat.com/), where we add a head-tracking heads-up display, shaking effect, scanning effect, and color correction (using custom AR lenses made in [Lens Studio](https://lensstudio.snapchat.com/)).
+To sell the illusion that the live actor is dialing in from a space capsule, we process her microphone and webcam feeds before sending them to Zoom. We pass the audio through Logic Pro X, where we apply EQ, distortion, and other plugins to achieve a lo-fi, crackly sound. We run the video through [Snap Camera](https://snapcamera.snapchat.com/), where we add a head-tracking heads-up display, a shaking effect, a scanning effect, and color correction, using custom AR lenses made in [Lens Studio](https://lensstudio.snapchat.com/).
 
 ### Control Console, Actor's Panel, and Server
 
@@ -137,18 +137,18 @@ Hidden from the players is the actor's panel, which helps the live actor direct 
 
 **Line Prompter:** At the bottom, a line prompter gives the actor hints and starter lines for directing the players, though the majority of her dialogue is left to improvisation.
 
-**Capsule Information:** The middle section of the actor's panel contains a range of information about the space capsule, which the actor can or cannot read depending on the capsule state. For example: in this screencap, we know that the number on the outside of the window is 21737, but in order to see what's inside the window, we'll need to close the window. If the players about the inside of the window, the actor could say, "The window's open, so I can't see inside." The players will then figure out that they need to hit the "Close Window" command in their control console.
+**Capsule Information:** The middle section of the actor's panel contains a range of information about the space capsule, which the actor can or cannot read depending on the capsule state. For example: in this screencap, we know that the number on the outside of the window is 21737, but in order to see what's inside the window, we'll need to close the window. If the players ask about the inside of the window, the actor could say, "The window's open. I can't see inside." The players will then figure out that they need to hit the "Close Window" command in their control console.
 
 Both the actor's panel and space cadet control console are connected via web sockets (Socket.IO) and a web server (Node.js) that keeps track of the game state.
 
 ## Contributions
 
-I designed all graphic assets, video FX, and audio FX, and played the role of the live actor during our final presentation. Dillon wrote the puzzles; developed the control console, actor's panel, and server; and played the Director of ASAN during the presentation. The two of us worked together to build the narrative and integrate all the parts into one cohesive experience.
+I designed all graphic assets, video FX, and audio FX, and played the role of the cosmonaut during our final presentation. Dillon wrote the puzzles; developed the control console, actor's panel, and server; and played the role of the Director of ASAN during the presentation. The two of us worked together to build the narrative and integrate all the parts into one cohesive experience.
 
 ## Reflections
 
-Zooming Away received glowing reviews from our guest participants and instructor! We received praise on its level of immersion and its use of a Zoom call as a medium.
+Zooming Away received glowing reviews from our guest participants and our class instructor! They praised its level of immersion and its use of a Zoom call as a storytelling medium.
 
-My biggest takeaway from this project was that building experiences for our laptop screens opens more doors than it closes. We lost the opportunity to experiment with physical space, but we got the chance to explore how AR lenses and web sockets can play a role in immersive theatre and producing engaging live interactive experiences in our own homes.
+My biggest takeaway from this project was that building interactive live experiences for our laptop screens opens more doors than it closes. We had lost the chance to experiment with physical space, but we gained the opportunity to explore how AR lenses and web sockets can play a role in immersive theatre and producing engaging experiences in our own homes.
 
 Where could this take us in the future?
