@@ -77,7 +77,6 @@
 			    <ul class="nav">
 			    	<a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>
 			    	<a href="/classes"><li {% if page=="classes" %}class="selected"{% endif %}>classes</li></a>
-			    	<a href="/photos"><li {% if page=="photos" %}class="selected"{% endif %}>photos</li></a>
 			    </ul>
 			</div>
 		</div>
@@ -91,7 +90,7 @@
 				<p class="category" category="interactive">interactive</p>
 			</div>
 			{% for project in projects %}
-			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %}">
+			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %} {% if project.featured %}featured{% endif %}">
 				<a href="{{ url_for('project', name=project.keyword) }}">
 					<div class="arrow">
 						<i class="far fa-arrow-alt-circle-right"></i>
