@@ -271,8 +271,8 @@ footer p:nth-child(2) {
   cursor: pointer;
 }
 #projects .project {
-  width: 280px;
-  height: 280px;
+  width: 380px;
+  height: 240px;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -520,7 +520,7 @@ footer p:nth-child(2) {
     margin-bottom: 8px;
   }
   #projects .project {
-    height: 210px;
+    height: 180px;
   }
   #projects .project:hover .info .title {
     bottom: 200%;

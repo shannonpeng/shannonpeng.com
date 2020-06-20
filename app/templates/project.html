@@ -12,13 +12,15 @@
 		#project-writeup .button {
 			color: #{{ project.color }};
 			border: 4px solid #{{ project.color }};
+			left: -4px;
+			top: -4px;
 			box-shadow: 4px 4px 0px 0px #{{ project.color }}; 
 			position: relative;
 		}
 		#project-writeup .button:active {
 			position: relative;
-			left: 4px;
-			top: 4px;
+			left: 0;
+			top: 0;
 			color: #{{ project.color }};
 			box-shadow: none;
 		}
@@ -26,8 +28,7 @@
 {% endblock %}
 
 {% block title %}
-    {{ project.title }}
-    {{ super() }}
+    {{ project.title }} {{ super() }}
 {% endblock %}
 
 {% block description %}
