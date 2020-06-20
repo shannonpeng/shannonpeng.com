@@ -18,7 +18,7 @@ collaborators: Hiram Moncivais, Jenny Xu, Jessica Tang, Jierui Fang, Noah Moroze
 pc: Alex Laiman, Chantal Acacio
 description: Designing a futuristic, sci-fi theme for MIT's largest annual undergraduate hackathon
 
-Every September, HackMIT draws over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
+Every September, [HackMIT](http://hackmit.org) draws over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
 
 HackMIT is organized by a team of 20-30 MIT undergraduates passionate about empowering students through technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme — *Hack to the Future*, inspired by the *Back to the Future* trilogy.
 

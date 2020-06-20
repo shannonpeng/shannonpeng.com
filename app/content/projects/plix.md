@@ -105,7 +105,9 @@ We also brought in [Google Maps API](https://developers.google.com/maps/document
 
 ## What I Learned
 
-Jessica and I worked closely across all aspects of Plix, splitting the code at a fine-grain level. Through this project, I strengthened my full-stack web development skills. On the backend, I learned how to implement sessions and user authentication, and I became more familiar with Javascript callback functions, MongoDB schemas, and Socket.IO. On the frontend, I gained experience with sending HTTP requests, templating with Handlebars, and writing SASS/CSS to create Plix's playful look.
+Jessica and I worked closely across all aspects of Plix, splitting the code at a fine-grain level. Through this project, I strengthened my web development skills across the full stack.
+
+On the backend, I learned how to implement sessions and user authentication, and I became more familiar with Javascript callback functions, MongoDB schemas, and Socket.IO. On the frontend, I gained experience with sending HTTP requests, templating with Handlebars, and writing SASS/CSS to create Plix's playful look.
 
 ## What's Next
 
