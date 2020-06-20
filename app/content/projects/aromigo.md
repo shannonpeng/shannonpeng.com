@@ -1,3 +1,4 @@
+hidden: true
 title: Aromigo
 keyword: aromigo
 subtitle: Connecting long-distance partners through familiar aromas
