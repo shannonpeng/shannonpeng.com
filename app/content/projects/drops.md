@@ -19,7 +19,7 @@ description: Javascript game created to raise awareness about disparities in wat
 I built Drops with my friends [Claire](https://clairenord.com/), Lilia, and Sarah at [ByteHacks 2017](https://bytehacks2017.devpost.com/), where it won 1st Place and Best UX. Drops was inspired by [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), an iOS game I loved to play growing up. I worked on developing the gameplay with the Javascript game framework [Phaser.IO](http://phaser.io/) and creating the game's assets.
 
 <a href="https://liliapoteat.github.io/drops/" class="button">
-	Play Drops
+	Play Drops <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
 ## Gameplay
@@ -31,7 +31,7 @@ In Drops, the player moves a bucket to collect clean water drops in **<span styl
 ![Gameplay: home](/static/images/projects/drops/home.png "Gameplay: home")
 ![Gameplay: instructions](/static/images/projects/drops/instructions.png "Gameplay: instructions")
 
-##### The home and instruction screens at the beginning of Drops
+##### The home and instruction screens at the beginning of Drops.
 
 </div>
 
@@ -93,7 +93,7 @@ I drew the game's drops, buckets, and backgrounds in Illustrator.
 
 ![Assets: drops](/static/images/projects/drops/assets-drops.png "Assets: drops")
 
-##### **Drops:** Blue, brown, and green drops
+##### **Drops:** Blue, brown, and green drops.
 
 </div>
 
@@ -101,7 +101,7 @@ I drew the game's drops, buckets, and backgrounds in Illustrator.
 
 ![Assets: buckets](/static/images/projects/drops/assets-buckets.png "Assets: buckets")
 
-##### **Buckets:** Buckets filled with various levels of clean, polluted, and deadly water
+##### **Buckets:** Buckets filled with various levels of clean, polluted, and deadly water.
 
 </div>
 
@@ -111,7 +111,7 @@ Only the empty bucket made it into the final game, but I thought it would've bee
 
 ![Assets: backgrounds](/static/images/projects/drops/assets-backgrounds.png "Assets: backgrounds")
 
-##### **Backgrounds:** Background artwork for Boston, Charleston, and Sebring
+##### **Backgrounds:** Background artwork for Boston, Charleston, and Sebring.
 
 </div>
 

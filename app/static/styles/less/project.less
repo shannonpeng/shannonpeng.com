@@ -64,7 +64,7 @@
 			color: darken(@grey, 50%);
 			margin-top: 48px;
 			margin-bottom: 48px;
-			border-left: 3px solid darken(@grey, 5%);
+			border-left: 4px solid darken(@grey, 5%);
 			padding-left: 24px;
 		}
 		a:hover {
@@ -146,13 +146,17 @@
 			padding: 12px 24px;
 			margin: 12px 0;
 			font-family: @font-title;
+			font-size: 90%;
 			text-transform: uppercase;
 			font-weight: bold;
 			display: inline-block;
-			.transition(1.5*@transition-time);
+			.external-icon {
+				margin-left: 4px;
+			}
+			//.transition(1.5*@transition-time);
 			&:hover {
-				color: white;
-				.transition(@transition-time);
+				//color: white;
+				//.transition(@transition-time);
 				text-decoration: none;
 			}
 		}

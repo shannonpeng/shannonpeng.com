@@ -20,9 +20,9 @@ description: Designing a futuristic, sci-fi theme for MIT's largest annual under
 
 Every September, HackMIT draws over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
 
-HackMIT is organized by a team of 20-30 MIT undergraduates passionate about empowering students through technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme—*Hack to the Future*, inspired by the *Back to the Future* trilogy.
+HackMIT is organized by a team of 20-30 MIT undergraduates passionate about empowering students through technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme — *Hack to the Future*, inspired by the *Back to the Future* trilogy.
 
-Below is a summary of our work, including HackMIT 2017's branding, website, social media, merchandise, physical hack, and more.
+Below is a summary of my our work, including HackMIT 2017's branding, website, social media, merchandise, physical hack, and more.
 
 ## Branding
 
@@ -38,7 +38,7 @@ While the event's colors and fonts change every year, HackMIT has developed a st
 ![2016 HackMIT Logo](/static/images/projects/hackmit-2017/logo-2016.jpg "2016 HackMIT Logo")
 ![2017 HackMIT Logo](/static/images/projects/hackmit-2017/logo-2017.jpg "2017 HackMIT Logo")
 
-##### HackMIT logos, 2014-2017
+##### HackMIT logos, 2014-2017.
 
 </div>
 
@@ -50,7 +50,7 @@ After a hunt for futuristic fonts and colors, we summarized our choices in a bra
 
 ![HackMIT 2017 Branding](/static/images/projects/hackmit-2017/branding.jpg "HackMIT 2017 branding")
 
-##### HackMIT 2017 Branding
+##### HackMIT 2017 Branding.
 
 </div>
 
@@ -72,17 +72,17 @@ On your first visit to the website, you'll also see an opening animation I made,
 
 ![Opening animation](/static/images/projects/hackmit-2017/splash-intro.gif "Opening animation")
 
-##### HackMIT 2017 website opening animation, created in After Effects
+##### HackMIT 2017 website opening animation, created in After Effects.
 
 </div>
 
 <a href="https://hackmit.org/2017" class="button">
-	View Live Website
+	View Live Website <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
 ## Social Media
 
-To keep hackers in the loop, we posted frequently on HackMIT's social media—announcements, reminders, hype, and more.
+To keep hackers in the loop, we posted frequently on HackMIT's social media: announcements, reminders, hype, and more.
 
 ### Announcements
 
@@ -100,7 +100,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media—an
 ![1 day left to apply](/static/images/projects/hackmit-2017/social-doc.jpg "1 day left to apply")
 ![Last day to confirm your spot](/static/images/projects/hackmit-2017/social-biff.jpg "Last day to confirm your spot")
 
-##### Announcement posts I created, inspired by *Back to the Future* quotes
+##### Announcement posts I created, inspired by *Back to the Future* quotes.
 
 </div>
 
@@ -116,7 +116,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media—an
 ![Countdown C](/static/images/projects/hackmit-2017/countdown-c.jpg "Countdown C")
 ![Countdown K](/static/images/projects/hackmit-2017/countdown-k.jpg "Countdown K")
 
-##### Artwork by Jierui Fang
+##### Artwork by Jierui Fang.
 
 </div>
 
@@ -126,7 +126,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media—an
 
 ![Facebook cover](/static/images/projects/hackmit-2017/social-cover.jpg "Facebook cover")
 
-##### Facebook cover I created to build hype
+##### Facebook cover I created to build hype.
 
 </div>
 
@@ -134,7 +134,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media—an
 
 ![Facebook filter](/static/images/projects/hackmit-2017/social-filter.jpg "Facebook filter")
 
-##### Facebook filter I designed for HackMIT team members
+##### Facebook filter I designed for HackMIT team members.
 
 </div>
 
@@ -147,7 +147,7 @@ A hackathon isn't complete without awesome swag. We provided hackers, mentors, a
 ![Organizer crewnecks](/static/images/projects/hackmit-2017/crewnecks-white.jpg "Organizer crewnecks")
 ![Mentor crewnecks](/static/images/projects/hackmit-2017/crewnecks-purple.jpg "Mentor crewnecks")
 
-##### Crewneck designs by [Hiram Moncivais](http://hiram.xyz)
+##### Crewneck designs by [Hiram Moncivais](http://hiram.xyz).
 
 </div>
 
@@ -160,7 +160,7 @@ I designed a day-of booklet with detailed information about the weekend's speake
 ![Day-of booklet cover](/static/images/projects/hackmit-2017/dayofbooklet-1.jpg "Day-of booklet cover")
 ![Day-of booklet content](/static/images/projects/hackmit-2017/dayofbooklet-2.jpg "Day-of booklet content")
 
-##### Day-of booklet cover and content
+##### Day-of booklet cover and content.
 
 </div>
 
@@ -177,7 +177,7 @@ Hackers also received pairs of red-cyan 3D glasses, which they could use to view
 ![Signage](/static/images/projects/hackmit-2017/sign-5.jpg "Signage")
 ![Signage](/static/images/projects/hackmit-2017/sign-6.jpg "Signage")
 
-##### 3D signage, designed by [Jessica Tang](https://jynnie.me)
+##### 3D signage, designed by [Jessica Tang](https://jynnie.me).
 
 </div>
 
@@ -189,7 +189,7 @@ I proposed the idea of a Faction Cup—a mini-tournament (inspired by the *Harry
 
 ![Hackers at a mini-event](/static/images/projects/hackmit-2017/faction-minievent.jpg "Hackers at a mini-event")
 
-##### A group of hackers at a mini-event
+##### A group of hackers at a mini-event.
 
 </div>
 

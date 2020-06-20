@@ -595,7 +595,7 @@ footer p:nth-child(2) {
   color: #757575;
   margin-top: 48px;
   margin-bottom: 48px;
-  border-left: 3px solid #e7e7e7;
+  border-left: 4px solid #e7e7e7;
   padding-left: 24px;
 }
 #project-writeup .content a:hover {
@@ -671,16 +671,15 @@ footer p:nth-child(2) {
   padding: 12px 24px;
   margin: 12px 0;
   font-family: halyard-text, sans-serif;
+  font-size: 90%;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
-  -webkit-transition: all 225ms ease-in-out;
-  transition: all 225ms ease-in-out;
+}
+#project-writeup .content .button .external-icon {
+  margin-left: 4px;
 }
 #project-writeup .content .button:hover {
-  color: white;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
   text-decoration: none;
 }
 #project-writeup .links {

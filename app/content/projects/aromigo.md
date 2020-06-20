@@ -2,7 +2,7 @@ title: Aromigo
 keyword: aromigo
 subtitle: Connecting long-distance partners through familiar aromas
 date: 2018-10-31
-context: MAS.834 Tangible Interfaces
+context: MIT MAS.834 Tangible Interfaces
 tags: [Tangible Interfaces, Interation Design, Electronics, Prototyping, Bluetooth]
 technologies: [Arduino Uno, XBee, Peltiers, LEDs]
 materials: [Lampshade, Essential Oils, Wooden Bowl, Copper Wire]
@@ -14,7 +14,7 @@ color: b99bea
 collaborators: Je Sung Lee and Joanne Leong
 description: Connecting long-distance partners through Bluetooth-enabled oil warmers
 
-I created Aromigo with my team in Tangible Interfaces, an interaction design class taught by the [Tangible Media](https://tangible.media.mit.edu/) group at the MIT Media Lab. For this project, I focused on Arduino programming, working with the sensors and XBee, and learning about principles of interaction design.
+I created Aromigo with my team in Tangible Interfaces (MAS.834), an interaction design class taught by the [Tangible Media](https://tangible.media.mit.edu/) group at the MIT Media Lab. For this project, I focused on Arduino programming, working with the sensors and XBee, and learning about principles of interaction design.
 
 ## Inspiration
 
@@ -97,7 +97,11 @@ We decided on the materials, constructed the final housing, and secured the elec
 
 </div>
 
+<div class="image-set image-set-two" markdown="1">
+
 ![Process: prototype one](/static/images/projects/aromigo/process-prototype1.jpg "Process: prototype one")
+
+</div>
 
 ##### Later stages of prototyping the interaction with Aromigo using the capacitive sensor and LEDs.
 
@@ -189,7 +193,7 @@ Inside the bowl, the components are driven by the Arduino Uno microcontroller. T
 
 </div>
 
-## Reflections
+## What I Learned
 
 Through Aromigo, I learned about analyzing affordances and illustrating interactions with narratives, as well as working with new hardware components (controlling peltiers and networking via XBee) and smoothing sensor signals. 
 

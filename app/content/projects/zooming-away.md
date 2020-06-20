@@ -3,7 +3,7 @@ title: Zooming Away
 keyword: zooming-away
 subtitle: An immersive space-themed escape room over Zoom call
 date: 2020-05-11
-context: 21M.737 Interactive Design and Projection for Live Performance
+context: MIT 21M.737 Interactive Design and Projection for Live Performance
 tags: [Experiential Storytelling, Escape Room, Interactive Design]
 technologies: [Photoshop, Illustrator, Lens Studio, Snap Camera, Logic Pro X, SocketIO, Node.js, Javascript]
 categories: [interactive]
@@ -17,7 +17,7 @@ color: 3c5ce2
 collaborators: Dillon Zhang
 description: An immersive space-themed escape room over Zoom video call
 
-I created Zooming Away with my friend Dillon Zhang in May 2020. It was our final project for an MIT theatre class: 21M.737 Interactive Design and Projection for Live Performance.
+I created Zooming Away with my friend Dillon Zhang in May 2020. It was our final project for an MIT theatre class: Interactive Design and Projection for Live Performance (21M.737).
 
 ## The Idea
 
@@ -41,7 +41,7 @@ The experience starts in your inbox: each member of your team has just completed
 
 ![Zooming Away cadet virtual background](/static/images/projects/zooming-away/cadet-bg.jpg "Zooming Away cadet virtual background")
 
-##### Zooming Away email invitation and virtual background
+##### *top:* Zooming Away email invitation, *bottom:* Space cadet virtual background
 
 </div>
 
@@ -53,7 +53,7 @@ When the time comes, you join the Zoom call, and the ceremony kicks off with a s
 
 ![Congratulations from Jim Fredstine](/static/images/projects/zooming-away/jim.jpg "Congratulations from Jim Fredstine")
 
-##### A special message from Jim Fredstine, Director of ASAN
+##### A special message from Jim Fredstine, Director of ASAN.
 
 </div>
 
@@ -90,14 +90,14 @@ As space cadets, you retrieve the ASAN diagnostic guide you received during trai
 
 </div>
 
-##### An excerpt of the ASAN diagnostic guide (full guide [here](/static/images/projects/zooming-away/diagnostic-guide.pdf))
+##### An excerpt of the ASAN diagnostic guide. (full guide [here](/static/images/projects/zooming-away/diagnostic-guide.pdf))
 
 
 <div class="image-set" markdown="1">
 
 ![Space cadet control console](/static/images/projects/zooming-away/console.png "Space cadet control console")
 
-##### The space cadet control console
+##### The space cadet control console.
 
 </div>
 
@@ -111,7 +111,7 @@ The space cadets (players) communicate with the cosmonaut (live actor) and her s
 
 ![Flowchart of Zooming Away components](/static/images/projects/zooming-away/flowchart.jpg "Flowchart of Zooming Away components")
 
-##### Flowchart of Zooming Away components
+##### Flowchart of Zooming Away components.
 
 </div>
 
@@ -127,7 +127,7 @@ Hidden from the players is the actor's panel, which helps the live actor direct 
 
 ![Actor's panel](/static/images/projects/zooming-away/actors-panel.png "Actor's panel")
 
-##### The actor's panel
+##### The actor's panel.
 
 </div>
 
