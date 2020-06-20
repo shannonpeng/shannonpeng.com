@@ -22,6 +22,10 @@ collaborators: None
 pc: None
 description: Example description.
 
+<a href="/" class="button">
+	Button Text <i class="fas fa-external-link-alt external-icon"></i>
+</a>
+
 ## The Idea
 
 ## Walkthrough
