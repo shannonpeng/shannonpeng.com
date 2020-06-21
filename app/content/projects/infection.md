@@ -1,4 +1,3 @@
-featured: true
 title: Infection
 keyword: infection
 subtitle: Immunology-inspired game for kids

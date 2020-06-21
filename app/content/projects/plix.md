@@ -1,4 +1,3 @@
-featured: true
 title: Plix
 keyword: plix
 subtitle: Online community for location-based collaborative pixel art

@@ -1,4 +1,3 @@
-featured: true
 title: Grid Sequencer
 keyword: 115-grid-sequencer
 subtitle: Compose and visualize musical patterns
