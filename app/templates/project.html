@@ -6,8 +6,17 @@
 		#project-writeup .content a {
 			color: #{{ project.color }};
 		}
-		#project-writeup .links li:hover {
-			background-color: #{{ project.color }};
+		#project-writeup .links li {
+			position: relative;
+			color: #{{ project.color }};
+			border: 2px solid #{{ project.color }};
+			box-shadow: 2px 3px 0px 0px #{{ project.color }};
+		}
+		#project-writeup .links li:active {
+			position: relative;
+			box-shadow: none;
+			left: 3px;
+			top: 3px;
 		}
 		#project-writeup .button {
 			color: #{{ project.color }};

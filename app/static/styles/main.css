@@ -692,21 +692,11 @@ footer p:nth-child(2) {
 #project-writeup .links li {
   width: 20px;
   height: 20px;
-  background-color: #e7e7e7;
-  color: #757575;
   padding: 16px;
   margin-right: 8px;
   border-radius: 50% 50%;
   position: relative;
   display: flex;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-#project-writeup .links li:hover {
-  background-color: #f4f4f4;
-  color: white;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
 }
 #project-writeup .links i {
   font-size: 16px;
