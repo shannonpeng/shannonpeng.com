@@ -1,3 +1,4 @@
+hidden: true
 title: Muses 30th Anniversary
 keyword: muses-30th
 subtitle: Branding for a muse-ical reunion

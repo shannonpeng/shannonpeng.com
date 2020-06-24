@@ -1,3 +1,4 @@
+hidden: true
 title: Drops
 keyword: drops
 subtitle: Javascript game raising awareness about water pollution
