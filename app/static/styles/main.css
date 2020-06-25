@@ -93,7 +93,7 @@ footer p:nth-child(2) {
   position: absolute;
   right: 0;
   max-width: 350px;
-  margin-top: 40%;
+  margin-top: 50%;
   padding-left: 36px;
   text-align: left;
 }
@@ -102,10 +102,10 @@ footer p:nth-child(2) {
   font-family: futura-pt, sans-serif;
 }
 #main .sidebar > .content .social {
-  display: inline-block;
   margin: 12px 0;
   opacity: 1;
   color: inherit;
+  text-align: center;
   position: relative;
   -webkit-transition: opacity 450ms ease-in-out;
   transition: opacity 450ms ease-in-out;
@@ -113,8 +113,7 @@ footer p:nth-child(2) {
 #main .sidebar > .content .social li {
   width: 30px;
   display: inline-block;
-  margin-left: 30px;
-  text-align: center;
+  margin: 0 15px;
   opacity: 0.6;
   -webkit-transition: opacity 150ms ease-in-out;
   transition: opacity 150ms ease-in-out;

@@ -8,7 +8,7 @@
 			position: absolute;
 			right: 0;
 			max-width: 350px;
-			margin-top: 40%;
+			margin-top: 50%;
 			padding-left: 36px;
 			text-align: left;
 
@@ -17,18 +17,17 @@
 				font-family: futura-pt, sans-serif;
 			}
 			.social {
-				display: inline-block;
 				margin: 12px 0;
 				opacity: 1;
 				color: inherit;
+				text-align: center;
 				position: relative;
 				.transition(3*@transition-time, opacity);
 
 				li {
 					width: @social-icon-width;
 					display: inline-block;
-					margin-left: @social-icon-width;
-					text-align: center;
+					margin: 0 @social-icon-width/2;
 					opacity: @hover-opacity;
 					.transition(@transition-time, opacity);
 					&:hover {

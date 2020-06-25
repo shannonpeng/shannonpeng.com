@@ -11,7 +11,7 @@ thumbnail: /static/images/projects/dystopian-tsa-scan/thumbnail.jpg
 cover: /static/images/projects/dystopian-tsa-scan/thumbnail.jpg
 caption: A screencap from the demo video.
 color: 006078
-video: https://youtu.be/H7CRr3wcwLQ
+video: https://www.youtube.com/watch?v=H7CRr3wcwLQ&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=4
 description: A Kinect-powered interactive security scan prototype
 
 In the MIT theatre class Interactive Design and Projection for Live Performance (21M.737), our first assignment is to introduce ourselves through a short "self-portrait" performance.
@@ -22,7 +22,7 @@ I'm a huge fan of sci-fi and dystopias (catch me binge-watching *Black Mirror*).
 
 ##### Watch the full demo video. (1:52)
 
-<a href="https://youtu.be/H7CRr3wcwLQ" class="button">
+<a href="https://www.youtube.com/watch?v=H7CRr3wcwLQ&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=4" class="button">
 	Watch Demo on YouTube <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
@@ -30,19 +30,19 @@ I'm a huge fan of sci-fi and dystopias (catch me binge-watching *Black Mirror*).
 
 In the first iteration of this project, I created a video, projected it onto a blank wall in the classroom space, and stood in front of it during my performance. Because the video's content and timing were fixed, I needed to practice timing my actions — walking onstage and raising/lowering my arms — until I got it right.
 
-Later in the class, I revisited the piece and made it interactive, with the help of a [Kinect](https://en.wikipedia.org/wiki/Kinect) sensor, [NI mate](https://www.ni-mate.com/), and [Isadora](https://troikatronix.com/). Now, instead of me following the video, the video follows me! The project tracks and uses the positions of my hands to progress through a sequence of scenes. 
+Later in the class, I revisited the piece and made it interactive, with the help of a [Kinect](https://en.wikipedia.org/wiki/Kinect) sensor, [NI mate](https://www.ni-mate.com/), and [Isadora](https://troikatronix.com/). Now I don't need to follow the video; the video follows me! The project tracks and uses the positions of my hands to progress through a sequence of scenes. 
 
 ## Behind the Scenes
 
 Creating this piece led me through a variety of skills, from motion graphics to sensor integration, which made it all the more fun.
 
-I started by hand-animating all the motion graphics in After Effects.
+I started by hand-animating the motion graphics in After Effects.
 
 <div class="image-set" markdown="1">
 
-![Hand-animated motion graphics in After Effects](/static/images/projects/dystopian-tsa-scan/ae.png "Hand-animated motion graphics in After Effects")
+![Motion graphics in After Effects](/static/images/projects/dystopian-tsa-scan/ae.png "Hand-animated motion graphics in After Effects")
 
-##### Hand-animated motion graphics in After Effects.
+##### Motion graphics in After Effects.
 
 </div>
 
@@ -62,7 +62,7 @@ I set up OSC and Syphon listeners in Isadora, assembled the video and audio clip
 
 <div class="image-set" markdown="1">
 
-![Interactive logic in Isadora](/static/images/projects/dystopian-tsa-scan/isadora.png "Interactive logic in Isadora.")
+![Interactive logic in Isadora](/static/images/projects/dystopian-tsa-scan/isadora.png "Interactive logic in Isadora")
 
 ##### Interactive logic in Isadora.
 
@@ -75,7 +75,7 @@ While the scan responds to arm movement, its content is still fixed — it would
 
 From a technological standpoint, it totally is. Access to our Facebook data alone (our profiles, reacts, check-ins, groups, and liked pages) could potentially unlock all of the above information. During the 2016 presidential election, [Cambridge Analytica](https://www.vox.com/science-and-health/2018/3/23/17152564/cambridge-analytica-psychographic-microtargeting-what) infamously psychologically profiled American voters based on their online activity. If I took the scan in this direction, the very existence of such a project would speak volumes about how little control we have over our data and privacy in this tech-driven world.
 
-Given the growing level of government surveillance, it's also not too hard to imagine a future in which even airport security procedures would tap into the wealth of data surrounding our digital identities.
+With a growing level of government surveillance, it's also not too hard to imagine a future in which even airport security procedures would tap into the wealth of data surrounding our digital identities.
 
 This short, fun self-portrait project doubles as a piece that raises serious questions about where our digital privacy is headed in the future.
 

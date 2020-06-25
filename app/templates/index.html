@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-    shannon peng
+    Shannon Peng
 {% endblock %}
 
 {% block content %}
@@ -10,8 +10,7 @@
 		<div class="sidebar">
 			<div class="content">
 				<a href="/"><h2 class="title">SHANNON PENG</h2></a>
-				<p>I'm a creative technologist with a love for music and experiential storytelling.</p>
-				<p>I graduated from MIT in 2020 with a B.S. in Electrical Engineering and Computer Science and a minor in Theater Arts.</p>
+				<p>I'm a NYC-based creative technologist with a love for experiential storytelling and music.</p>
 				<div class="stats">
 					<div class="content">
 						{% for stat in stats %}
@@ -68,11 +67,11 @@
 				    </div>
 				</div>
 				<ul class="social">
+			        <li><a href="mailto:shannonspeng@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
 			        <li><a href="//github.com/shannonpeng" target="_blank"><i class="fab fa-github-alt"></i></a></li>
 			        <li><a href="//linkedin.com/in/shannonspeng" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-			        <li><a href="//behance.net/shannonpeng" target="_blank"><i class="fab fa-behance"></i></a></li>
 			        <li><a href="//open.spotify.com/user/shannon.penguin" target="_blank"><i class="fab fa-spotify"></i></a>
-			        <li><a href="//instagram.com/shannonpenguin" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			        <li><a href="//youtube.com/channel/UCQP9OWLKwvmY9X4dqYAGwlg/" target="_blank"><i class="fab fa-youtube"></i></a>
 			    </ul>
 			    <ul class="nav">
 			    	<a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>

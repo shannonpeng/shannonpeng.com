@@ -10,6 +10,7 @@ categories: [code, music, interactive]
 label: Instrument Design
 thumbnail: /static/images/projects/ringtone/thumbnail.jpg
 cover: /static/images/projects/ringtone/cover.jpg
+video: https://www.youtube.com/watch?v=dH-7hjbHGUQ&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=4
 color: d6549e
 caption: Performing with Ringtone.
 description: A custom digital musical instrument with capacitive touch controls and an LED-based UI

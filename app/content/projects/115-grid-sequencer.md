@@ -11,17 +11,17 @@ thumbnail: /static/images/projects/115-grid-sequencer/thumbnail.jpg
 cover: /static/images/projects/115-grid-sequencer/cover.jpg
 color: 6f93f0
 github: https://gist.github.com/shannonpeng/1657018d92a1b81b7fcb56381519141a
-video: https://youtu.be/TMPp4XCwnAg
+video: https://www.youtube.com/watch?v=TMPp4XCwnAg&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=2
 caption: A demo of my finished grid sequencer.
 description: A simple grid sequencer for composing and visualizing musical patterns, programmed in C
 
 I built a grid sequencer as my final project for [6.115](http://web.mit.edu/6.115/www/page/home.html), an MIT class on microcontrollers and embedded systems. The goal was to bring a creative embedded software project from concept to working prototype! You can find demo videos of my sequencer below.
 
-<a href="https://youtu.be/TMPp4XCwnAg" class="button">
+<a href="https://www.youtube.com/watch?v=TMPp4XCwnAg&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=2" class="button">
 	Watch Percussion Demo <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
-<a href="https://youtu.be/fCk_Kd_At4U" class="button">
+<a href="https://www.youtube.com/watch?v=fCk_Kd_At4U&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=1" class="button">
 	Watch Melody Demo <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
