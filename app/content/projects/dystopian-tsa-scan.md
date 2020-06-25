@@ -28,9 +28,9 @@ I'm a huge fan of sci-fi and dystopias (catch me binge-watching *Black Mirror*).
 
 ## Going Interactive
 
-In the first iteration of this project, I created a video, projected it onto a blank wall in the classroom space, and stood in front of it during my performance. Because the video's content and timing were fixed, I needed to practice the timing for my actions — walking onstage and raising/lowering my arms — until I got it right.
+In the first iteration of this project, I created a video, projected it onto a blank wall in the classroom space, and stood in front of it during my performance. Because the video's content and timing were fixed, I needed to practice timing my actions — walking onstage and raising/lowering my arms — until I got it right.
 
-Later in the class, I revisited the piece and made it interactive, with the help of a [Kinect](https://en.wikipedia.org/wiki/Kinect) sensor, [NI mate](https://www.ni-mate.com/), and the real-time interactive prototyping software [Isadora](https://troikatronix.com/). Now, instead of me following the video, the video follows me. The project tracks and uses the positions of my hands to progress through a sequence of scenes. 
+Later in the class, I revisited the piece and made it interactive, with the help of a [Kinect](https://en.wikipedia.org/wiki/Kinect) sensor, [NI mate](https://www.ni-mate.com/), and [Isadora](https://troikatronix.com/). Now, instead of me following the video, the video follows me! The project tracks and uses the positions of my hands to progress through a sequence of scenes. 
 
 ## Behind the Scenes
 
@@ -58,7 +58,7 @@ In Logic Pro X, I recorded the voiceover, added music and sound effects, and mix
 
 In NI mate, I configured the Kinect sensor and set up communication between NI mate and Isadora: NI mate transmits Kinect data over OSC and real-time video input via Syphon.
 
-I set up OSC and Syphon listeners in Isadora, assembled the video and audio clips, and implemented transition logic and additional sound cues to integrate everything into an interactive experience.
+I set up OSC and Syphon listeners in Isadora, assembled the video and audio clips, and implemented transition logic to integrate everything into an interactive experience.
 
 <div class="image-set" markdown="1">
 
@@ -73,7 +73,7 @@ I set up OSC and Syphon listeners in Isadora, assembled the video and audio clip
 
 While the scan responds to arm movement, its content is still fixed — it would ID everyone as me. But what if it didn't? What if it could dynamically display any user's biographical data, hobbies and interests, and psychological profile? Would that even be possible?
 
-From a technological standpoint, it's totally feasible. Access to our Facebook data alone (our profiles, reacts, check-ins, groups, and liked pages) could potentially unlock all of the above information. During the 2016 presidential election, [Cambridge Analytica](https://www.vox.com/science-and-health/2018/3/23/17152564/cambridge-analytica-psychographic-microtargeting-what) infamously psychologically profiled American voters based on their online activity. If I took the scan in that direction, the very existence of such a project would speak volumes about how little control we have over our data and privacy in this tech-driven world.
+From a technological standpoint, it totally is. Access to our Facebook data alone (our profiles, reacts, check-ins, groups, and liked pages) could potentially unlock all of the above information. During the 2016 presidential election, [Cambridge Analytica](https://www.vox.com/science-and-health/2018/3/23/17152564/cambridge-analytica-psychographic-microtargeting-what) infamously psychologically profiled American voters based on their online activity. If I took the scan in this direction, the very existence of such a project would speak volumes about how little control we have over our data and privacy in this tech-driven world.
 
 Given the growing level of government surveillance, it's also not too hard to imagine a future in which even airport security procedures would tap into the wealth of data surrounding our digital identities.
 
