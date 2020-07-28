@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: shannonpeng.com
+Token: 0daa24dd3d0272455d6392bd769df2aa1e01c1a2067f5f5d7a10237f201d1dcd
