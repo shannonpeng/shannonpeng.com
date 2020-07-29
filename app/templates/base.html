@@ -16,8 +16,11 @@
 
         <!-- social media metadata -->
         <meta property="og:title" content="{{ self.title() }}">
-        <meta name="description" content="{% block description %}eecs & media arts / mit '20{% endblock %}">
+        <meta property="description" content="MIT '20 / I'm a NYC-based creative technologist with a love for experiential storytelling and music.">
         <meta property="og:description" content="{{ self.description() }}">
+        <meta property="og:image" content="{{ url_for('static', filename='thumbnail.jpg') }}">
+        <meta property="og:url" content="http://shannonpeng.com">
+        <meta name="twitter:card" content="summary_large_image">
 
         <!-- font awesome, google fonts, typekit, and css -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
