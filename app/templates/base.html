@@ -16,7 +16,7 @@
 
         <!-- social media metadata -->
         <meta property="og:title" content="{{ self.title() }}">
-        <meta property="description" content="MIT '20 / I'm a NYC-based creative technologist with a love for experiential storytelling and music.">
+        <meta name="description" content="{% block description %}MIT '20 / I'm a NYC-based creative technologist with a love for experiential storytelling and music.{% endblock %}">
         <meta property="og:description" content="{{ self.description() }}">
         <meta property="og:image" content="{{ url_for('static', filename='thumbnail.jpg') }}">
         <meta property="og:url" content="http://shannonpeng.com">
