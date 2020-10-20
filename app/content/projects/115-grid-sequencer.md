@@ -14,6 +14,7 @@ github: https://gist.github.com/shannonpeng/1657018d92a1b81b7fcb56381519141a
 video: https://www.youtube.com/watch?v=TMPp4XCwnAg&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=2
 caption: A demo of my finished grid sequencer.
 description: A simple grid sequencer for composing and visualizing musical patterns, programmed in C
+emoji: 🎛
 
 I built a grid sequencer as my final project for [6.115](http://web.mit.edu/6.115/www/page/home.html), an MIT class on microcontrollers and embedded systems. The goal was to bring a creative embedded software project from concept to working prototype! You can find demo videos of my sequencer below.
 

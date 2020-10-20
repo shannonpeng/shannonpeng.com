@@ -16,6 +16,7 @@ github: https://github.com/dillzhang/space-console
 color: 3c5ce2
 collaborators: Dillon Zhang
 description: An immersive space-themed escape room over Zoom video call
+emoji: 🚀
 
 I created Zooming Away with my friend Dillon Zhang in May 2020. It was our final project for an MIT theatre class: Interactive Design and Projection for Live Performance (21M.737).
 

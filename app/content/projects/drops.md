@@ -16,6 +16,7 @@ github: https://github.com/shannonpeng/plix
 collaborators: Claire Nord, Lilia Poteat, and Sarah Powazek
 caption: Collecting polluted water drops in Drops Level 3.
 description: Javascript game created to raise awareness about disparities in water quality around the United States
+emoji: 💧
 
 I built Drops with my friends [Claire](https://clairenord.com/), Lilia, and Sarah at [ByteHacks 2017](https://bytehacks2017.devpost.com/), where it won 1st Place and Best UX. Drops was inspired by [Scoops](https://itunes.apple.com/us/app/scoops-build-match-food-free/id291591378?mt=8), an iOS game I loved to play growing up. I worked on developing the gameplay with the Javascript game framework [Phaser.IO](http://phaser.io/) and creating the game's assets.
 

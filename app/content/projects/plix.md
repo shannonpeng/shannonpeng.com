@@ -15,6 +15,7 @@ github: https://github.com/shannonpeng/plix
 collaborators: Jessica Tang
 caption: Pixel art on the Next House board in Plix.
 description: Online community for location-based, real-time, collaborative pixel art, built with Node.js and Socket.IO
+emoji: 🖌
 
 I created Plix with my friend [Jessica Tang](http://jynnie.me/) in January 2018. It won 1st Place in MIT 6.148 (now [web.lab](http://weblab.mit.edu/)), a campus-wide web programming class and competition.
 

@@ -15,6 +15,7 @@ cover: /static/images/projects/puzzled-chair/cover.jpg
 caption: My final chair — and only one of many possible chair configurations from my set of instructions.
 color: d1b473
 description: Instruction-based chair design inspired by the work of Sol Lewitt
+emoji: 🪑
 
 "I named this chair after how I felt while making it," I told the class during my final presentation. I got a few chuckles. "Hey, it's true!"
 

@@ -13,6 +13,7 @@ caption: A screencap from the demo video.
 color: 006078
 video: https://www.youtube.com/watch?v=H7CRr3wcwLQ&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=4
 description: A Kinect-powered interactive security scan prototype
+emoji: 👁‍🗨
 
 In the MIT theatre class Interactive Design and Projection for Live Performance (21M.737), our first assignment is to introduce ourselves through a short "self-portrait" performance.
 

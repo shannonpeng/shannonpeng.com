@@ -15,6 +15,7 @@ cover: /static/images/projects/woodmail-lamp/thumbnail.png
 color: 766358
 caption: My final assembled lamp and the shadows it casts on the surrounding wall.
 description: Chainmail-inspired lamp assembled from laser cut plywood rings
+emoji: 🏮
 
 Woodmail was the second project I completed in my first studio class, 4.031 Design Studio: Objects and Interaction.
 

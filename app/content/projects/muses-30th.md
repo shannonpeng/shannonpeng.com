@@ -14,6 +14,7 @@ link: https://mitmuses.github.io/reunion/
 collaborators: Courtney Guo and Kathryn Jin
 caption: Muses of past and present gathering at our 30th Anniversary Reunion.
 description: Event branding for the MIT Muses' 30th Anniversary Reunion.
+emoji: 💜
 
 The year 2018 marked the 30th anniversary of the founding of my a cappella group, the [MIT Muses](https://mitmuses.github.io). To celebrate, we planned out a weekend of fun activities and invited our alumnae to join us for a special edition concert.
 

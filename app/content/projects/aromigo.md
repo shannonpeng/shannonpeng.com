@@ -14,6 +14,7 @@ cover: /static/images/projects/aromigo/cover.jpg
 color: b99bea
 collaborators: Je Sung Lee and Joanne Leong
 description: Connecting long-distance partners through Bluetooth-enabled oil warmers
+emoji: 🤲
 
 I created Aromigo with my team in Tangible Interfaces (MAS.834), an interaction design class taught by the [Tangible Media](https://tangible.media.mit.edu/) group at the MIT Media Lab. For this project, I focused on Arduino programming, working with the sensors and XBee, and learning about principles of interaction design.
 

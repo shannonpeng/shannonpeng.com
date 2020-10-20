@@ -13,6 +13,7 @@ color: 454997
 collaborators: Stef Ren, TC Qin
 caption: Ultimate Guitar Hero's game interface.
 description: Guitar Hero-inspired game for learning any Ultimate Guitar tab, built on Python and the Kivy UI framework
+emoji: 🎸
 
 When guitar players learn new music, they typically turn to [guitar tabs](https://en.wikipedia.org/wiki/Tablature). Tabs for most songs are easily found on websites like [Ultimate Guitar](http://ultimate-guitar.com), but they're often very static in nature: essentially plain text on a web page.
 

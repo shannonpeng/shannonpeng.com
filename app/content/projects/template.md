@@ -21,6 +21,7 @@ video: https://youtube.com
 collaborators: None
 pc: None
 description: Example description.
+emoji: ✨
 
 <a href="/" class="button">
 	Button Text <i class="fas fa-external-link-alt external-icon"></i>

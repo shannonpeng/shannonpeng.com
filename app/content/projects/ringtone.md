@@ -14,6 +14,7 @@ video: https://www.youtube.com/watch?v=dH-7hjbHGUQ&list=PL13VJHLPzcIlgi0ceXD7n-M
 color: d6549e
 caption: Performing with Ringtone.
 description: A custom digital musical instrument with capacitive touch controls and an LED-based UI
+emoji: 🎶
 
 This writeup is a work in progress. 🙈 Check back again soon!
 

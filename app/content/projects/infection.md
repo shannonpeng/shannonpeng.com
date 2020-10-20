@@ -18,6 +18,7 @@ mentors: Benjamin Grey, Tony Hu
 pc: 2.00B Staff, Lily Bailey, and Tony Hu
 caption: Demonstrating Infection's gameplay in our final Playsentation.
 description: Immunology-inspired multiplayer game with velcro organs, antibodies, and bacteria
+emoji: 🦠
 
 I created Infection with my project team, Team Hedgehog 🦔, through an intensive exploration of play and product design in MIT's [Toy Product Design](http://web.mit.edu/2.00b/www/index.html) class (2.00B).
 
