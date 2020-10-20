@@ -1,0 +1,74 @@
+{% extends "index.html" %}
+
+{% block title %}
+  about / {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div id="about">
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+{% block page_content %}
+<div class="header">
+  <h1 class="title">about</h1>
+</div>
+<div class="content">
+  <img class="profile-pic" src="/static/images/profile.jpg" />
+  <h2>I'm a NYC-based creative technologist with a love for experiential storytelling and music.</h2>
+  <div class="stats">
+    {% for stat in stats %}
+      {% if not stat.hidden %}
+        {% if stat.name == 'status' %}
+          <div class="cluster">
+            <div class="icon" title="current status">
+              <i class="{{ stat.icon }}"></i>
+            </div>
+            <div>
+              <p><b>{{ stat.prefix }}: </b>{{ stat.text }}</p>
+            </div>
+          </div>
+        {% elif stat.name == 'song' %}
+          <div class="cluster">
+            {% if stat.live %}
+            <div class="volume" title="listening now">
+              <div class="bar"><span>&nbsp;</span></div>
+              <div class="bar"><span>&nbsp;</span></div>
+              <div class="bar"><span>&nbsp;</span></div>
+              <div class="bar"><span>&nbsp;</span></div>
+              <div class="bar"><span>&nbsp;</span></div>
+            </div>
+            {% else %}
+            <div class="icon" title="last song played">
+              <i class="{{ stat.icon }}"></i>
+            </div>
+            {% endif %}
+            <div>
+              <p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i>{% if stat.url %}</a>{% endif %} by {{ stat.artist | truncate(35, killwords=True, leeway=0) }}</p>
+            </div>
+          </div>
+        {% elif stat.name == 'book' %}
+          <div class="cluster">
+            <div class="icon" title="currently reading">
+              <i class="fas fa-book"></i>
+            </div>
+            <div>
+              <p><i>{{ stat.title }}</i> <span class="description">by {{ stat.author }}</span></p>
+            </div>
+          </div>
+        {% elif stat.name == 'movie' %}
+          <div class="cluster">
+            <div class="icon" title="last movie watched">
+              <i class="{{ stat.icon }}"></i>
+            </div>
+            <div>
+              <p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title }}</i>{% if stat.url %}</a>{% endif %} ({{ stat.year }})</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% endblock %}

@@ -1,5 +1,5 @@
 # Personal Website
-## shannonpeng.com
+## [https://shannonpeng.com](https://shannonpeng.com)
 
 My personal website, built in January 2019.
 
@@ -20,8 +20,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 deactivate
 ```
-Then, run the start script:
+Then, run:
 ```
-sh start.sh
+source venv/bin/activate
+less-watch-compiler app/static/styles/less app/static/styles main.less &
+flask run
 ```
-© 2019 Shannon Peng, All rights reserved.
+© 2020 Shannon Peng, All rights reserved.

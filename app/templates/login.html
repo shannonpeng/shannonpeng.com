@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
 {% block title %}
-    login
+  login
 {% endblock %}
 
 {% block content %}
-    <div id="admin">
-        <div class="container login">
-            <div class="content">
-                <h1 class="title">LOGIN</h1>
-                <form method='post' action="/login">
-                    <div class="field"><i class="fas fa-user"></i><input type="username" name="username" placeholder="username" /></div>
-                    <div class="field"><i class="fas fa-lock"></i><input type="password" name="password" placeholder="password" /></div>
-                    <input class="login button" type="submit" value="login" />
-                </form>
-            </div>
-        </div>
+<div id="admin">
+  <div class="container login">
+    <div class="content">
+      <h1 class="title">LOGIN</h1>
+      <form method='post' action="/login">
+        <div class="field"><i class="fas fa-user"></i><input type="username" name="username" placeholder="username" /></div>
+        <div class="field"><i class="fas fa-lock"></i><input type="password" name="password" placeholder="password" /></div>
+        <input class="login button" type="submit" value="login" />
+      </form>
     </div>
+  </div>
+</div>
 {% endblock %}

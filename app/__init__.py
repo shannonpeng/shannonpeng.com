@@ -7,13 +7,18 @@ from markdown2 import Markdown
 from .user import User
 import os, requests
 
-# set up flask app and connect to database
+
+#******************
+#***** SETUP ******
+#******************
+
+# setup Flask app and connect to mLab database
 app = Flask(__name__)
 app.secret_key = os.environ.get('SESSION_SECRET')
 app.config['MONGO_URI'] = os.environ.get('MONGOLAB_URI')
 mongo = PyMongo(app)
 
-# set up project posts
+# setup Flatpages renderer for project posts
 markdowner = Markdown(extras=['fenced-code-blocks', 'target-blank-links' , 'markdown-in-html'])
 def my_renderer(text):
     prerendered_body = render_template_string(text)
@@ -35,7 +40,8 @@ def pygments_css():
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-login_manager.login_message = 'You gotta log in to do that. 😤'
+login_manager.login_message = 'you gotta log in to do that. 😤'
+
 @login_manager.user_loader
 def load_user(username):
     user = mongo.db.users.find_one({ 'username': username })
@@ -43,30 +49,42 @@ def load_user(username):
         return None
     return User(user['username'])
 
-# home/projects page
+
+#*******************
+#***** ROUTES ******
+#*******************
+
+# home page (projects)
 @app.route('/')
 def index():
     featured_projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('featured') is True and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
     projects = sorted([p for p in flatpages if p.path.startswith(POST_DIR) and p.meta.get('featured') is None and p.meta.get('hidden') is None], key=lambda x:x['date'], reverse=True)
-    stats = get_stats()
-    return render_template('index.html', projects=featured_projects+projects, stats=stats, page='projects')
+    return render_template('index.html', projects=featured_projects+projects, page='projects')
 
 # classes page
 @app.route('/classes')
 def classes():
-    stats = get_stats()
-    return render_template('classes.html', stats=stats, page='classes')
+    return render_template('classes.html', page='classes')
 
-# photos page
-@app.route('/photos')
-def photos():
+# about page
+@app.route('/about')
+def about():
     stats = get_stats()
-    photo_count = 18
-    response = requests.get('https://api.instagram.com/v1/users/self/media/recent/?access_token={0}&count={1}'.format(os.environ.get('IG_ACCESS_TOKEN'), photo_count)).json()
-    recent_media = response.get('data') or []
-    return render_template('photos.html', photos=recent_media, stats=stats, page='photos')
+    return render_template('about.html', stats=stats, page='about')
 
-# go links
+# project pages
+@app.route('/projects/<name>', strict_slashes=False)
+def project(name):
+    path = '{}/{}'.format(POST_DIR, name)
+    project = flatpages.get_or_404(path)
+    return render_template('project.html', project=project)
+
+
+#*********************
+#***** GO LINKS ******
+#*********************
+
+# fetch go link
 @app.route('/go/<keyword>')
 def go_get(keyword):
     link = mongo.db.links.find_one_or_404({ 'keyword': keyword })
@@ -75,6 +93,7 @@ def go_get(keyword):
         return redirect('//' + url)
     return redirect(url)
 
+# create new go link
 @app.route('/go/create', methods=['POST'])
 @login_required
 def go_create():
@@ -84,25 +103,31 @@ def go_create():
         new_link = { 'keyword': keyword, 'url': url }
         result = mongo.db.links.replace_one({ 'keyword': keyword }, new_link, upsert=True)
         if result.acknowledged:
-            flash('Link created successfully 😍', category='success')
+            flash('link created successfully 👏', category='success')
         else:
-            flash('Link not created. 😬', category='error')
+            flash('link not created. 😬', category='error')
     else:
-        flash('Keyword or URL missing. 🤔', category='error')
+        flash('link keyword or URL missing. 🤔', category='error')
     return redirect(url_for('admin'))
 
+# delete a go link
 @app.route('/go/delete', methods=['POST'])
 @login_required
 def go_delete():
     link_id = request.form.get('link_id')
     link = mongo.db.links.find_one_and_delete({ '_id': objectid.ObjectId(link_id) })
     if link:
-        flash('Link deleted successfully 💨', category='success')
+        flash('link deleted successfully 💨', category='success')
     else:
-        flash('Link not deleted. 😬', category='error')
+        flash('link not deleted. 😬', category='error')
     return redirect(url_for('admin'))
 
-# sessions and admin portal
+
+#**************************************
+#***** SESSIONS AND ADMIN PORTAL ******
+#**************************************
+
+# admin portal route
 @app.route('/admin')
 @login_required
 def admin():
@@ -110,6 +135,7 @@ def admin():
     stats = get_stats()
     return render_template('admin.html', stats=stats, links=links)
 
+# login route
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET': # return login page
@@ -125,19 +151,23 @@ def login():
                 user_obj = User(user['username'])
                 login_user(user_obj)
                 return redirect(request.args.get('next') or url_for('admin'))
-        flash('Invalid username or password 🙅‍♀️', category='error')
+        flash('invalid username or password 🙅‍♀️', category='error')
         return redirect(url_for('login'))
 
+# logout route
 @app.route('/logout')
 def logout():
     logout_user()
-    flash('You\'re logged out. Buh-bye. ✌️', category='message')
+    flash('you\'re logged out. Buh-bye. ✌️', category='message')
     return redirect(url_for('index'))
 
-# stats
+
+#******************************
+#***** STATS (FUN FACTS) ******
+#******************************
 
 LAST_FM_API_KEY = os.environ.get('LAST_FM_API_KEY')
-LAST_FM_USERNAME = 'spenguinx'
+LAST_FM_USERNAME = os.environ.get('LAST_FM_USERNAME')
 
 def get_stats():
     order = ['status', 'song', 'movie']
@@ -157,8 +187,10 @@ def get_stats():
     except:
         stats = sorted(mongo.db.stats.find() or [], key=lambda stat: stat['name'], reverse=True)
     return stats
+
 def get_stat_by_name(name):
     return mongo.db.stats.find_one({ "name": name })
+
 def update_stat(name, fields):
     s = get_stat_by_name(name)
     if s:
@@ -183,27 +215,25 @@ def stats(name):
                     s[k] = form[k]
         result = mongo.db.stats.replace_one({ 'name': name }, s, upsert=False)
         if result.acknowledged:
-            flash('Stat updated successfully 😍', category='success')
+            flash('stat updated successfully 👏', category='success')
         else:
-            flash('Stat not updated. 😬', category='error')
+            flash('stat not updated. 😬', category='error')
     else:
-        flash('The requested stat was not found. 🙊', category='error')
+        flash('the requested stat was not found. 🙊', category='error')
     return redirect(url_for('admin'))
 
-# project posts
-@app.route('/projects/<name>', strict_slashes=False)
-def project(name):
-    path = '{}/{}'.format(POST_DIR, name)
-    project = flatpages.get_or_404(path)
-    return render_template('project.html', project=project)
+
+#***************************
+#***** ERROR HANDLING ******
+#***************************
 
 # handle 404
 @app.errorhandler(404)
 def not_found(error):
-    return render_template('error.html', title='404', message='page not found 👻'), 404
+    return render_template('error.html', title='404', message='that page doesn\'t exist 👽'), 404
 
 # unhandled errors
 @app.errorhandler(Exception)
 def unhandled_exception(error):
     app.logger.error('Unhandled Exception: %s', (error))
-    return render_template('error.html', message='internal server error ⚠️'), 500
+    return render_template('error.html', message='yikes... internal server error ⚠️'), 500

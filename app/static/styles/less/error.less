@@ -1,25 +1,44 @@
 #error {
-	font-family: @font-error;
+  display: flex;
+  height: 100vh;
+  background-color: #C6D8AF;
 
-	.container {
-		display: flex;
-		height: 100vh;
+  .container {
+    max-width: 60%;
+    margin: auto;
+    animation: fade-in 300ms ease-in;
 
-		.content {
-			margin: auto;
-			text-align: center;
+    .title {
+      color: @red;
+      font-size: 8em;
+      line-height: 100%;
+    }
+    h2 {
+      font-size: 4em;
+      line-height: 100%;
+    }
+    p {
+      font-size: 2em;
+      margin: 1em 0;
+      color: lighten(@font-color-body, 25%);
+      transition-duration: @transition-time;
 
-			.title {
-				color: @red;
-				font-size: 96px;
-			}
-			p {
-				margin: 24px;
-				opacity: @hover-opacity;
-			}
-			h1, h3 {
-				margin: 0;
-			}
-		}
-	}
+      &:hover {
+        opacity: @hover-opacity;
+        transition-duration: @transition-time;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @tablet-width) {
+  #error {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: @mobile-width) {
+  #error {
+    font-size: 0.50em;
+  }
 }

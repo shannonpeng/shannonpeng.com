@@ -1,177 +1,173 @@
-{% extends "base.html" %}
+{% extends "index.html" %}
 
 {% block head %}
-	{{ super() }}
-	<style type="text/css">
-		#project-writeup .content a {
-			color: #{{ project.color }};
-		}
-		#project-writeup .links li {
-			position: relative;
-			color: #{{ project.color }};
-			border: 2px solid #{{ project.color }};
-			box-shadow: 2px 3px 0px 0px #{{ project.color }};
-		}
-		#project-writeup .links li:active {
-			position: relative;
-			box-shadow: none;
-			left: 3px;
-			top: 3px;
-		}
-		#project-writeup .button {
-			color: #{{ project.color }};
-			border: 4px solid #{{ project.color }};
-			box-shadow: 4px 4px 0px 0px #{{ project.color }}; 
-			position: relative;
-		}
-		#project-writeup .button:active {
-			position: relative;
-			left: 4px;
-			top: 4px;
-			color: #{{ project.color }};
-			box-shadow: none;
-		}
-	</style>
+  {{ super() }}
+  <style type="text/css">
+    #project-writeup .content a {
+      color: #{{ project.color }};
+    }
+    #project-writeup .links li {
+      position: relative;
+      color: #{{ project.color }};
+      border: 2px solid #{{ project.color }};
+      box-shadow: 2px 3px 0px 0px #{{ project.color }};
+    }
+    #project-writeup .links li:active {
+      position: relative;
+      box-shadow: none;
+      left: 3px;
+      top: 3px;
+    }
+    #project-writeup .button {
+      color: #{{ project.color }};
+      border: 4px solid #{{ project.color }};
+      box-shadow: 4px 4px 0px 0px #{{ project.color }}; 
+      position: relative;
+    }
+    #project-writeup .button:active {
+      position: relative;
+      left: 4px;
+      top: 4px;
+      color: #{{ project.color }};
+      box-shadow: none;
+    }
+  </style>
 {% endblock %}
 
 {% block title %}
-    {{ project.title }}{{ super() }}
+  {{ project.title }} / {{ super() }}
 {% endblock %}
 
 {% block description %}
-    {{ project.description }}
+  {{ project.description }}
 {% endblock %}
 
 {% block content %}
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+{% block page_content %}
 <div class="back top">
-	<a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
+  <a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
 </div>
 <div id="project-writeup">
-	<header class="cover">
-		<div class="cover-headline">
-			<div class="container">
-				<h4 class="label" style="color: #{{ project.color }}">{{ project.label }}</h4>
-				<h3 class="title">{{ project.title }}</h3>
-				<p class="description">{{ project.description }}</p>
-				{% if project.link or project.facebook or project.github or project.video %}
-				<ul class="links">
-					{% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
-					{% if project.facebook %}<a href="{{project.facebook}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
-					{% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
-					{% if project.medium %}<a href="{{project.medium}}" target="_blank" title="medium"><li><i class="fab fa-medium-m"></i></li></a>{% endif %}
-					{% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
-				</ul>
-				{% endif %}
-			</div>
-		</div>
-		<div class="cover-image">
-			<img src="{{ project.cover }}" />
-			{% if project.caption %}<p class="caption">{{ project.caption }}</p>{% endif %}
-		</div>
-	</header>
+  <header class="cover">
+    <div class="cover-headline">
+      <div class="container">
+        <h4 class="label" style="color: #{{ project.color }}">{{ project.label }}</h4>
+        <h3 class="title">{% if project.emoji %}{{ project.emoji }} {% endif %}{{ project.title }}</h3>
+        <p class="description">{{ project.description }}</p>
+        {% if project.link or project.facebook or project.github or project.video %}
+        <ul class="links">
+          {% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
+          {% if project.facebook %}<a href="{{project.facebook}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
+          {% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
+          {% if project.medium %}<a href="{{project.medium}}" target="_blank" title="medium"><li><i class="fab fa-medium-m"></i></li></a>{% endif %}
+          {% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="{{ project.cover }}" />
+      {% if project.caption %}<p class="caption">{{ project.caption }}</p>{% endif %}
+    </div>
+  </header>
 
-	<div class="content">
+  <div class="content">
 
-		{{ project.html|safe }}
+    {{ project.html|safe }}
 
-		<table class="metadata">
-			{% if project.collaborators %}
-			<tr>
-				<td class="property">collaborators</td>
-				<td class="value">
-					{{ project.collaborators }}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.mentors %}
-			<tr>
-				<td class="property">mentors</td>
-				<td class="value">
-					{{ project.mentors }}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.tags %}
-			<tr>
-				<td class="property">tags</td>
-				<td class="value">
-					{% for t in project.tags %}
-						{{ t }}{{ "," if not loop.last }}
-					{% endfor %}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.technologies %}
-			<tr>
-				<td class="property">technologies</td>
-				<td class="value">
-					{% for t in project.technologies %}
-						{{ t }}{{ "," if not loop.last }}
-					{% endfor %}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.materials %}
-			<tr>
-				<td class="property">materials &amp; tools</td>
-				<td class="value">
-					{% for m in project.materials %}
-						{{ m }}{{ "," if not loop.last }}
-					{% endfor %}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.dimensions %}
-			<tr>
-				<td class="property">dimensions</td>
-				<td class="value">
-					{{ project.dimensions }}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.pc %}
-			<tr>
-				<td class="property">photo credit</td>
-				<td class="value">
-					{{ project.pc }}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.context %}
-			<tr>
-				<td class="property">context</td>
-				<td class="value">
-					{{ project.context }}
-				</td>
-			</tr>
-			{% endif %}
-			{% if project.date %}
-			<tr>
-				<td class="property">completed</td>
-				<td class="value">
-					{{ project.date.strftime('%B %Y') }}
-				</td>
-			</tr>
-			{% endif %}
-		</table>
-	</div>
-	{% if project.link or project.facebook or project.github or project.video %}
-		<ul class="links">
-			{% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
-			{% if project.facebook %}<a href="{{project.link}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
-			{% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
-			{% if project.medium %}<a href="{{project.medium}}" target="_blank" title="medium"><li><i class="fab fa-medium-m"></i></li></a>{% endif %}
-			{% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
-		</ul>
-	{% endif %}
-	<div class="back bottom">
-		<a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
-	</div>
+    <table class="metadata">
+      {% if project.collaborators %}
+      <tr>
+        <td class="property">collaborators</td>
+        <td class="value">
+          {{ project.collaborators }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.mentors %}
+      <tr>
+        <td class="property">mentors</td>
+        <td class="value">
+          {{ project.mentors }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.technologies %}
+      <tr>
+        <td class="property">technologies</td>
+        <td class="value">
+          {% for t in project.technologies %}
+            {{ t }}{{ "," if not loop.last }}
+          {% endfor %}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.materials %}
+      <tr>
+        <td class="property">materials &amp; tools</td>
+        <td class="value">
+          {% for m in project.materials %}
+            {{ m }}{{ "," if not loop.last }}
+          {% endfor %}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.dimensions %}
+      <tr>
+        <td class="property">dimensions</td>
+        <td class="value">
+          {{ project.dimensions }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.pc %}
+      <tr>
+        <td class="property">photo credit</td>
+        <td class="value">
+          {{ project.pc }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.context %}
+      <tr>
+        <td class="property">context</td>
+        <td class="value">
+          {{ project.context }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if project.date %}
+      <tr>
+        <td class="property">completed</td>
+        <td class="value">
+          {{ project.date.strftime('%B %Y') }}
+        </td>
+      </tr>
+      {% endif %}
+    </table>
+  </div>
+  {% if project.link or project.facebook or project.github or project.video %}
+    <ul class="links">
+      {% if project.link %}<a href="{{project.link}}" target="_blank" title="link"><li><i class="fas fa-link"></i></li></a>{% endif %}
+      {% if project.facebook %}<a href="{{project.link}}" target="_blank" title="facebook"><li><i class="fab fa-facebook-f"></i></li></a>{% endif %}
+      {% if project.github %}<a href="{{project.github}}" target="_blank" title="github"><li><i class="fab fa-github-alt"></i></li></a>{% endif %}
+      {% if project.medium %}<a href="{{project.medium}}" target="_blank" title="medium"><li><i class="fab fa-medium-m"></i></li></a>{% endif %}
+      {% if project.video %}<a href="{{project.video}}" target="_blank" title="video"><li><i class="fab fa-youtube"></i></li></a>{% endif %}
+    </ul>
+  {% endif %}
+  <div class="back bottom">
+    <a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
+  </div>
 </div>
 <footer>
-	<div class="content">
-		<p>Made with <i class="fas fa-magic"></i> by Shannon Peng</p>
-		<p>&copy; Copyright 2020</p>
-	</div>
+  <div class="content">
+    <p>Made with <i class="fas fa-magic"></i> by Shannon Peng</p>
+    <p>&copy; Copyright 2020</p>
+  </div>
 </footer>
+{% endblock %}
+
 {% endblock %}

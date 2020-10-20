@@ -1,136 +1,135 @@
 #admin {
-	font-family: @font-admin;
 
-	// login page
-	.container.login {
-		margin-top: 25vh;
-		
-		.content {
-			text-align: center;
+  // login page
+  .container.login {
+    margin-top: 25vh;
+    
+    .content {
+      text-align: center;
 
-			.button.login {
-				margin-top: 24px;
-			}
-			.fas {
-				padding: 12px;
-				opacity: @hover-opacity;
-			}
-		}
-	}
+      .button.login {
+        margin-top: 24px;
+      }
+      .fas {
+        padding: 12px;
+        opacity: @hover-opacity;
+      }
+    }
+  }
 
-	// admin portal
-	.container {
-		width: 60vw;
-		min-width: 320px;
-		margin: auto;
-		padding-top: 48px;
+  // admin portal
+  .container {
+    width: 60vw;
+    min-width: 320px;
+    margin: auto;
+    padding-top: 48px;
 
-		.logout {
-			position: fixed;
-			top: 0;
-			right: 0;
-			margin: 24px 36px;
-			color: @red;
-			opacity: @hover-opacity;
-			.transition(@transition-time);
-			&:hover {
-				opacity: 1;
-				.transition(@transition-time);
-			}
-		}
+    .logout {
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 24px 36px;
+      color: @red;
+      opacity: @hover-opacity;
+      .transition(@transition-time);
+      &:hover {
+        opacity: 1;
+        .transition(@transition-time);
+      }
+    }
 
-		td {
-			padding: 8px;
-			&.target a {
-				text-decoration: underline;
-			}
-		}
+    td {
+      padding: 8px;
+      &.target a {
+        text-decoration: underline;
+      }
+    }
 
-		input, button {
-			outline: none;
-			border: none;
-			padding: 12px 24px;
-			background: @grey;
-			border-radius: 4px;
-			margin: 12px 8px;
-			font-family: @font-admin;
-			font-size: @font-size-body;
-		}
+    input, button {
+      outline: none;
+      border: none;
+      padding: 12px 24px;
+      background: @grey;
+      border-radius: 4px;
+      margin: 12px 8px;
+      font-family: inherit;
+      font-size: @font-size-body;
+    }
 
-		input.keyword {
-			width: 160px;
-		}
-		input.target {
-			width: 400px;
-		}
+    input.keyword {
+      width: 160px;
+    }
+    input.target {
+      width: 400px;
+    }
 
-		.button:hover {
-			cursor: pointer;
-		}
+    .button:hover {
+      cursor: pointer;
+    }
 
-		.button.submit, .button.login {
-			background-color: transparent;
-			color: @color1;
-			font-family: @font-title;
-			font-weight: @font-weight-bold;
-			text-transform: uppercase;
-			margin-top: 24px;
-			border: 4px solid @color1;
-			.transition(@transition-time);
+    .button.submit, .button.login {
+      background-color: transparent;
+      color: @color1;
+      font-family: @font-title;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 24px;
+      border: 4px solid @color1;
+      .transition(@transition-time);
 
-			&:hover {
-				background-color: @color1;
-				color: white;
-				.transition(@transition-time);
-			}
-		}
+      &:hover {
+        background-color: @color1;
+        color: white;
+        .transition(@transition-time);
+      }
+    }
 
-		.button.delete {
-			font-size: 12px;
-			padding: 12px 16px;
-			opacity: @hover-opacity;
-			.transition(@transition-time);
-			&:hover {
-				opacity: 1;
-				.transition(@transition-time);
-			}
-		}
+    .button.delete {
+      font-size: 12px;
+      padding: 12px 16px;
+      opacity: @hover-opacity;
+      .transition(@transition-time);
+      &:hover {
+        opacity: 1;
+        .transition(@transition-time);
+      }
+    }
 
-		.block {
-			overflow: hidden;
-			margin-bottom: 60px;
-			
-			.title {
-				opacity: @hover-opacity;
-			}
-			&.go-links {
-				> form {
-					margin: 18px 0;
-				}
-			}
-			&.stats {
-				.stat {
-					width: calc(50% - 40px);
-					display: inline-block;
-					vertical-align: top;
-					margin: 18px;
-					.name {
-						text-transform: uppercase;
-					}
-					.icon {
-						width: auto;
-						margin-right: 4px;
-					}
-					input {
-						width: calc(100% - 48px);
-						display: block;
-					}
-					.button {
-						width: 100%;
-					}
-				}
-			}
-		}
+    .block {
+      overflow: hidden;
+      margin-bottom: 60px;
+      
+      .title {
+        opacity: @hover-opacity;
+      }
+      &.go-links {
+        > form {
+          margin: 18px 0;
+        }
+      }
+      &.stats {
+        .stat {
+          width: calc(50% - 40px);
+          display: inline-block;
+          vertical-align: top;
+          margin: 18px;
+          .name {
+            text-transform: uppercase;
+          }
+          .icon {
+            width: auto;
+            margin-right: 4px;
+          }
+          input {
+            width: calc(100% - 48px);
+            display: block;
+          }
+          .button {
+            width: 100%;
+          }
+        }
+      }
+    }
 
-	}
+  }
 }

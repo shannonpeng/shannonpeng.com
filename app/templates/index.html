@@ -1,113 +1,51 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Shannon Peng
+  shannon peng
 {% endblock %}
 
 {% block content %}
-<div id="main">
-	<div class="container">
-		<div class="sidebar">
-			<div class="content">
-				<a href="/"><h2 class="title">SHANNON PENG</h2></a>
-				<p>I'm a NYC-based creative technologist with a love for experiential storytelling and music.</p>
-				<div class="stats">
-					<div class="content">
-						{% for stat in stats %}
-							{% if not stat.hidden %}
-								{% if stat.name == 'status' %}
-									<div class="cluster">
-										<div class="icon" title="current status">
-											<i class="{{ stat.icon }}"></i>
-										</div>
-										<div>
-											<p><b>{{ stat.prefix }}: </b>{{ stat.text }}</p>
-										</div>
-							        </div>
-						       	{% elif stat.name == 'song' %}
-							        <div class="cluster">
-							        	{% if stat.live %}
-										<div class="volume" title="listening now">
-											<div class="bar"><span>&nbsp;</span></div>
-											<div class="bar"><span>&nbsp;</span></div>
-											<div class="bar"><span>&nbsp;</span></div>
-											<div class="bar"><span>&nbsp;</span></div>
-											<div class="bar"><span>&nbsp;</span></div>
-										</div>
-										{% else %}
-										<div class="icon" title="last song played">
-											<i class="{{ stat.icon }}"></i>
-										</div>
-										{% endif %}
-										<div>
-											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title | truncate(35, killwords=True, leeway=0) }}</i>{% if stat.url %}</a>{% endif %} by {{ stat.artist | truncate(35, killwords=True, leeway=0) }}</p>
-										</div>
-							        </div>
-						       	{% elif stat.name == 'book' %}
-							        <div class="cluster">
-										<div class="icon" title="currently reading">
-											<i class="fas fa-book"></i>
-										</div>
-										<div>
-											<p><i>{{ stat.title }}</i> <span class="description">by {{ stat.author }}</span></p>
-										</div>
-							        </div>
-						        {% elif stat.name == 'movie' %}
-							        <div class="cluster">
-										<div class="icon" title="last movie watched">
-											<i class="{{ stat.icon }}"></i>
-										</div>
-										<div>
-											<p>{% if stat.url %}<a href="{{ stat.url }}" target="_blank">{% endif %}<i>{{ stat.title }}</i>{% if stat.url %}</a>{% endif %} ({{ stat.year }})</p>
-										</div>
-							        </div>
-						        {% endif %}
-					        {% endif %}
-				        {% endfor %}
-				    </div>
-				</div>
-				<ul class="social">
-			        <li><a href="mailto:shannonspeng@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-			        <li><a href="//github.com/shannonpeng" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-			        <li><a href="//linkedin.com/in/shannonspeng" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-			        <li><a href="//open.spotify.com/user/shannon.penguin" target="_blank"><i class="fab fa-spotify"></i></a>
-			        <li><a href="//youtube.com/channel/UCQP9OWLKwvmY9X4dqYAGwlg/" target="_blank"><i class="fab fa-youtube"></i></a>
-			    </ul>
-			    <ul class="nav">
-			    	<a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>
-			    	<a href="/classes"><li {% if page=="classes" %}class="selected"{% endif %}>classes</li></a>
-			    </ul>
-			</div>
-		</div>
-		{% block main_content %}
-		<div id="projects">
-			<div class="category-filter">
-				<p class="category active" category="all">all</p>
-				<p class="category" category="code">code</p>
-				<p class="category" category="games">games</p>
-				<p class="category" category="music">music</p>
-				<p class="category" category="interactive">interactive</p>
-			</div>
-			{% for project in projects %}
-			<div class="project{% for c in project.categories %} category-{{ c }}{% endfor %} {% if project.featured %}featured{% endif %}">
-				<a href="{{ url_for('project', name=project.keyword) }}">
-					<div class="arrow">
-						<i class="far fa-arrow-alt-circle-right"></i>
-					</div>
-				</a>
-				<a href="{{ url_for('project', name=project.keyword) }}">
-					<div class="thumbnail" style="background-image:linear-gradient(180deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.2)), url('{{ project.thumbnail }}')"></div>
-					<div class="info">
-						<h3 class="title">{{ project.title }}</h3>
-						<p class="subtitle">{{ project.subtitle }}</p>
-					</div>
-				</a>
-			</div>
-			{% else %}
-			<p>No projects to be found, just this guilty dinosaur. 🦖</p>
-			{% endfor %}
-		</div>
-		{% endblock %}
-	</div>
+<div id="home">
+{% block navbar %}
+<div class="navbar">
+  <div class="container">
+    <ul class="nav">
+      <a href="/"><li {% if page=="projects" %}class="selected"{% endif %}>projects</li></a>
+      <a href="/about"><li {% if page=="about" %}class="selected"{% endif %}>about</li></a>
+      <a href="/classes"><li {% if page=="classes" %}class="selected"{% endif %}>classes</li></a>
+      <a href="/design"><li {% if page=="design" %}class="selected"{% endif %}>design</li></a>
+    </ul>
+    <ul class="social">
+      <li><a href="mailto:shannonspeng@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="//linkedin.com/in/shannonspeng" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
+{% block page_content %}
+<div class="header">
+  <h1 class="title">Shannon Peng</h1>
+</div>
+<div class="projects">
+  {% for project in projects %}
+  <div class="project{% for c in project.categories %} category-{{ c }}{% endfor %} {% if project.featured %}featured{% endif %}">
+    <a href="{{ url_for('project', name=project.keyword) }}">
+      <img class="thumbnail" src="{{ project.thumbnail }}" />
+    </a>
+    <div class="info">
+      <a href="{{ url_for('project', name=project.keyword) }}"><h3 class="title">{% if project.emoji %}{{ project.emoji }} {% endif %}{{ project.title }}</h3></a>
+      <p class="subtitle">{{ project.subtitle }}</p>
+      <div class="tags">
+        {% for tag in project.tags %}
+        <div class="tag"># {{ tag }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <p>no projects to be found, just this guilty dinosaur. 🦖</p>
+  {% endfor %}
+</div>
+{% endblock %}
 </div>
 {% endblock %}

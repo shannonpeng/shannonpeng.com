@@ -1,128 +1,134 @@
 {% extends "index.html" %}
 
 {% block title %}
-	classes /
-	{{ super() }}
+  classes / {{ super() }}
 {% endblock %}
 
-{% block main_content %}
+{% block content %}
 <div id="classes">
-	<div class="container">
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+{% block page_content %}
+<div class="header">
+  <h1 class="title">Classes</h1>
+</div>
+<div class="content">
+  <div class="semester spring">
+    <p class="label"><i class="fab fa-pagelines"></i> Spring 2020</p>
+    <ul>
+    <li>↔️ Computer Systems Engineering (<a href="http://student.mit.edu/catalog/search.cgi?search=6.033" class="class-number" target="_blank">6.033</a>)</li>
+    <li>🕹 Interactive Design and Projection for Live Performance (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.737" class="class-number" target="_blank">21M.737</a>)</li>
+    <li>🎻 Digital Instrument Design (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.370" class="class-number" target="_blank">21M.370</a>)</li>
+    <li>🎤 Sound Design Practicum (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.806" class="class-number" target="_blank">21M.806</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester spring">
-			<p class="label"><i class="fab fa-pagelines"></i> Spring 2020</p>
-			<ul>
-				<li>↔️ Computer Systems Engineering (<a href="http://student.mit.edu/catalog/search.cgi?search=6.033" class="class-number" target="_blank">6.033</a>)</li>
-				<li>🕹 Interactive Design and Projection for Live Performance (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.737" class="class-number" target="_blank">21M.737</a>)</li>
-				<li>🎻 Digital Instrument Design (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.370" class="class-number" target="_blank">21M.370</a>)</li>
-				<li>🎤 Sound Design Practicum (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.806" class="class-number" target="_blank">21M.806</a>)</li>
-			</ul>
-		</div>
+  <div class="semester fall">
+    <p class="label"><i class="fas fa-leaf"></i> Fall 2019</p>
+    <ul>
+    <li>📸 Digital and Computational Photography (<a href="http://student.mit.edu/catalog/search.cgi?search=6.815" class="class-number" target="_blank">6.815</a>)</li>
+    <li>🗣 Oral Communication (<a href="http://student.mit.edu/catalog/search.cgi?search=6.UAT" class="class-number" target="_blank">6.UAT</a>)</li>
+    <li>🎭 Script Analysis  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.710" class="class-number" target="_blank">21M.710</a>)</li>
+    <li>📽 Projection Design  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.862" class="class-number" target="_blank">21M.862</a>)</li>
+    <li>💡 Lighting Design Practicum  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.803" class="class-number" target="_blank">21M.803</a>)</li>
+    <li>🎸 Interactive Music Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.809" class="class-number" target="_blank">6.809/21M.385</a>) <span class="description">(grader)</span></li>
+    </ul>
+  </div>
 
-		<div class="semester fall">
-			<p class="label"><i class="fas fa-leaf"></i> Fall 2019</p>
-			<ul>
-				<li>📸 Digital and Computational Photography (<a href="http://student.mit.edu/catalog/search.cgi?search=6.815" class="class-number" target="_blank">6.815</a>)</li>
-				<li>🗣 Oral Communication (<a href="http://student.mit.edu/catalog/search.cgi?search=6.UAT" class="class-number" target="_blank">6.UAT</a>)</li>
-				<li>🎭 Script Analysis  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.710" class="class-number" target="_blank">21M.710</a>)</li>
-				<li>📽 Projection Design  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.862" class="class-number" target="_blank">21M.862</a>)</li>
-				<li>💡 Lighting Design Practicum  (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.803" class="class-number" target="_blank">21M.803</a>)</li>
-				<li>🎸 Interactive Music Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.809" class="class-number" target="_blank">6.809/21M.385</a>) <span class="description">(grader)</span></li>
-			</ul>
-		</div>
+  <div class="semester summer">
+    <p class="label"><i class="fas fa-sun"></i> Summer 2019</p>
+    <ul>
+    <li>👩‍🏫 <a href="http://uaap.mit.edu/research-exploration/urop" target="_blank">UROP</a> with the MIT Media Lab's <a href="//www.media.mit.edu/groups/lifelong-kindergarten/overview/" target="_blank">Lifelong Kindergarten</a> group</li>
+    <li>🎡 Udemy Course on <a href="http://www.udemy.com/theme-park-design/">Theme Park Design</a></li>
+  </div>
 
-		<div class="semester summer">
-			<p class="label"><i class="fas fa-sun"></i> Summer 2019</p>
-			<ul>
-				<li>👩‍🏫 <a href="http://uaap.mit.edu/research-exploration/urop" target="_blank">UROP</a> with the MIT Media Lab's <a href="//www.media.mit.edu/groups/lifelong-kindergarten/overview/" target="_blank">Lifelong Kindergarten</a> group</li>
-				<li>🎡 Udemy Course on <a href="http://www.udemy.com/theme-park-design/">Theme Park Design</a></li>
-		</div>
+  <div class="semester spring">
+    <p class="label"><i class="fab fa-pagelines"></i> Spring 2019</p>
+    <ul>
+    <li>🎛 Microcomputer Project Laboratory (<a href="http://student.mit.edu/catalog/search.cgi?search=6.115" class="class-number" target="_blank">6.115</a>)</li>
+    <li>🎸 Interactive Music Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.809" class="class-number" target="_blank">6.809/21M.385</a>)</li>
+    <li>🎲 Introduction to Probability I (<a href="http://student.mit.edu/catalog/search.cgi?search=6.041A" class="class-number" target="_blank">6.041A</a>)</li>
+    <li>🎞 Beginning Screenwriting (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.608" class="class-number" target="_blank">21M.608</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester spring">
-			<p class="label"><i class="fab fa-pagelines"></i> Spring 2019</p>
-			<ul>
-				<li>🎛 Microcomputer Project Laboratory (<a href="http://student.mit.edu/catalog/search.cgi?search=6.115" class="class-number" target="_blank">6.115</a>)</li>
-				<li>🎸 Interactive Music Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.809" class="class-number" target="_blank">6.809/21M.385</a>)</li>
-				<li>🎲 Introduction to Probability I (<a href="http://student.mit.edu/catalog/search.cgi?search=6.041A" class="class-number" target="_blank">6.041A</a>)</li>
-				<li>🎞 Beginning Screenwriting (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.608" class="class-number" target="_blank">21M.608</a>)</li>
-			</ul>
-		</div>
+  <div class="semester fall">
+    <p class="label"><i class="fas fa-leaf"></i> Fall 2018</p>
+    <ul>
+    <li>🤖 Artificial Intelligence (<a href="http://student.mit.edu/catalog/search.cgi?search=6.034" class="class-number" target="_blank">6.034</a>)</li>
+    <li>🎧 Fundamentals of Music Processing (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.387" class="class-number" target="_blank">21M.387</a>)</li>
+    <li>🎥 Acting with the Camera (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.624" class="class-number" target="_blank">21M.624</a>)</li>
+    <li>🤲 Tangible Interfaces (<a href="http://student.mit.edu/catalog/search.cgi?search=MAS.834" class="class-number" target="_blank">MAS.834</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester fall">
-			<p class="label"><i class="fas fa-leaf"></i> Fall 2018</p>
-			<ul>
-				<li>🤖 Artificial Intelligence (<a href="http://student.mit.edu/catalog/search.cgi?search=6.034" class="class-number" target="_blank">6.034</a>)</li>
-				<li>🎧 Fundamentals of Music Processing (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.387" class="class-number" target="_blank">21M.387</a>)</li>
-				<li>🎥 Acting with the Camera (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.624" class="class-number" target="_blank">21M.624</a>)</li>
-				<li>🤲 Tangible Interfaces (<a href="http://student.mit.edu/catalog/search.cgi?search=MAS.834" class="class-number" target="_blank">MAS.834</a>)</li>
-			</ul>
-		</div>
+  <div class="semester summer">
+    <p class="label"><i class="fas fa-sun"></i> Summer 2018</p>
+    <p>🖌 Internship at <a href="//disneyanimation.com/">Walt Disney Animation Studios</a></p>
+  </div>
 
-		<div class="semester summer">
-			<p class="label"><i class="fas fa-sun"></i> Summer 2018</p>
-			<p>🖌 Internship at <a href="//disneyanimation.com/">Walt Disney Animation Studios</a></p>
-		</div>
+  <div class="semester spring">
+    <p class="label"><i class="fab fa-pagelines"></i> Spring 2018</p>
+    <ul>
+    <li>🔌 Circuits and Electronics (<a href="http://student.mit.edu/catalog/search.cgi?search=6.002" class="class-number" target="_blank">6.002</a>) </li>
+    <li>📶 Signal Processing (<a href="http://student.mit.edu/catalog/search.cgi?search=6.003" class="class-number" target="_blank">6.003</a>)</li>
+    <li>🧠 Introduction to Psychological Science (<a href="http://student.mit.edu/catalog/search.cgi?search=9.00" class="class-number" target="_blank">9.00</a>)</li>
+    <li>🎼 Harmony and Counterpoint I (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.301" class="class-number" target="_blank">21M.301</a>)</li>
+    <li>📱 Interconnected Embedded Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.08" class="class-number" target="_blank">6.08</a>) <span class="description">(lab assistant)</span></li>
+    </ul>
+  </div>
 
-		<div class="semester spring">
-			<p class="label"><i class="fab fa-pagelines"></i> Spring 2018</p>
-			<ul>
-				<li>🔌 Circuits and Electronics (<a href="http://student.mit.edu/catalog/search.cgi?search=6.002" class="class-number" target="_blank">6.002</a>) </li>
-				<li>📶 Signal Processing (<a href="http://student.mit.edu/catalog/search.cgi?search=6.003" class="class-number" target="_blank">6.003</a>)</li>
-				<li>🧠 Introduction to Psychological Science (<a href="http://student.mit.edu/catalog/search.cgi?search=9.00" class="class-number" target="_blank">9.00</a>)</li>
-				<li>🎼 Harmony and Counterpoint I (<a href="http://student.mit.edu/catalog/search.cgi?search=21M.301" class="class-number" target="_blank">21M.301</a>)</li>
-				<li>📱 Interconnected Embedded Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.08" class="class-number" target="_blank">6.08</a>) <span class="description">(lab assistant)</span></li>
-			</ul>
-		</div>
+  <div class="semester winter">
+    <p class="label"><i class="far fa-snowflake"></i> Winter 2018</p>
+    <p>🗿 Externship at <a href="http://5witsproductions.com/"  target="_blank">5 Wits Productions</a></p>
+  </div>
 
-		<div class="semester winter">
-			<p class="label"><i class="far fa-snowflake"></i> Winter 2018</p>
-			<p>🗿 Externship at <a href="http://5witsproductions.com/"  target="_blank">5 Wits Productions</a></p>
-		</div>
+  <div class="semester fall">
+    <p class="label"><i class="fas fa-leaf"></i> Fall 2017</p>
+    <ul>
+    <li>🥞 Computation Structures (<a href="http://student.mit.edu/catalog/search.cgi?search=6.004" class="class-number" target="_blank">6.004</a>)</li>
+    <li>🐛 Introduction to Biology (<a href="http://student.mit.edu/catalog/search.cgi?search=7.012" class="class-number" target="_blank">7.012</a>)</li>
+    <li>🔠 Differential Equations (<a href="http://student.mit.edu/catalog/search.cgi?search=18.03" class="class-number" target="_blank">18.03</a>)</li>
+    <li>🎞 Introduction to Media Studies (<a href="http://student.mit.edu/catalog/search.cgi?search=CMS.100" class="class-number" target="_blank">CMS.100</a>)</li>
+    <li>🛋 Design Studio: Objects and Interaction (<a href="http://student.mit.edu/catalog/search.cgi?search=4.031" class="class-number" target="_blank">4.031</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester fall">
-			<p class="label"><i class="fas fa-leaf"></i> Fall 2017</p>
-			<ul>
-				<li>🥞 Computation Structures (<a href="http://student.mit.edu/catalog/search.cgi?search=6.004" class="class-number" target="_blank">6.004</a>)</li>
-				<li>🐛 Introduction to Biology (<a href="http://student.mit.edu/catalog/search.cgi?search=7.012" class="class-number" target="_blank">7.012</a>)</li>
-				<li>🔠 Differential Equations (<a href="http://student.mit.edu/catalog/search.cgi?search=18.03" class="class-number" target="_blank">18.03</a>)</li>
-				<li>🎞 Introduction to Media Studies (<a href="http://student.mit.edu/catalog/search.cgi?search=CMS.100" class="class-number" target="_blank">CMS.100</a>)</li>
-				<li>🛋 Design Studio: Objects and Interaction (<a href="http://student.mit.edu/catalog/search.cgi?search=4.031" class="class-number" target="_blank">4.031</a>)</li>
-			</ul>
-		</div>
+  <div class="semester summer">
+    <p class="label"><i class="fas fa-sun"></i> Summer 2017</p>
+    <p>🎹 <a href="http://uaap.mit.edu/research-exploration/urop" target="_blank">UROP</a> with the MIT Media Lab's <a href="//opera.media.mit.edu/" target="_blank">Opera of the Future</a> group</p>
+  </div>
 
-		<div class="semester summer">
-			<p class="label"><i class="fas fa-sun"></i> Summer 2017</p>
-			<p>🎹 <a href="http://uaap.mit.edu/research-exploration/urop" target="_blank">UROP</a> with the MIT Media Lab's <a href="//opera.media.mit.edu/" target="_blank">Opera of the Future</a> group</p>
-		</div>
+  <div class="semester spring">
+    <p class="label"><i class="fab fa-pagelines"></i> Spring 2017</p>
+    <ul>
+    <li>📱 Interconnected Embedded Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.08" class="class-number" target="_blank">6.S08</a>)</li>
+    <li>🔍 Introduction to Algorithms (<a href="http://student.mit.edu/catalog/search.cgi?search=6.006" class="class-number" target="_blank">6.006</a>)</li>
+    <li>🤹‍♀️ Toy Product Design (<a href="http://student.mit.edu/catalog/search.cgi?search=2.00B" class="class-number" target="_blank">2.00B</a>)</li>
+    <li>⚡️ Electricity &amp; Magnetism (<a href="http://student.mit.edu/catalog/search.cgi?search=8.02" class="class-number" target="_blank">8.02</a>)</li>
+    <li>🌾 Ethics and Politics of Food (<a href="http://student.mit.edu/catalog/search.cgi?search=24.03" class="class-number" target="_blank">24.03</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester spring">
-			<p class="label"><i class="fab fa-pagelines"></i> Spring 2017</p>
-			<ul>
-				<li>📱 Interconnected Embedded Systems (<a href="http://student.mit.edu/catalog/search.cgi?search=6.08" class="class-number" target="_blank">6.S08</a>)</li>
-				<li>🔍 Introduction to Algorithms (<a href="http://student.mit.edu/catalog/search.cgi?search=6.006" class="class-number" target="_blank">6.006</a>)</li>
-				<li>🤹‍♀️ Toy Product Design (<a href="http://student.mit.edu/catalog/search.cgi?search=2.00B" class="class-number" target="_blank">2.00B</a>)</li>
-				<li>⚡️ Electricity &amp; Magnetism (<a href="http://student.mit.edu/catalog/search.cgi?search=8.02" class="class-number" target="_blank">8.02</a>)</li>
-				<li>🌾 Ethics and Politics of Food (<a href="http://student.mit.edu/catalog/search.cgi?search=24.03" class="class-number" target="_blank">24.03</a>)</li>
-			</ul>
-		</div>
+  <div class="semester winter">
+    <p class="label"><i class="far fa-snowflake"></i> Winter 2017</p>
+    <ul>
+    <li>🌐 Web Programming Competition (<a href="http://student.mit.edu/catalog/search.cgi?search=6.148" class="class-number" target="_blank">6.148</a>)</li>
+    <li>👓 Mobile Virtual Reality Development (<a href="http://student.mit.edu/catalog/search.cgi?search=6.s096" class="class-number" target="_blank">6.S096</a>)</li>
+    </ul>
+  </div>
 
-		<div class="semester winter">
-			<p class="label"><i class="far fa-snowflake"></i> Winter 2017</p>
-			<ul>
-				<li>🌐 Web Programming Competition (<a href="http://student.mit.edu/catalog/search.cgi?search=6.148" class="class-number" target="_blank">6.148</a>)</li>
-				<li>👓 Mobile Virtual Reality Development (<a href="http://student.mit.edu/catalog/search.cgi?search=6.s096" class="class-number" target="_blank">6.S096</a>)</li>
-			</ul>
-		</div>
-
-		<div class="semester fall">
-			<p class="label"><i class="fas fa-leaf"></i> Fall 2016</p>
-			<ul>
-				<li>⚗️ Solid-State Chemistry (<a href="http://student.mit.edu/catalog/search.cgi?search=3.091" class="class-number" target="_blank">3.091</a>)</li>
-				<li>💡 Engineering, Innovation &amp; Design (<a href="http://student.mit.edu/catalog/search.cgi?search=6.902" class="class-number" target="_blank">6.A59</a>)</li>
-				<li>⚙️ Mechanics (<a href="http://student.mit.edu/catalog/search.cgi?search=8.01" class="class-number" target="_blank">8.01</a>)</li>
-				<li>🔢 Multivariable Calculus (<a href="http://student.mit.edu/catalog/search.cgi?search=18.02" class="class-number" target="_blank">18.02</a>)</li>
-			</ul>
-		</div>
-	</div>
+  <div class="semester fall">
+    <p class="label"><i class="fas fa-leaf"></i> Fall 2016</p>
+    <ul>
+    <li>⚗️ Solid-State Chemistry (<a href="http://student.mit.edu/catalog/search.cgi?search=3.091" class="class-number" target="_blank">3.091</a>)</li>
+    <li>💡 Engineering, Innovation &amp; Design (<a href="http://student.mit.edu/catalog/search.cgi?search=6.902" class="class-number" target="_blank">6.A59</a>)</li>
+    <li>⚙️ Mechanics (<a href="http://student.mit.edu/catalog/search.cgi?search=8.01" class="class-number" target="_blank">8.01</a>)</li>
+    <li>🔢 Multivariable Calculus (<a href="http://student.mit.edu/catalog/search.cgi?search=18.02" class="class-number" target="_blank">18.02</a>)</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
 </div>
 {% endblock %}
