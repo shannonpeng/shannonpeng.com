@@ -18,10 +18,11 @@ mentors: Benjamin Grey, Tony Hu
 pc: 2.00B Staff, Lily Bailey, and Tony Hu
 caption: Demonstrating Infection's gameplay in our final Playsentation.
 description: Immunology-inspired multiplayer game with velcro organs, antibodies, and bacteria
+emoji: 🦠
 
-I created Infection with my project team, Team Hedgehog 🦔, through an intensive exploration of play and product design in MIT's [Toy Product Design](http://web.mit.edu/2.00b/www/index.html) class (2.00B).
+I created Infection with Team Hedgehog 🦔 through an intensive exploration of play and product design in MIT's Toy Product Design class (2.00B).
 
-We actually started off with a completely different project idea in the beginning of our design process — it was during playtesting and iteration that the idea for Infection emerged and our project evolved into what it is today.
+Fun fact: we actually started off with a completely different project idea at the beginning of our design process. It was during playtesting and iteration that the idea for Infection emerged, and our project became what it is today.
 
 ## Gameplay
 
@@ -92,7 +93,7 @@ In lab, we pitched our sketches to our teams, pinned them to a board, and then c
 
 ## Poster Pitches
 
-We narrowed our team's initial sketches down to our top three ideas, for which we created large, interactive posters to pitch to the entire class.
+We narrowed our team's initial sketches down to our top three ideas. Then, we created large, interactive posters to pitch them to the entire class.
 
 <div class="image-set" markdown="1">
 
@@ -109,11 +110,11 @@ We narrowed our team's initial sketches down to our top three ideas, for which w
 
 </div>
 
-Using feedback from both instructors and kids, we selected the most promising two ideas — Impossible Structures and Light Rail — to move into the next phase: sketch models.
+Using feedback from both instructors and kids, we selected the two most promising ideas (Impossible Structures and Light Rail) to move into the next phase: sketch models.
 
 ## Sketch Models
 
-Building sketch models is a useful way to quickly test a product idea. For each of Light Rail and Impossible Structures, we created a *looks like* model, to show how the toy would look to scale, and a *plays like* model, to explore potential interactions.
+Building sketch models is a useful way to quickly test a product idea. For each of Impossible Structures and Light Rail, we created a *looks like* model to show how the toy would look to scale, and a *plays like* model to explore potential interactions.
 
 <div class="image-set" markdown="1">
 
@@ -162,19 +163,19 @@ Building sketch models is a useful way to quickly test a product idea. For each 
 
 Some feedback we received from mentors and instructors included:
 
-- **Velcro vs. Magnets:** There is a big difference between velcro and magnets — magnets limit the possible ways we can connect the blocks, while Velcro grants us multiple degrees of freedom (it doesn't even require 90º angles). Velcro might be more fun for kids, because it allows for more freeform play. Also, what if we turned the entire structure upside down so it hangs like a bat?
-- **Trains Need...:** Instructors were skeptical that kids would be entertained purely by colored LEDs and rearranging train cars—also, if we're going to make a toy that resembles a train, they'd expect it to have wheels and/or be motorized, and make sound.
+- **Velcro vs. Magnets:** There is a big difference between velcro and magnets. Magnets limit the possible ways we can connect the blocks, while Velcro grants us multiple degrees of freedom (it doesn't even require 90º angles). Velcro might be more fun for kids, because it allows for more freeform play. Also, what if we turned the entire structure upside down so it hangs like a bat?
+- **Trains Need...:** Instructors were skeptical that kids would be entertained purely by colored LEDs and rearranging train cars. Also, if we're going to make a toy that resembles a train, they'd probably expect it to have wheels and/or be motorized, and make sound.
 
 
 ## Playtesting
 
-To get more feedback, we brought our sketch models to the MIT Museum, where we could playtest with our target audience — real kids.
+To get more feedback, we brought our sketch models to the MIT Museum, where we could playtest with our target audience: real kids.
 
-The first thing we noticed was that the kids who visited our table immediately gravitated toward the Impossible Structures Velcro blocks. *What's that weird looking sculpture? I wanna check that out.*
+The first thing we noticed was that kids immediately gravitated toward the Impossible Structures Velcro blocks. *What's that weird looking sculpture? I wanna check that out.*
 
-We were surprised to find that instead of piecing blocks together by hand, kids liked to stand back and throw blocks at the sculpture to add to it — they were amused that the block could stick where it hit the sculpture. We made up a game where we would take turns throwing blocks at the sculpture to see who would be the one to knock it down, and the kids enjoyed it.
+The next thing we noticed took us by surprise: rather than piecing blocks together by hand, kids liked to stand back and throw blocks at the sculpture to add to it. They were amused by how the block would stick and stay where it hit the sculpture. We started a game in which kids took turns throwing blocks at the sculpture to see who would be the one to knock it down, and the kids loved it.
 
-At the end of the day, we realized that **kids really like throwing things.** And many also liked throwing things at each other.
+At the end of the day, we learned that **kids really like throwing things.** And many also liked throwing things at each other.
 
 <div class="image-set" markdown="1">
 
@@ -191,11 +192,11 @@ At the end of the day, we realized that **kids really like throwing things.** An
 
 </div>
 
-It seemed that Impossible Structures was winning, not for the appeal of building with the Velcro blocks, but for throwing them. How could we take the Velcro blocks of Impossible Structures in a new direction?
+It seemed that Impossible Structures was winning, not for the appeal of building with blocks, but for throwing them. How could we take the Velcro blocks of Impossible Structures in a new direction?
 
 It was then that the idea for Infection was born.
 
-> At the end of the day, we realized that kids really like throwing things. And many also liked throwing things at each other.
+> At the end of the day, we learned that kids really like throwing things. And many also liked throwing things at each other.
 
 ## Prototyping
 
@@ -225,9 +226,9 @@ It was quite late into the semester to switch ideas, but our team had full faith
 
 </div>
 
-We tested our new prototypes and came up with gameplay rules by playing multiple rounds of Infection outside of lab (the best kind of homework).
+We tested our new prototypes and came up with gameplay rules by playing multiple rounds of Infection outside of the lab. (Peak MIT homework.)
 
-We adjusted the organs' attachment to the vests until they were attached tightly enough to not fall off accidentally while a player was running, but loosely enough so that an incoming bacteria could cleanly knock the organ off. After some finishing touches, our final prototype was ready to *play*sent!
+We adjusted the organs' attachment to the vests until they were attached tightly enough to not fall off accidentally while a player was running, and also loosely enough such that an incoming bacterium could cleanly knock the organ off. After some finishing touches, our final prototype was ready to *play*sent!
 
 <div class="image-set" markdown="1">
 
@@ -239,9 +240,7 @@ We adjusted the organs' attachment to the vests until they were attached tightly
 
 ## What I Learned
 
-2.00B is one of my favorite classes I took at MIT. I got my first hands-on introduction to the product design process, witnessed the value of playtesting first-hand, and gained experience with fabrication techniques, while having lots of fun along the way.
-
-The class offered a very playful and supportive environment, and it inspired me to learn more about product design!
+2.00B was one of my favorite classes at MIT. I got my first look into the product design process, witnessed the value of playtesting first-hand, and gained experience with fabrication techniques, all while having lots of fun along the way. The class had a very playful and supportive environment, and it inspired me to learn more about product design.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -259,4 +258,3 @@ The class offered a very playful and supportive environment, and it inspired me 
 ##### Team Hedgehog celebrates winning a class estimathon.
 	
 </div>
-
