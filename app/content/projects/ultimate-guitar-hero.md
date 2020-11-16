@@ -3,7 +3,7 @@ keyword: ultimate-guitar-hero
 subtitle: Guitar Hero-inspired game for learning any Ultimate Guitar tab
 date: 2019-05-13
 context: MIT 6.809/21M.385 Interactive Music Systems
-tags: [Software, Game Development, UI Design, Music Technology]
+tags: [Game Development, UI Design, Music Technology]
 technologies: [Kivy, Python, MIDI Guitar]
 categories: [code, music, interactive, games, design]
 label: Interactive Music Systems
@@ -12,10 +12,10 @@ cover: /static/images/projects/ultimate-guitar-hero/cover.png
 color: 454997
 collaborators: Stef Ren, TC Qin
 caption: Ultimate Guitar Hero's game interface.
-description: Guitar Hero-inspired game for learning any Ultimate Guitar tab, built on Python and the Kivy UI framework
+description: Guitar Hero-inspired game for learning any Ultimate Guitar tab, built with Python and the Kivy UI framework
 emoji: 🎸
 
-When guitar players learn new music, they typically turn to [guitar tabs](https://en.wikipedia.org/wiki/Tablature). Tabs for most songs are easily found on websites like [Ultimate Guitar](http://ultimate-guitar.com), but they're often very static in nature: essentially plain text on a web page.
+When guitar players learn new music, they typically turn to guitar tabs. Tabs for most songs are easily found on websites like [Ultimate Guitar](http://ultimate-guitar.com), but they're often very static in nature: essentially plain text on a web page.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -27,7 +27,7 @@ When guitar players learn new music, they typically turn to [guitar tabs](https:
 
 Tabs serve their purpose — with time and practice, you'll be able to learn how to play a song from its tab. But in Spring 2019, my final project team in MIT's Interactive Music Systems class (21M.385/6.809) couldn't help but wonder if these tabs could offer something more.
 
-How can we turn static guitar tabs into a more dynamic, fun, and interactive learning experience? Here's what we came up with.
+How can we transform static guitar tabs into a more dynamic, fun, and interactive learning experience? Here's what we came up with.
 
 ## How It Works
 
@@ -69,7 +69,7 @@ Once you hit `Play`, you enter the game screen. It's packed with features:
 
 **Score, Progress Bar, and Streak:** These help you track your accuracy and progress.
 
-**Notes Move Across the Screen:** You'll never lose your place in the guitar tab, because instead of having to scroll down the page to see more notes, the notes scroll to you as you play! You can't move on to the next note until you play the current one correctly.
+**Notes Move Across the Screen:** You'll never lose your place in the tab again, because you don't have to scroll down for more notes — the notes scroll to you as you play. You can't move on to the next note until you play the current one correctly.
 
 **Live Fret Diagram:** One of the challenges of reading a guitar tab is translating a fret number into a physical position on the fretboard. In Ultimate Guitar Hero, you can toggle a live fret diagram, which helps you visually compare where your fingers currently are to where they should be.
 
@@ -77,13 +77,13 @@ Once you hit `Play`, you enter the game screen. It's packed with features:
 
 ## Contributions
 
-On this project, I worked across UI/UX design and software development: I designed the game interface, programmed the animations, and I also wrote code to process user input from the MIDI guitar controller.
+On this project, I worked across UI/UX design and software development: I designed the game interface, programmed the animations, and wrote code to process user input from the MIDI guitar controller.
 
 ## What's Next
 
-Ultimate Guitar Hero received lots of praise from our classmates and the MIT community! Where could we take it next? Here are some features we had in mind:
+Ultimate Guitar Hero received lots of praise from our class and from the MIT community! Where could we take it next? Here are some features we had in mind:
 
-- Right now, the game filters out special features of guitar tabs, like hammer ons, pull offs, slides, and string bends. A next move would be to add support for these features to more accurately represent the guitar tabs that players wish to learn.
+- Right now, the game filters out special indicators on guitar tabs, like hammer ons, pull offs, slides, and string bends. A next move would be to add support for these indicators to more accurately represent the guitar tabs that players wish to learn.
 
 - The game is currently designed to work with a MIDI guitar — could we extend it to work with *any* guitar, possibly through the use of microphone input and audio analysis?
 

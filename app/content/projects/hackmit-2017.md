@@ -2,11 +2,11 @@ title: HackMIT 2017
 keyword: hackmit-2017
 subtitle: Designing a sci-fi themed hackathon
 date: 2017-09-15
-tags: [Branding, Event Planning, Graphic Design, Motion Graphics, Social Media, Marketing, Installation]
+tags: [Event Planning, Graphic Design, Motion Graphics, Social Media, Marketing, Installation Art]
 technologies: [Photoshop, Illustrator, After Effects, Adobe XD]
 materials: [Foam core board, hot glue, spray paint, LEDs]
 categories: [design, make]
-label: Event Branding
+label: Event Design
 thumbnail: /static/images/projects/hackmit-2017/thumbnail.jpg
 cover: /static/images/projects/hackmit-2017/thumbnail.jpg
 caption: Building life-sized HACK letters, nicknamed the "physical hack", is an annual HackMIT tradition.
@@ -16,14 +16,14 @@ facebook: https://facebook.com/hackmit
 medium: https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a
 collaborators: Hiram Moncivais, Jenny Xu, Jessica Tang, Jierui Fang, Noah Moroze, HackMIT Team
 pc: Alex Laiman, Chantal Acacio
-description: Designing a futuristic, sci-fi theme for MIT's largest annual undergraduate hackathon
+description: Designing a futuristic sci-fi theme for MIT's largest annual undergraduate hackathon
 emoji: 🚗
 
-Every September, [HackMIT](http://hackmit.org) draws over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
+Every September, [HackMIT](http://hackmit.org) brings over 1000 college students from around the world to MIT campus for a weekend of workshops, talks, activities, and building innovative projects.
 
-HackMIT is organized by a team of 20-30 MIT undergraduates passionate about empowering students through technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme — *Hack to the Future*, inspired by the *Back to the Future* trilogy.
+HackMIT is organized by a team of about 20 MIT students who are passionate about empowering students in technology and innovation. As a member of the HackMIT Marketing committee, I helped shape the event's branding and 2017 theme: *Hack to the Future*, inspired by the *Back to the Future* movie trilogy.
 
-Below is a summary of my our work, including HackMIT 2017's branding, website, social media, merchandise, physical hack, and more.
+Below is a summary of our work, including HackMIT 2017's branding, website, social media, merchandise, physical hack, and more.
 
 ## Branding
 
@@ -83,7 +83,7 @@ On your first visit to the website, you'll also see an opening animation I made,
 
 ## Social Media
 
-To keep hackers in the loop, we posted frequently on HackMIT's social media: announcements, reminders, hype, and more.
+To keep hackers in the loop, we posted frequently on HackMIT's social media, including announcements, reminders, hype, and more.
 
 ### Announcements
 
@@ -141,7 +141,7 @@ To keep hackers in the loop, we posted frequently on HackMIT's social media: ann
 
 ## Crewnecks
 
-A hackathon isn't complete without awesome swag. We provided hackers, mentors, and organizers with color-coded crewnecks. Hacker wore navy crewnecks; mentors wore purple and organizers white so that they could be easily located around the event venue.
+A hackathon isn't complete without awesome swag. We provided hackers, mentors, and organizers with color-coded crewnecks. Hackers wore navy crewnecks; mentors and organizers wore purple and white, respectively, so that they could be easily located around the event venue.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -194,7 +194,7 @@ I proposed the idea of a Faction Cup—a mini-tournament (inspired by the *Harry
 
 </div>
 
-During registration, we asked every hacker to pick a faction—<span style="color:#ff585d;font-weight:bold">red</span> or <span style="color:#74d1ea;font-weight:bold">blue</span>. Over the weekend, hackers scored points for their factions by attending workshops, tech talks, fireside chats, and mini red-blue battles (including a lightsaber fight!) A live leaderboard in the hacking arena kept track of the current faction scores.
+During registration, we asked every hacker to pick a faction: <span style="color:#ff585d;font-weight:bold">red</span> or <span style="color:#74d1ea;font-weight:bold">blue</span>. Over the weekend, hackers scored points for their factions by attending workshops, tech talks, fireside chats, and mini red-blue battles (including a lightsaber fight!) A live leaderboard in the hacking arena kept track of the current faction scores.
 
 At the end of the hackathon, all members of the winning faction took home a special prize: *Hack to the Future* magnets.
 
@@ -229,7 +229,7 @@ To build hype on campus, we released one letter a day in front of the student ce
 
 ## Reflections
 
-Working with the HackMIT organizing team has been an incredibly rewarding experience. It takes months of hard work to plan an event like HackMIT, and nothing compares to seeing it all come together in the big weekend—hackers taking pictures with the HACK letters, scoring points for their factions, and building [innovative projects](https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a). I'm proud to have been part of the team that made HackMIT 2017 happen!
+Working with the HackMIT organizing team has been an incredibly rewarding experience. It takes months of hard work to plan an event like HackMIT, and nothing compares to seeing it all come together in the big weekend — hackers taking pictures with the HACK letters, scoring points for their factions, and building [innovative projects](https://medium.com/hackmit-stories/hack-to-the-past-recapping-hackmit-2017-5f4837ecee7a). I'm proud to have been part of the team that made HackMIT 2017 happen!
 
 <div class="image-set image-set-two" markdown="1">
 

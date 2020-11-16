@@ -42,14 +42,7 @@
   {{ project.description }}
 {% endblock %}
 
-{% block content %}
-{% block navbar %}
-  {{ super() }}
-{% endblock %}
 {% block page_content %}
-<div class="back top">
-  <a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
-</div>
 <div id="project-writeup">
   <header class="cover">
     <div class="cover-headline">
@@ -100,7 +93,7 @@
         <td class="property">technologies</td>
         <td class="value">
           {% for t in project.technologies %}
-            {{ t }}{{ "," if not loop.last }}
+            {{ t }}{{ " &middot; " if not loop.last }}
           {% endfor %}
         </td>
       </tr>
@@ -110,7 +103,7 @@
         <td class="property">materials &amp; tools</td>
         <td class="value">
           {% for m in project.materials %}
-            {{ m }}{{ "," if not loop.last }}
+            {{ m }}{{ " &middot; " if not loop.last }}
           {% endfor %}
         </td>
       </tr>
@@ -162,12 +155,4 @@
     <a href="/"><i class="icon fas fa-arrow-left"></i> back to all projects</p></a>
   </div>
 </div>
-<footer>
-  <div class="content">
-    <p>Made with <i class="fas fa-magic"></i> by Shannon Peng</p>
-    <p>&copy; Copyright 2020</p>
-  </div>
-</footer>
-{% endblock %}
-
 {% endblock %}

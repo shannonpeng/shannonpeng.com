@@ -22,15 +22,15 @@ I created Zooming Away with my friend Dillon Zhang in May 2020. It was our final
 
 ## The Idea
 
-Normally, the class would have us create interactive media for a physical space on campus. However, after the COVID-19 outbreak moved our classes online, we found ourselves with a new, unique challenge: creating an interactive live performance from the confines of our homes, to be shared with the class over video call.
+Normally, the class would have us create interactive media for a physical space on campus. However, after the COVID-19 outbreak moved our classes online, we found ourselves with a new, unique challenge: creating an interactive live performance from the confines of our homes, to be shared with our instructor and classmates over video call.
 
-Rather than create a traditional performance and "virtualize" it, we decided to embrace the format and build our project around a video call. Drawing inspiration from the game [Keep Talking and Nobody Explodes](https://keeptalkinggame.com/), we created a 15-minute, 2-4 player immersive escape room that takes place in a Zoom call and web browser.
+Rather than create a traditional performance and "virtualize" it, we decided to embrace the format and build our project around a video call. Drawing inspiration from the game [Keep Talking and Nobody Explodes](https://keeptalkinggame.com/), we created a 15-minute, 2-3 player escape room that takes place in a Zoom call and your browser.
 
 ## Walkthrough
 
 ### Email Invitation
 
-The experience starts in your inbox: each member of your team has just completed ASAN space cadet training and receives an invite to a virtual commencement webcast, held over Zoom.
+The experience starts in your inbox: you and your teammates have just completed ASAN space cadet training. You all receive invites to a virtual commencement webcast, held over Zoom.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -70,7 +70,7 @@ A few minutes in, ASAN cosmonaut Rachel Ride dials in urgently and interrupts, "
 
 ### Diagnostic Guide and Control Console
 
-As space cadets, you retrieve the ASAN diagnostic guide you received during training and remote dial into the control console in your browser.
+Facing an unexpected first mission, you urgently dig up the ASAN diagnostic guide you received during training and remote dial into the command console from your browser.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -102,7 +102,7 @@ As space cadets, you retrieve the ASAN diagnostic guide you received during trai
 
 </div>
 
-Through interacting with Rachel over video call and flipping through the guide to determine the correct console commands, you can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes?
+Through interacting with Rachel over video call and flipping through the guide to determine the correct console commands, you and your fellow cadets can stabilize Rachel's space capsule and help steer her back on course. But can you repair everything in under 10 minutes?
 
 ## How It Works
 
@@ -138,16 +138,16 @@ Hidden from the players is the actor's panel, which helps the live actor direct 
 
 **Capsule Information:** The middle section of the actor's panel contains a range of information about the space capsule, which the actor can or cannot read depending on the capsule state. For example: in this screencap, we know that the number on the outside of the window is 21737, but in order to see what's inside the window, we'll need to close the window. If the players ask about the inside of the window, the actor could say, "The window's open. I can't see inside." The players should then figure out that they need to hit the "Close Window" command in their control console.
 
-Both the actor's panel and space cadet control console are connected via web sockets (Socket.IO) and a web server (Node.js) that keeps track of the game state.
+The actor's panel and space cadet control console are connected via web sockets (Socket.IO) and a web server (Node.js) that keeps track of the game state.
 
 ## Contributions
 
-I designed all graphic assets, video FX, and audio FX, and played the role of the cosmonaut during our final presentation. Dillon wrote the puzzles; developed the control console, actor's panel, and server; and played the role of the Director of ASAN during the presentation. The two of us worked together to build the narrative and integrate all the parts into one cohesive experience.
+I designed all graphic assets, video FX, and audio FX, and played the role of the cosmonaut during our final presentation. Dillon wrote the puzzles; developed the control console, actor's panel, and server; and played the role of the Director of ASAN during the presentation. The two of us worked together to build the narrative and integrate all the components into one cohesive experience.
 
 ## Reflections
 
 Zooming Away received glowing reviews from our guest participants and class instructor! They praised its level of immersion and its use of a Zoom call as a storytelling medium.
 
-My biggest takeaway from this project was that building interactive live experiences for our laptop screens opens more doors than it closes. We lost the chance to experiment with physical space, but we gained the opportunity to explore how AR lenses and web sockets can play a role in producing engaging experiences in our own homes.
+My biggest takeaway from this project is that building interactive live experiences for our laptop screens opens more doors than it closes. We lost the chance to experiment with physical space, but we gained the opportunity to explore how AR lenses and web sockets can play a role in producing engaging experiences in our own homes.
 
 Where could this take us in the future?
