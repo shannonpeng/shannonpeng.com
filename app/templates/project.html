@@ -93,7 +93,7 @@
         <td class="property">technologies</td>
         <td class="value">
           {% for t in project.technologies %}
-            {{ t }}{{ " &middot; " if not loop.last }}
+            {{ t }}{{ " ·" if not loop.last }}
           {% endfor %}
         </td>
       </tr>
@@ -103,7 +103,7 @@
         <td class="property">materials &amp; tools</td>
         <td class="value">
           {% for m in project.materials %}
-            {{ m }}{{ " &middot; " if not loop.last }}
+            {{ m }}{{ " ·" if not loop.last }}
           {% endfor %}
         </td>
       </tr>

@@ -79,4 +79,3 @@ From a technological standpoint, it totally is. Access to our Facebook data alon
 With a growing level of government surveillance, it's also not too hard to imagine a future in which even airport security procedures would tap into the wealth of data surrounding our digital identities.
 
 This short, fun self-portrait project doubles as a piece that raises serious questions about where our digital privacy is headed in the future.
-

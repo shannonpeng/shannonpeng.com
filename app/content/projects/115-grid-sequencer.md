@@ -18,13 +18,13 @@ emoji: 🎛
 
 I built a grid sequencer as my final project for MIT 6.115, a class on microcontrollers and embedded systems. My goal was to bring a creative embedded software project from concept to fully-functional prototype. You can find demo videos of my sequencer below.
 
-<center><iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/TMPp4XCwnAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/TMPp4XCwnAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <a href="https://www.youtube.com/watch?v=TMPp4XCwnAg&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=2" class="button">
 	Watch Percussion Demo on YouTube<i class="fas fa-external-link-alt external-icon"></i>
 </a>
 
-<center><iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/fCk_Kd_At4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/fCk_Kd_At4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <a href="https://www.youtube.com/watch?v=fCk_Kd_At4U&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=1" class="button">
 	Watch Melody Demo on YouTube<i class="fas fa-external-link-alt external-icon"></i>
@@ -175,4 +175,3 @@ I especially found the audio aspects of the project — picking apart WAV files 
 ##### My finished sequencer: grid controller, breadboard, and PSoC. Speaker not pictured.
 
 </div>
-

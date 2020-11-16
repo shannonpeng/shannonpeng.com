@@ -88,4 +88,3 @@ Ultimate Guitar Hero received lots of praise from our class and from the MIT com
 - The game is currently designed to work with a MIDI guitar — could we extend it to work with *any* guitar, possibly through the use of microphone input and audio analysis?
 
 - It's currently not possible to infer the exact timing of a song from its tab without any additional data or processing. Given that data, could we make Ultimate Guitar Hero run in real-time and evaluate the player on how their timing compares to the timing of the original song?
-
