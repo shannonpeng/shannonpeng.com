@@ -28,9 +28,7 @@ Ringtone is an original musical instrument featuring a circular body, capacitive
 
 ## The Instrument
 
-Ringtone's body consists of a 7.5" diameter plate constructed from plastic takeout lids. Lining the inside edge of the plate is a strip of 32 LEDs, and along the outside edge are 12 capacitive touch sensors cut from copper tape. 
-
-The 12 touch sensors form two sets: 8 "note" sensors on the right hand side, and 4 "button" sensors on the left.
+Ringtone's body consists of a 7.5" diameter plate constructed from plastic takeout lids. Lining the inside edge of the plate is a strip of 32 LEDs, and along the outside edge are 12 capacitive touch sensors cut from copper tape. The 12 touch sensors form two sets: 8 "note" sensors on the right hand side, and 4 "button" sensors on the left.
 
 Attached to the back is the 21M.370 class PCB, an ESP32 microcontroller, and an IMU, which collects XYZ acceleration and gyro data. The ESP32 connects via USB to a computer (not pictured), where the instrument's sound is generated.
 
@@ -230,7 +228,7 @@ After performing with Ringtone, I identified the features I found the most usefu
 
 ## Reflection
 
-Overall, I’m delighted with Ringtone as an instrument! I had lots of fun both making it and performing with it. Through this project, I learned a great deal about music technology, electronics, and interaction design. 21M.370 was my first venture into instrument design, and I was amazed by the sheer breadth of the field. I hope I'll get more opportunitiese to explore this area in the future.
+I’m delighted with Ringtone as an instrument! I had lots of fun both making it and performing with it. Through this project, I learned a great deal about music technology, electronics, and interaction design. 21M.370 was my first venture into instrument design, and I was amazed by the sheer breadth of the field. I hope I'll get more opportunities to explore this area in the future.
 
 <div class="image-set" markdown="1">
 
