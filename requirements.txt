@@ -11,7 +11,7 @@ Flask-PyMongo==2.3.0
 gunicorn==19.9.0
 idna==2.9
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 Markdown==3.2.1
 markdown2==2.3.8
 MarkupSafe==1.1.1
