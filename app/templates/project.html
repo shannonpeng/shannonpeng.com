@@ -75,6 +75,14 @@
 		{{ project.html|safe }}
 
 		<table class="metadata">
+			{% if project.role %}
+			<tr>
+				<td class="property">role</td>
+				<td class="value">
+					{{ project.role }}
+				</td>
+			</tr>
+			{% endif %}
 			{% if project.collaborators %}
 			<tr>
 				<td class="property">collaborators</td>
@@ -88,6 +96,14 @@
 				<td class="property">mentors</td>
 				<td class="value">
 					{{ project.mentors }}
+				</td>
+			</tr>
+			{% endif %}
+			{% if project.sponsors %}
+			<tr>
+				<td class="property">sponsors</td>
+				<td class="value">
+					{{ project.sponsors }}
 				</td>
 			</tr>
 			{% endif %}
