@@ -1,3 +1,4 @@
+hidden: true
 title: The V.E.R.S. Project
 keyword: vers-project
 subtitle: An Area 51-themed live remote interactive adventure
