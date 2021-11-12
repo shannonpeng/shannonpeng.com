@@ -1,7 +1,7 @@
 featured: true
 title: Zooming Away
 keyword: zooming-away
-subtitle: An immersive space-themed escape room over Zoom call
+subtitle: An immersive space-themed escape room over Zoom video call
 date: 2020-05-11
 context: MIT 21M.737 Interactive Design and Projection for Live Performance
 tags: [Experiential Storytelling, Escape Room, Interactive Design]
