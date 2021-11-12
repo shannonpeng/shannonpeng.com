@@ -666,6 +666,11 @@ footer p:nth-child(2) {
   font-size: 14.4px;
   border-radius: 3px;
 }
+#project-writeup .content .callout {
+  padding: 12px 36px;
+  background-color: #fafafa;
+  border-radius: 6px;
+}
 #project-writeup .content .button {
   padding: 12px 24px;
   margin: 12px 0;
