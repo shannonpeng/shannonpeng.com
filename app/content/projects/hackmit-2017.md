@@ -1,3 +1,4 @@
+hidden: true
 title: HackMIT 2017
 keyword: hackmit-2017
 subtitle: Designing a sci-fi themed hackathon
