@@ -22,17 +22,23 @@ emoji: 👽
 
 ## Overview
 
-The V.E.R.S. Project is a 60-minute live remote interactive adventure following the journey of Alex ("@lex"), an eccentric alien conspiracy theorist who enlists the help of a team of computer hackers to break into Area 51. In a unique blend of immersive theater and escape rooms, teams of 2-3 players tackle a series of narrative-driven challenges to determine the fate of @lex’s mission — all from the comfort of their own rooms.
+**The V.E.R.S. Project** is a live 60-minute remote interactive adventure following the journey of Alex ("@lex"), an eccentric alien conspiracy theorist who enlists the help of a team of computer hackers to break into Area 51. In a unique virtual blend of immersive theater and escape rooms, teams of 2-3 players tackle a series of narrative-driven challenges to determine the fate of @lex’s mission — all from the comfort of their own rooms.
 
-VERS began as a fun quarantine project in Summer 2020 and culminated in a student-led production in early 2021, funded by The Council for the Arts at MIT (CAMIT).
+The experience takes place over a group Zoom video call and a web-based game interface designed to simulate a desktop. Dialogue, sound effects, and images immerse players in the story as @lex progresses through multiple locations within Area 51. In order to succeed, players must interact with @lex, as well as with the desktop files and applications that unlock throughout.
 
-The **[student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/team)** of VERS (January 15 - February 7, 2021) featured a cast of 8 actors and ran 72 shows, reaching a total of 185 players.
+VERS began as a fun quarantine project between 3 college friends in Summer 2020 and culminated in an official student-led production in early 2021, funded by The Council for the Arts at MIT (CAMIT).
 
-<iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/R0-Npw_SJDs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The **[official student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/team)** of VERS (January 15 - February 7, 2021) featured a cast of 8 actors, ran 72 shows, and reached an audience of 185 players. It received glowing reviews:
 
-<a href="https://www.youtube.com/watch?v=R0-Npw_SJDs&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=5" class="button">
-	Watch Video on YouTube<i class="fas fa-external-link-alt external-icon"></i>
-</a>
+> SO. FREAKING. AWESOME. 12/10 *-Alicia O.*
+
+> My sister was about to jump off of the bed when the "government" began to knock on the door. *-Duha S.*
+
+> It's definitely the best virtual escape room experience I've ever had :') *-Cherry W.*
+
+<center><iframe width="560" height="315" style="max-width:100%" src="https://www.youtube.com/embed/R0-Npw_SJDs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+##### Watch the VERS production recap video. (1:41)
 
 ## The Idea
 
@@ -91,7 +97,7 @@ As @lex turns off his video, you redirect your attention to the virtual desktop 
 
 ### Gameplay
 
-Through dialogue, sound effects, and pictures, you follow @lex on his journey through multiple locations: from the desert into a dark, abandoned warehouse; into an old, cranky elevator; through winding industrial hallways; to the entrance to The Vault, and finally, into The Vault itself. Each location unlocks new apps to use, documents to examine, and interactive puzzles to solve with your team.
+You follow @lex on his journey through multiple locations: from the desert into a dark, abandoned warehouse; into an old, cranky elevator; through winding industrial hallways; to the entrance to The Vault, and finally, into The Vault itself. Each location unlocks new apps to use, documents to examine, and interactive puzzles to solve with your team.
 
 Will you make it out of The Vault before the FBI arrives?
 
