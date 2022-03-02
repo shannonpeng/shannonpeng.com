@@ -16,14 +16,14 @@
 						{% for stat in stats %}
 							{% if not stat.hidden %}
 								{% if stat.name == 'status' %}
-									<div class="cluster">
+									<!--<div class="cluster">
 										<div class="icon" title="current status">
 											<i class="{{ stat.icon }}"></i>
 										</div>
 										<div>
 											<p><b>{{ stat.prefix }}: </b>{{ stat.text }}</p>
 										</div>
-							        </div>
+							        </div>-->
 						       	{% elif stat.name == 'song' %}
 							        <div class="cluster">
 							        	{% if stat.live %}
