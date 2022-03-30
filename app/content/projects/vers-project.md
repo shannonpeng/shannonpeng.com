@@ -28,7 +28,7 @@ The experience takes place over a group Zoom video call and a web-based game int
 
 VERS began as a fun quarantine project between 3 college friends in Summer 2020 and culminated in an official student-led production in early 2021, funded by The Council for the Arts at MIT (CAMIT).
 
-The **[official student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/team)** of VERS (January 15 - February 7, 2021) featured a cast of 8 actors, ran 72 shows, and reached an audience of 185 players. It received glowing reviews:
+The **[official student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/team)** of VERS ran from January 15, 2021 to February 7, 2021. It featured a cast of 8 actors, ran 72 shows, and reached an audience of 185 players. It received glowing reviews:
 
 > SO. FREAKING. AWESOME. 12/10 *-Alicia O.*
 
@@ -55,9 +55,9 @@ In May 2020, these questions drove Dillon Zhang (MIT '20) and I to build [Zoomin
 
 ##### *Zooming Away:* Live interactive performance via Zoom call and web-based UI
 
-Eager to continue exploring, I called together Dillon and Anand Tyagi (NYU '21) to create a more complex, ambitious experience based on Zooming Away, which we called The V.E.R.S. ("Virtual Escape Room Summer") Project. In the 3 months that followed, we met remotely to ideate, design, and develop a 60-minute interactive adventure centered around breaking into Area 51.
+Eager to continue exploring, I called together Dillon and Anand Tyagi (NYU '21) to create a more ambitious, complex experience based on Zooming Away, which we called The V.E.R.S. ("Virtual Escape Room Summer") Project. In the 3 months that followed, we met remotely to ideate, design, and develop a 60-minute interactive adventure centered around breaking into Area 51.
 
-VERS initially began as a fun way to explore a novel concept and gain experience with game design and development over lockdown. With encouragement from our friends and MIT theater instructors, we later applied for grant funding, and then launched VERS into a successful fully-remote theater production for the MIT community.
+VERS initially began as a fun way to explore a novel concept and gain experience with game development over lockdown. With encouragement from our friends and MIT theater instructors, we later applied for grant funding, and then launched VERS into a successful fully-remote theater production for the MIT community in early 2021.
 
 ## Player Experience
 
@@ -140,7 +140,7 @@ Will you make it out of The Vault before the FBI arrives?
 
 ### Team Photo
 
-Whether your mission ends in success or failure, your VERS experience concludes with a mission debrief with your actor and a team photo.
+Whether your mission ends in success or failure, your VERS experience concludes with a mission debrief with your actor and a commemorative team photo.
 
 <div class="image-set" markdown="1">
 
@@ -149,6 +149,45 @@ Whether your mission ends in success or failure, your VERS experience concludes 
 </div>
 
 ##### Team photo with VERS virtual backgrounds.
+
+
+## Behind the Curtain
+
+So, how does VERS work? Live theater typically has operators running lights, sound, and other cues, as well as a stage manager making sure the show is cohesive. However, when everyone is working from home in different technological situations, coordinating multiple people in real time can quickly get messy.
+
+In the interest of simplicity, reliability, and the best player experience, we decided to have our actors run their own shows — and make it as easy as possible for them to do so.
+
+### Actor Panel
+
+<div class="image-set" markdown="1">
+
+![VERS: Actor Panel](/static/images/projects/vers-project/actor-panel.png "VERS: Actor Panel")
+
+</div>
+
+##### Peeking backstage at the Actor Panel.
+
+The heart of the VERS backstage is the Actor Panel. We designed the Actor Panel to be self-contained and streamlined — everything the actor needs to run the show is in one place, items show up only when needed, and anything that can be automated is taken care of by code.
+
+On the right are general controls: manage time, navigate between puzzles, and send messages to the players.
+
+On the left is the interactive script: embedded throughout the scenes are buttons to trigger sound effects and send game content, plus suggested hints to offer the players.
+
+The Actor Panel allows the actor take full control of the players' experience without distracting them from their performance. At the production level, it also minimizes the setup needed to run a show (all you need is a webcam and browser), and it enables us to run multiple shows at the same time!
+
+## Contributions
+
+Dillon, Anand, and I collaborated closely to brainstorm, design, and implement VERS's puzzles. In addition, Dillon developed the backend and the infrastructure for the desktop simulator. I worked on story, UI/UX design, sound design, illustration, marketing, and production management.
+
+## Reflections
+
+The V.E.R.S. Project blew up to a scale we could never have anticipated. What began as a quarantine project for three curious computer science majors grew into a production that:
+
+- brought together 11 theater-loving teammates across MIT class years and time zones
+- engaged 185+ members of the MIT community during a time of isolation
+- broke new territory in theater and computer science to create a first-of-its-kind live remote interactive entertainment experience
+
+We're very proud to have made VERS, and we're grateful to our actors, mentors, CAMIT, and players, all of whom made this production possible! 💚
 
 <div class="callout" markdown="1">
 **🎖 Special Instructions for Webby Awards**
