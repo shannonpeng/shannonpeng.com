@@ -24,4 +24,4 @@ Then, run the start script:
 ```
 sh start.sh
 ```
-© 2019 Shannon Peng, All rights reserved.
+© 2022 Shannon Peng, All rights reserved.
