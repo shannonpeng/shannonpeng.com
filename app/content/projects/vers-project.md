@@ -44,7 +44,7 @@ The **[official student-led MIT production <i class="fas fa-external-link-alt ex
 
 The idea behind VERS first came to us in a Zoom-era MIT theater class. When COVID-19 sent the world into lockdown, and the class online, we wondered: how do we design a live interactive performance for a cast, crew, and audience that are entirely remote? Moreover, how can we design an experience *specifically for* our computer screens? Perhaps screen technologies open more doors than they close.
 
-In May 2020, these questions drove Dillon Zhang (MIT '20) and I to build [Zooming Away](https://shannonpeng.com/projects/zooming-away), a mini 15-minute experience in which players stabilize a crashing spaceship by interacting with the astronaut via a Zoom call and web-based "control console" UI. We had a lot of fun making the project, and our classmates and instructors loved playing it. Weeks after the class ended, I couldn't stop thinking about this new, exciting format of remote entertainment that we'd come up with and what else we could do with it.
+In May 2020, these questions drove Dillon Zhang (MIT '20) and I (Shannon Peng, MIT '20) to build [Zooming Away](https://shannonpeng.com/projects/zooming-away), a mini 15-minute experience in which players stabilize a crashing spaceship by interacting with the astronaut via a Zoom call and web-based "control console" UI. We had a lot of fun making the project, and our classmates and instructors loved playing it. Weeks after the class ended, I couldn't stop thinking about this new, exciting format of remote entertainment that we'd come up with and what else we could do with it.
 
 <div class="image-set image-set-two" markdown="1">
 
@@ -177,7 +177,7 @@ The Actor Panel allows the actor take full control of the players' experience wi
 
 ## Contributions
 
-Dillon, Anand, and I collaborated closely to brainstorm, design, and implement VERS's puzzles. In addition, Dillon developed the backend and the infrastructure for the desktop simulator. I worked on story, UI/UX design, sound design, illustration, marketing, and production management.
+Dillon, Anand, and Shannon collaborated closely to brainstorm, design, and implement VERS's puzzles. In addition, Dillon developed the backend and the infrastructure for the desktop simulator. Shannon worked on story, UI/UX design, sound design, illustration, marketing, and production management.
 
 ## Reflections
 
@@ -194,7 +194,7 @@ We're very proud to have made VERS, and we're grateful to our actors, mentors, C
 
 Hello there!
 
-We're excited for you to try out VERS. ☺️ VERS normally takes 3 people to run (1 live actor and 2 players), but with some window juggling you can walk through the experience on one computer. For individual evaluation, we recommend following these steps:
+We're excited for you to try out VERS. ☺️ VERS normally takes 3 people to run (1 live actor and 2 players), but with some window juggling you can walk through the experience on one computer. We recommend following these steps:
 
 1. In a new window, go to **[versproject.net/newroom <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/newroom)**. This creates a new show and opens its Actor Panel.
 2. Hover over the volume icon <i class="fas fa-volume-up"></i> at the top and click the mute button <i class="fas fa-volume-mute"></i> to mute the Actor Panel's sound.
