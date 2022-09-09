@@ -11,7 +11,7 @@ thumbnail: /static/images/projects/vers-project/thumbnail.jpg
 cover: /static/images/projects/vers-project/cover.jpg
 caption: "It's time to prove that aliens are real, once and for all. Can your team help @lex break into Area 51 without getting caught? (Cover Art: @lex's desk)"
 color: 5CAF00
-link: https://versproject.herokuapp.com
+link: https://versproject.onrender.com
 video: https://www.youtube.com/watch?v=R0-Npw_SJDs&list=PL13VJHLPzcIlgi0ceXD7n-MnPk4wwMh6Z&index=5
 collaborators: Dillon Zhang, Anand Tyagi
 mentors: Joshua Higgason, Kevin Fulton
@@ -28,7 +28,7 @@ The experience takes place over a group Zoom video call and a web-based game int
 
 VERS began as a fun quarantine project between 3 college friends in Summer 2020 and culminated in an official student-led production in early 2021, funded by The Council for the Arts at MIT (CAMIT).
 
-The **[official student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/team)** of VERS ran from January 15, 2021 to February 7, 2021. It featured a cast of 8 actors, ran 72 shows, and reached an audience of 185 players. It received glowing reviews:
+The **[official student-led MIT production <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.onrender.com/team)** of VERS ran from January 15, 2021 to February 7, 2021. It featured a cast of 8 actors, ran 72 shows, and reached an audience of 185 players. It received glowing reviews:
 
 > SO. FREAKING. AWESOME. 12/10 *-Alicia O.*
 
@@ -196,7 +196,7 @@ Hello there!
 
 We're excited for you to try out VERS. ☺️ VERS normally takes 3 people to run (1 live actor and 2 players), but with some window juggling you can walk through the experience on one computer. We recommend following these steps:
 
-1. In a new window, go to **[versproject.net/newroom <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.herokuapp.com/newroom)**. This creates a new show and opens its Actor Panel.
+1. In a new window, go to **[versproject.net/newroom <i class="fas fa-external-link-alt external-icon"></i>](https://versproject.onrender.com/newroom)**. This creates a new show and opens its Actor Panel.
 2. Hover over the volume icon <i class="fas fa-volume-up"></i> at the top and click the mute button <i class="fas fa-volume-mute"></i> to mute the Actor Panel's sound.
 3. Locate the Player URL at the top right, and open that URL in a second window. Log in with any username you'd like.
 4. If possible, position the two windows side by side so that you can easily see both. Follow the instructions in the Actor Panel, pressing the buttons accordingly to drive the player experience. The buttons are color coded: <span style="color:#a27ef5">purple</span> for sound cues, <span style="color:#5aa0f2">blue</span> for content, and <span style="color:#edb538">orange</span> and <span style="color:#2bc125">green</span> for advancing the game state.

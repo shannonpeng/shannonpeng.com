@@ -10,7 +10,7 @@ label: Web Development
 thumbnail: /static/images/projects/plix/thumbnail.jpg
 cover: /static/images/projects/plix/cover.jpg
 color: 19158c
-link: https://plix.herokuapp.com
+link: https://plix.onrender.com
 github: https://github.com/shannonpeng/plix
 collaborators: Jessica Tang
 caption: Pixel art on the Next House board in Plix.
@@ -21,7 +21,7 @@ I created Plix with my friend [Jessica Tang](http://jynnie.me/) in January 2018.
 
 **Note:** Plix currently only has boards on MIT campus, so you'd need to be at MIT to draw on a board. However, you can always view boards other Plixers have created by logging in with username `test` and password `test`, and then clicking the <i class="fas fa-user"></i> icon.
 
-<a href="https://plix.herokuapp.com" class="button">
+<a href="https://plix.onrender.com" class="button">
 	Open Plix <i class="fas fa-external-link-alt external-icon"></i>
 </a>
 

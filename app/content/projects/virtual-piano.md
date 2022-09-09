@@ -11,14 +11,14 @@ label: Web Development
 thumbnail: /static/images/projects/virtual-piano/thumbnail.png
 cover: /static/images/projects/virtual-piano/cover.png
 color: 1747af
-link: https://pengs-piano.herokuapp.com/
+link: https://pengs-piano.onrender.com/
 github: https://github.com/shannonpeng/virtual-piano
 caption: Two people playing a chord in Virtual Piano.
 description: Real-time piano duets in the browser, powered by Socket.IO and Audiosynth
 
 I created Virtual Piano at [Hack@Brown 2017](https://2017.hackatbrown.org/), drawing inspiration from the browser-based experiments in Google's [Chrome Music Lab](https://musiclab.chromeexperiments.com/).
 
-<a href="https://pengs-piano.herokuapp.com/" class="button">
+<a href="https://pengs-piano.onrender.com/" class="button">
 	Play Virtual Piano
 </a>
 
